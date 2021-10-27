@@ -22,6 +22,7 @@ Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'
 Route::get('/terms-and-conditions', [App\Http\Controllers\HomeController::class, 'terms'])->name('terms');
 Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'privacy'])->name('privacy');
 Route::get('/copyright', [App\Http\Controllers\HomeController::class, 'copyright'])->name('copyright');
+Route::post('/news-letters', [HomeController::class, 'news_letters'])->name('news-letters');
 
 Auth::routes();
 
