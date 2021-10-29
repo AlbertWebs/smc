@@ -16,6 +16,7 @@ use App\Http\Controllers\AdminsController;
 
 // Front End Themes
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/parallax', [App\Http\Controllers\HomeController::class, 'parallax'])->name('parallax');
 Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
 Route::get('/our-services', [App\Http\Controllers\HomeController::class, 'services'])->name('services');
 Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
