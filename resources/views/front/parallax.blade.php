@@ -148,18 +148,139 @@
 								</div>
 							</div>
 						</div>
-						<a href="#intro" class="slider-scroll-button position-absolute bottom-10 left-50pct transform3dx-n50" data-hash data-hash-offset="0" data-hash-offset-lg="80">Sroll To Bottom</a>
+						<a href="#home-intro" class="slider-scroll-button position-absolute bottom-10 left-50pct transform3dx-n50" data-hash data-hash-offset="0" data-hash-offset-lg="80">Sroll To Bottom</a>
 					</div>
 				</section>
-				<div id="intro" class="container container-xl-custom py-5 my-5">
+				<div class="home-intro bg-primary" id="home-intro">
+					<div class="container">
+
+						<div class="row align-items-center">
+							<div class="col-lg-8">
+								<p>
+									Trusted and reliable advisory and investment service since <span class="highlighted-word">2008</span>
+									{{-- <span>Check out our options and features included.</span> --}}
+								</p>
+							</div>
+							<div class="col-lg-4">
+								<div class="get-started text-start text-lg-end">
+									<a href="#who" class="btn btn-dark btn-lg text-3 font-weight-semibold px-4 py-3 transform3dx-n50" data-hash data-hash-offset="0" data-hash-offset-lg="68">What We Do</a>
+									{{-- <div class="learn-more">or <a href="index.html">learn more.</a></div> --}}
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<section class="section bg-color-grey border-0 m-0" style="padding:0px">
+					<div class="container-fluid">
+						<div class="row align-items-center bg-color-grey">
+							<div class="col-lg-6 p-0">
+								<section class="parallax section section-parallax custom-parallax-bg-pos-left custom-sec-left h-100 m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'horizontalPosition': '100%'}" data-image-src="{{asset('theme/img/generic/generic-corporate-3-1-full.jpg')}}" style="min-height: 315px;">
+								</section>
+							</div>
+							<div class="col-lg-6 p-0">
+								<section class="section section-no-border h-100 m-0">
+									<div class="row m-0">
+										<div class="col-half-section col-half-section-left">
+											<div class="overflow-hidden">
+												<h4 class="mb-0 appear-animation" data-appear-animation="maskUp"><a href="#" class="text-4 font-weight-bold pt-2 d-block text-dark text-decoration-none pb-1">M&A Advisory</a></h4>
+											</div>
+											<div class="overflow-hidden mb-2">
+												<p class="mb-0 lead text-4 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">The best partner for fast moving consumer goods is Sasema Management Company. We have many years of experience with distributing consumer goods into retail market. We have a team of international buyers and account managers.</p>
+											</div>
+											<br><a href="#" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">LEARN MORE</a>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+						<div class="row align-items-center bg-color-grey">
+							<div class="col-lg-6 order-2 order-lg-1 p-0">
+								<section class="section section-no-border h-100 m-0">
+									<div class="row justify-content-end m-0">
+										<div class="col-half-section col-half-section-right custom-text-align-right">
+											<div class="overflow-hidden">
+												<h4 class="mb-0 appear-animation" data-appear-animation="maskUp"><a href="#" class="text-4 font-weight-bold pt-2 d-block text-dark text-decoration-none pb-1">Familly Business Consulting</a></h4>
+											</div>
+											<div class="overflow-hidden mb-2">
+												<p class="mb-0 lead text-4 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">We focus on addressing key issues such as succession and structuring to enable families to build successful multi-generational businesses, that will leave lasting legacies.
+
+												</p>
+												<br><a href="#" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">LEARN MORE</a>
+											</div>
+											
+										</div>
+									</div>
+								</section>
+							</div>
+							<div class="col-lg-6 order-1 order-lg-2 p-0">
+								<section class="parallax section section-parallax h-100 m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'horizontalPosition': '100%'}" data-image-src="{{asset('theme/img/generic/generic-corporate-3-2-full.jpg')}}" style="min-height: 315px;">
+								</section>
+							</div>
+						</div>
+						<div class="row align-items-center bg-color-grey">
+							<div class="col-lg-6 p-0">
+								<section class="parallax section section-parallax custom-parallax-bg-pos-left custom-sec-left h-100 m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'horizontalPosition': '100%'}" data-image-src="{{asset('theme/img/generic/generic-corporate-3-3-full.jpg')}}" style="min-height: 315px;">
+								</section>
+							</div>
+							<div class="col-lg-6 p-0">
+								<section class="section section-no-border h-100 m-0">
+									<div class="row m-0">
+										<div class="col-half-section col-half-section-left">
+											<div class="overflow-hidden">
+												<h4 class="mb-0 appear-animation" data-appear-animation="maskUp"><a href="#" class="text-4 font-weight-bold pt-2 d-block text-dark text-decoration-none pb-1">Investment Advisory</a></h4>
+											</div>
+											<div class="overflow-hidden mb-2">
+												<p class="mb-0 lead text-4 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">Sasema works with businesses who have already identified their ideal investment partner and/or are at the middle of a transaction (be it an M&A or Private Equity), to enable them manage the deal process and achieve the best outcomes from the investment process.</p>
+												<br><a href="#" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">LEARN MORE</a>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+					
+				<section>
+
+				
+
+			
+				<section class="section section-height-3 bg-color-grey-scale-1 m-0 border-0" id="who">
+					<div class="container">
+						<div class="row align-items-center justify-content-center">
+							<div class="col-lg-6 pb-sm-4 pb-lg-0 pe-lg-5 mb-sm-5 mb-lg-0">
+								<h2 class="text-color-dark font-weight-normal text-6 mb-2">Who <strong class="font-weight-extra-bold">We Are</strong></h2>
+								<p class="lead pe-lg-5 me-lg-5">
+									Sasema Management Company is an investment advisory, mergers and acquisitions and family business consulting firm.<br><br>
+
+									Sasema was established in Mauritius in 2008 and is currently based in Nairobi, Kenya, primarily servicing the East African region but with extensive Pan-African networks.
+									
+										
+								</p>
+								<h2 class="text-color-dark font-weight-normal text-6 mb-2">What <strong class="font-weight-extra-bold">We Do</strong></h2>
+								<p class="lead pe-lg-5 me-lg-5">Sasema provides consultancy services in investment advisory, M&A  and family business and has worked in the following sectors; FMCG (retail), agribusiness, banking, real estate, and private equity among others.</p>
+								{{-- <a href="#" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2">LEARN MORE</a> --}}
+							</div>
+							<div class="col-sm-8 col-md-6 col-lg-4 offset-sm-4 offset-md-4 offset-lg-2 position-relative mt-sm-5" style="top: 1.7rem;">
+								<img src="{{asset('theme/img/generic/generic-corporate-3-1.jpg')}}" class="img-fluid position-absolute d-none d-sm-block appear-animation" data-appear-animation="expandIn" data-appear-animation-delay="300" style="top: 10%; left: -50%;" alt="" />
+								<img src="{{asset('theme/img/generic/generic-corporate-3-2.jpg')}}" class="img-fluid position-absolute d-none d-sm-block appear-animation" data-appear-animation="expandIn" style="top: -33%; left: -29%;" alt="" />
+								<img src="{{asset('theme/img/generic/generic-corporate-3-3.jpg')}}" class="img-fluid position-relative appear-animation mb-2" data-appear-animation="expandIn" data-appear-animation-delay="600" alt="" />
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div  class="container container-xl-custom py-5 my-5">
 					<div class="row justify-content-center">
-						<div class="col-xl-9 text-center">
-							<h2 class="font-weight-bold text-11 appear-animation" data-appear-animation="fadeInUpShorter">We are Porto, we are Awesome</h2>
-							<p class="line-height-9 text-4 opacity-9 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras volutpat id sapien ac varius. Fusce hendrerit ligula a consectetur ullamcorper. Vestibulum varius pharetra lorem, in maximus libero placerat sed. In a lectus vel mauris tempor lobortis feugiat sed magna.</p>
+						<div class="col-xl-6 text-center">
+							<h2 class="font-weight-bold text-11 appear-animation" data-appear-animation="fadeInUpShorter">THE HISTORY OF SASEMA MANAGEMENT COMPANY</h3>
+							<span class="position-absolute left-50pct transform3dx-n50 top-0 mt-3"><img src="{{asset('/')}}/theme/img/slides/slide-blue-line.png" class="w-auto appear-animation animated appear-animation-visible" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" alt=""></span>
+							<h5 class="line-height-9 appear-animation mb-0 lead" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" style="text-transform: capitalize">Sasema Management Company is an investment advisory, mergers and acquisitions and family business consulting firm.<br>Sasema was established in Mauritius in 2008 and is currently based in Nairobi, Kenya, primarily servicing the East African region but with extensive Pan-African networks.</h5>
 						</div>
 					</div>
 					<div class="row featured-boxes featured-boxes-style-4">
-						<div class="col-sm-6 col-lg-3 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="400">
+						<div class="col-sm-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="400">
 							<div class="featured-box mb-lg-0">
 								<div class="box-content px-lg-1 px-xl-5">
 									<i class="icon-featured icons icon-bubbles text-color-primary text-11"></i>
@@ -168,7 +289,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-lg-3 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
+						<div class="col-sm-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
 							<div class="featured-box mb-lg-0">
 								<div class="box-content px-lg-1 px-xl-5">
 									<i class="icon-featured icons icon-organization text-color-primary text-11"></i>
@@ -177,20 +298,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6 col-lg-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
+						<div class="col-sm-6 col-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
 							<div class="featured-box mb-sm-0">
 								<div class="box-content px-lg-1 px-xl-5">
 									<i class="icon-featured icons icon-cup text-color-primary text-11"></i>
 									<h4 class="font-weight-bold text-5 mb-3">Work Hard</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-lg-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
-							<div class="featured-box mb-0">
-								<div class="box-content px-lg-1 px-xl-5">
-									<i class="icon-featured icons icon-heart text-color-primary text-11"></i>
-									<h4 class="font-weight-bold text-5 mb-3">Deliver Quality</h4>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 								</div>
 							</div>
