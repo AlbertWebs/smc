@@ -279,351 +279,55 @@
 							<h5 class="line-height-9 appear-animation mb-0 lead" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" style="text-transform: capitalize">Sasema Management Company is an investment advisory, mergers and acquisitions and family business consulting firm.<br>Sasema was established in Mauritius in 2008 and is currently based in Nairobi, Kenya, primarily servicing the East African region but with extensive Pan-African networks.</h5>
 						</div>
 					</div>
-					<div class="row featured-boxes featured-boxes-style-4">
-						<div class="col-sm-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="400">
-							<div class="featured-box mb-lg-0">
-								<div class="box-content px-lg-1 px-xl-5">
-									<i class="icon-featured icons icon-bubbles text-color-primary text-11"></i>
-									<h4 class="font-weight-bold text-5 mb-3">Strategy</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
-							<div class="featured-box mb-lg-0">
-								<div class="box-content px-lg-1 px-xl-5">
-									<i class="icon-featured icons icon-organization text-color-primary text-11"></i>
-									<h4 class="font-weight-bold text-5 mb-3">Plan Everything</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-6 col-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
-							<div class="featured-box mb-sm-0">
-								<div class="box-content px-lg-1 px-xl-5">
-									<i class="icon-featured icons icon-cup text-color-primary text-11"></i>
-									<h4 class="font-weight-bold text-5 mb-3">Work Hard</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-								</div>
-							</div>
-						</div>
-					</div>
+					
 				</div>
-				<section id="services" class="section section-height-3 bg-primary border-0 m-0 appear-animation" data-appear-animation="fadeIn">
-					<div class="container my-3">
-						<div class="row mb-5">
-							<div class="col text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-								<h2 class="font-weight-bold text-color-light mb-2">Services</h2>
-								<p class="text-color-light opacity-7">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT</p>
-							</div>
-						</div>
-						<div class="row mb-lg-4">
-							<div class="col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
-								<div class="feature-box feature-box-style-2">
-									<div class="feature-box-icon">
-										<i class="icons icon-support text-color-light"></i>
-									</div>
-									<div class="feature-box-info">
-										<h4 class="font-weight-bold text-color-light text-4 mb-2">CUSTOMER SUPPORT</h4>
-										<p class="text-color-light opacity-7">Lorem ipsum dolor sit amet, consectetur adipiscing <span class="alternative-font text-color-light">metus.</span> elit. Quisque rutrum pellentesque imperdiet.</p>
+				<section class="section section-height-1 bg-color-grey-scale-1 m-0 border-1">
+					<div  class="container container-xl-custom py-5 my-5 bg-color-grey-scale-1">
+						<div class="row featured-boxes featured-boxes-style-4 bg-color-grey-scale-1">
+							<div class="col-sm-6 col-lg-4 appear-animation bg-color-grey-scale-1" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="400">
+								<div class="featured-box mb-lg-0">
+									<div class="box-content px-lg-1 px-xl-5">
+										{{-- <i class="icon-featured icons icon-bubbles text-color-primary text-11"></i> --}}
+										<img class="icon-animated text-color-primary svg-animation-effect-1-hover svg-animation-effect-1-hover-tertiary" width="85" height="85" src="{{asset('theme/img/icons/accounting-auditor-3.svg')}}" alt="" data-icon="" data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary svg-animation-effect-1-hover svg-animation-effect-1-hover-tertiary'}" style="opacity: 1; width: 85px;">
+										<br>
+										<h2 class="font-weight-bold text-10 mb-3" style="color:#0081ff">OUR VISION</h3>
+										<p class="font-weight-bold text-5 mb-3">To be a trusted and reliable advisory and investment services partner in Africa.</p>
 									</div>
 								</div>
 							</div>
-							<div class="col-lg-4 appear-animation" data-appear-animation="fadeInUpShorter">
-								<div class="feature-box feature-box-style-2">
-									<div class="feature-box-icon">
-										<i class="icons icon-layers text-color-light"></i>
-									</div>
-									<div class="feature-box-info">
-										<h4 class="font-weight-bold text-color-light text-4 mb-2">SLIDERS</h4>
-										<p class="text-color-light opacity-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
-								<div class="feature-box feature-box-style-2">
-									<div class="feature-box-icon">
-										<i class="icons icon-menu text-color-light"></i>
-									</div>
-									<div class="feature-box-info">
-										<h4 class="font-weight-bold text-color-light text-4 mb-2">BUTTONS</h4>
-										<p class="text-color-light opacity-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
+							<div class="col-sm-6 col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
+								<div class="featured-box mb-lg-0">
+									<div class="box-content px-lg-1 px-xl-5">
+										{{-- <i class="icon-featured icons icon-organization text-color-primary text-11"></i> --}}
+										<img class="icon-animated text-color-primary svg-animation-effect-1-hover svg-animation-effect-1-hover-tertiary" width="85" height="85" src="{{asset('theme/img/icons/accounting-auditor-4.svg')}}" alt="" data-icon="" data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary svg-animation-effect-1-hover svg-animation-effect-1-hover-quaternary'}" style="opacity: 1; width: 85px;">
+										<br>
+										<h2 class="font-weight-bold text-10 mb-3" style="color:#0081ff">OUR MISSION</h3>
+										<p class="font-weight-bold text-5 mb-3">To deliver sustainable value to all stakeholders.</p>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="300">
-								<div class="feature-box feature-box-style-2">
-									<div class="feature-box-icon">
-										<i class="icons icon-doc text-color-light"></i>
-									</div>
-									<div class="feature-box-info">
-										<h4 class="font-weight-bold text-color-light text-4 mb-2">HTML5 / CSS3 / JS</h4>
-										<p class="text-color-light opacity-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 appear-animation" data-appear-animation="fadeInUpShorter">
-								<div class="feature-box feature-box-style-2">
-									<div class="feature-box-icon">
-										<i class="icons icon-user text-color-light"></i>
-									</div>
-									<div class="feature-box-info">
-										<h4 class="font-weight-bold text-color-light text-4 mb-2">ICONS</h4>
-										<p class="text-color-light opacity-7">Lorem ipsum dolor sit amet, consectetur adipiscing <span class="alternative-font text-color-light">metus.</span> elit. Quisque rutrum pellentesque imperdiet.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300">
-								<div class="feature-box feature-box-style-2">
-									<div class="feature-box-icon">
-										<i class="icons icon-screen-desktop text-color-light"></i>
-									</div>
-									<div class="feature-box-info">
-										<h4 class="font-weight-bold text-color-light text-4 mb-2">LIGHTBOX</h4>
-										<p class="text-color-light opacity-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
+							<div class="col-sm-6 col-lg-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
+								<div class="featured-box mb-sm-0">
+									<div class="box-content px-lg-1 px-xl-5">
+										{{-- <i class="icon-featured icons icon-cup text-color-primary text-11"></i> --}}
+										<img class="icon-animated text-color-primary svg-animation-effect-1-hover svg-animation-effect-1-hover-tertiary" width="85" height="85" src="{{asset('theme/img/icons/accounting-auditor-6.svg')}}" alt="" data-icon="" data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary svg-animation-effect-1-hover svg-animation-effect-1-hover-quaternary'}" style="opacity: 1; width: 85px;">
+										<br>
+										<h2 class="font-weight-bold text-10 mb-3" style="color:#0081ff">OUR GOALS</h3>
+										<p class="font-weight-bold text-5 mb-3">To create big african businesses, in AFRICA, for AFRICA, by AFRICANS.</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-
-				<div id="projects" class="container">
-					<div class="row justify-content-center pt-5 mt-5">
-						<div class="col-lg-9 text-center">
-							<div class="appear-animation" data-appear-animation="fadeInUpShorter">
-								<h2 class="font-weight-bold mb-2">Projects</h2>
-								<p class="mb-4">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT</p>
-							</div>
-							<p class="pb-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo. vamus suscipit molestie vestibulum.</p>
-						</div>
-					</div>
-					<div class="row pb-5 mb-5">
-						<div class="col">
-
-							<div class="appear-animation popup-gallery-ajax" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-								<div class="owl-carousel owl-theme mb-0" data-plugin-options="{'items': 4, 'margin': 35, 'loop': false}">
-
-									<div class="portfolio-item">
-										<a href="ajax/portfolio-ajax-project.html" data-ajax-on-modal>
-											<span class="thumb-info thumb-info-lighten">
-												<span class="thumb-info-wrapper">
-													<img src="{{asset('theme/img/projects/project.jpg')}}" class="img-fluid border-radius-0" alt="">
-													<span class="thumb-info-title">
-														<span class="thumb-info-inner">Presentation</span>
-														<span class="thumb-info-type">Brand</span>
-													</span>
-													<span class="thumb-info-action">
-														<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-													</span>
-												</span>
-											</span>
-										</a>
-									</div>
-
-									<div class="portfolio-item">
-										<a href="ajax/portfolio-ajax-project-1.html" data-ajax-on-modal>
-											<span class="thumb-info thumb-info-lighten">
-												<span class="thumb-info-wrapper">
-													<span class="owl-carousel owl-theme dots-inside m-0" data-plugin-options="{'items': 1, 'margin': 20, 'animateOut': 'fadeOut', 'autoplay': true, 'autoplayTimeout': 3000}"><span><img src="{{asset('theme/img/projects/project-1.jpg')}}" class="img-fluid border-radius-0" alt=""></span><span><img src="{{asset('theme/img/projects/project-1-2.jpg')}}" class="img-fluid border-radius-0" alt=""></span></span>
-													<span class="thumb-info-title">
-														<span class="thumb-info-inner">Sasema Watch</span>
-														<span class="thumb-info-type">Media</span>
-													</span>
-													<span class="thumb-info-action">
-														<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-													</span>
-												</span>
-											</span>
-										</a>
-									</div>
-
-									<div class="portfolio-item">
-										<a href="ajax/portfolio-ajax-project-2.html" data-ajax-on-modal>
-											<span class="thumb-info thumb-info-lighten">
-												<span class="thumb-info-wrapper">
-													<img src="{{asset('theme/img/projects/project-2.jpg')}}" class="img-fluid border-radius-0" alt="">
-													<span class="thumb-info-title">
-														<span class="thumb-info-inner">Identity</span>
-														<span class="thumb-info-type">Logo</span>
-													</span>
-													<span class="thumb-info-action">
-														<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-													</span>
-												</span>
-											</span>
-										</a>
-									</div>
-
-									<div class="portfolio-item">
-										<a href="ajax/portfolio-ajax-project-3.html" data-ajax-on-modal>
-											<span class="thumb-info thumb-info-lighten">
-												<span class="thumb-info-wrapper">
-													<img src="{{asset('theme/img/projects/project-27.jpg')}}" class="img-fluid border-radius-0" alt="">
-													<span class="thumb-info-title">
-														<span class="thumb-info-inner">Sasema Screens</span>
-														<span class="thumb-info-type">Website</span>
-													</span>
-													<span class="thumb-info-action">
-														<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-													</span>
-												</span>
-											</span>
-										</a>
-									</div>
-
-									<div class="portfolio-item">
-										<a href="ajax/portfolio-ajax-project-4.html" data-ajax-on-modal>
-											<span class="thumb-info thumb-info-lighten">
-												<span class="thumb-info-wrapper">
-													<img src="{{asset('theme/img/projects/project-4.jpg')}}" class="img-fluid border-radius-0" alt="">
-													<span class="thumb-info-title">
-														<span class="thumb-info-inner">Three Bottles</span>
-														<span class="thumb-info-type">Logo</span>
-													</span>
-													<span class="thumb-info-action">
-														<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-													</span>
-												</span>
-											</span>
-										</a>
-									</div>
-
-									<div class="portfolio-item">
-										<a href="ajax/portfolio-ajax-project-5.html" data-ajax-on-modal>
-											<span class="thumb-info thumb-info-lighten">
-												<span class="thumb-info-wrapper">
-													<img src="{{asset('theme/img/projects/project-5.jpg')}}" class="img-fluid border-radius-0" alt="">
-													<span class="thumb-info-title">
-														<span class="thumb-info-inner">Company T-Shirt</span>
-														<span class="thumb-info-type">Brand</span>
-													</span>
-													<span class="thumb-info-action">
-														<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-													</span>
-												</span>
-											</span>
-										</a>
-									</div>
-
-									<div class="portfolio-item">
-										<a href="ajax/portfolio-ajax-project-6.html" data-ajax-on-modal>
-											<span class="thumb-info thumb-info-lighten">
-												<span class="thumb-info-wrapper">
-													<img src="{{asset('theme/img/projects/project-6.jpg')}}" class="img-fluid border-radius-0" alt="">
-													<span class="thumb-info-title">
-														<span class="thumb-info-inner">Mobile Mockup</span>
-														<span class="thumb-info-type">Website</span>
-													</span>
-													<span class="thumb-info-action">
-														<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-													</span>
-												</span>
-											</span>
-										</a>
-									</div>
-
-									<div class="portfolio-item">
-										<a href="ajax/portfolio-ajax-project-7.html" data-ajax-on-modal>
-											<span class="thumb-info thumb-info-lighten">
-												<span class="thumb-info-wrapper">
-													<img src="{{asset('theme/img/projects/project-7.jpg')}}" class="img-fluid border-radius-0" alt="">
-													<span class="thumb-info-title">
-														<span class="thumb-info-inner">Sasema Label</span>
-														<span class="thumb-info-type">Media</span>
-													</span>
-													<span class="thumb-info-action">
-														<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-													</span>
-												</span>
-											</span>
-										</a>
-									</div>
-
-									<div class="portfolio-item">
-										<a href="ajax/portfolio-ajax-project-1.html" data-ajax-on-modal>
-											<span class="thumb-info thumb-info-lighten">
-												<span class="thumb-info-wrapper">
-													<img src="{{asset('theme/img/projects/project-23.jpg')}}" class="img-fluid border-radius-0" alt="">
-													<span class="thumb-info-title">
-														<span class="thumb-info-inner">Business Folders</span>
-														<span class="thumb-info-type">Logo</span>
-													</span>
-													<span class="thumb-info-action">
-														<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-													</span>
-												</span>
-											</span>
-										</a>
-									</div>
-
-									<div class="portfolio-item">
-										<a href="ajax/portfolio-ajax-project-2.html" data-ajax-on-modal>
-											<span class="thumb-info thumb-info-lighten">
-												<span class="thumb-info-wrapper">
-													<img src="{{asset('theme/img/projects/project-24.jpg')}}" class="img-fluid border-radius-0" alt="">
-													<span class="thumb-info-title">
-														<span class="thumb-info-inner">Tablet Screen</span>
-														<span class="thumb-info-type">Website</span>
-													</span>
-													<span class="thumb-info-action">
-														<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-													</span>
-												</span>
-											</span>
-										</a>
-									</div>
-
-									<div class="portfolio-item">
-										<a href="ajax/portfolio-ajax-project-3.html" data-ajax-on-modal>
-											<span class="thumb-info thumb-info-lighten">
-												<span class="thumb-info-wrapper">
-													<img src="{{asset('theme/img/projects/project-25.jpg')}}" class="img-fluid border-radius-0" alt="">
-													<span class="thumb-info-title">
-														<span class="thumb-info-inner">Black Watch</span>
-														<span class="thumb-info-type">Media</span>
-													</span>
-													<span class="thumb-info-action">
-														<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-													</span>
-												</span>
-											</span>
-										</a>
-									</div>
-
-									<div class="portfolio-item">
-										<a href="ajax/portfolio-ajax-project-4.html" data-ajax-on-modal>
-											<span class="thumb-info thumb-info-lighten">
-												<span class="thumb-info-wrapper">
-													<img src="{{asset('theme/img/projects/project-26.jpg')}}" class="img-fluid border-radius-0" alt="">
-													<span class="thumb-info-title">
-														<span class="thumb-info-inner">Monitor Mockup</span>
-														<span class="thumb-info-type">Website</span>
-													</span>
-													<span class="thumb-info-action">
-														<span class="thumb-info-action-icon bg-dark opacity-8"><i class="fas fa-plus"></i></span>
-													</span>
-												</span>
-											</span>
-										</a>
-									</div>
-
-
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
+			
 
 				<section id="clients" class="section section-background section-height-4 overlay overlay-show overlay-op-9 border-0 m-0" style="background-image: url({{asset('theme/img/bg-one-page-1-1.jpg')}}); background-size: cover; background-position: center;">
 					<div class="container">
 						<div class="row">
 							<div class="col text-center">
-								<h2 class="font-weight-bold text-color-light mb-2">We’re excited about Sasema</h2>
-								<p class="text-color-light opacity-7">30,000 CUSTOMERS IN 100 COUNTRIES USE Sasema. MEET OUR CUSTOMERS.</p>
+								<h2 class="font-weight-bold text-color-light mb-2">Our Clients</h2>
+								{{-- <p class="text-color-light opacity-7">30,000 CUSTOMERS IN 100 COUNTRIES USE Sasema. MEET OUR CUSTOMERS.</p> --}}
 							</div>
 						</div>
 						<div class="row text-center py-3 my-4">
@@ -632,25 +336,28 @@
 									<img class="img-fluid" src="{{asset('theme/img/logos/logo-light-1.png')}}" alt="">
 								</div>
 								<div>
-									<img class="img-fluid" src="{{asset('theme/img/logos/logo-light-2.png')}}" alt="">
+									<img class="img-fluid" src="{{asset('theme/img/logos/logo-light-1.png')}}" alt="">
 								</div>
 								<div>
-									<img class="img-fluid" src="{{asset('theme/img/logos/logo-light-3.png')}}" alt="">
+									<img class="img-fluid" src="{{asset('theme/img/logos/logo-light-1.png')}}" alt="">
 								</div>
 								<div>
-									<img class="img-fluid" src="{{asset('theme/img/logos/logo-light-4.png')}}" alt="">
+									<img class="img-fluid" src="{{asset('theme/img/logos/logo-light-1.png')}}" alt="">
 								</div>
 								<div>
-									<img class="img-fluid" src="{{asset('theme/img/logos/logo-light-5.png')}}" alt="">
+									<img class="img-fluid" src="{{asset('theme/img/logos/logo-light-1.png')}}" alt="">
 								</div>
 								<div>
-									<img class="img-fluid" src="{{asset('theme/img/logos/logo-light-6.png')}}" alt="">
+									<img class="img-fluid" src="{{asset('theme/img/logos/logo-light-1.png')}}" alt="">
 								</div>
 								<div>
-									<img class="img-fluid" src="{{asset('theme/img/logos/logo-light-4.png')}}" alt="">
+									<img class="img-fluid" src="{{asset('theme/img/logos/logo-light-1.png')}}" alt="">
 								</div>
 								<div>
-									<img class="img-fluid" src="{{asset('theme/img/logos/logo-light-2.png')}}" alt="">
+									<img class="img-fluid" src="{{asset('theme/img/logos/logo-light-1.png')}}" alt="">
+								</div>
+								<div>
+									<img class="img-fluid" src="{{asset('theme/img/logos/logo-light-1.png')}}" alt="">
 								</div>
 							</div>
 						</div>
@@ -772,7 +479,7 @@
 					</div>
 				</div>
 
-				<section id="contact" class="section bg-color-grey-scale-1 border-0 py-0 m-0">
+				<section id="contact" class="section bg-color-grey-scale-2 border-0 py-0 m-0">
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-md-6">
