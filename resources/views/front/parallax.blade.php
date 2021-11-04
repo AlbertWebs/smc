@@ -12,9 +12,7 @@
 		<meta name="description" content="Sasema - Responsive HTML5 Template">
 		<meta name="author" content="okler.net">
 
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="img/apple-touch-icon.png')}}">
+		
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
@@ -46,7 +44,7 @@
 		<!-- Head Libs -->
 		<script src="{{asset('theme/vendor/modernizr/modernizr.min.js')}}"></script>
 
-
+        @include('favicon')
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-Sasema"></script>
 		<script>
@@ -86,7 +84,7 @@
 														</a>
 													</li>
 													<li class="dropdown">
-														<a data-hash class="nav-link active" href="#home">
+														<a data-hash class="nav-link active" href="#home-intro">
 															Who we Are
 														</a>
 				
@@ -94,9 +92,7 @@
 													<li>
 														<a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="68" href="#services">Services</a>
 													</li>
-													<li>
-														<a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="68" href="#projects">Projects</a>
-													</li>
+													
 													<li>
 														<a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="68" href="#clients">Clients</a>
 													</li>
@@ -171,9 +167,10 @@
 
 					</div>
 				</div>
-				<section class="section bg-color-grey border-0 m-0" style="padding:0px">
+				<section class="section bg-color-grey border-0 m-0" style="padding:0px" id="services">
 					<div class="container-fluid">
-						<div class="row align-items-center bg-color-grey">
+						{{-- <div class="row align-items-center bg-color-grey"> --}}
+						<div class="row bg-color-grey">
 							<div class="col-lg-6 p-0">
 								<section class="parallax section section-parallax custom-parallax-bg-pos-left custom-sec-left h-100 m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'horizontalPosition': '100%'}" data-image-src="{{asset('theme/img/generic/generic-corporate-3-1-full.jpg')}}" style="min-height: 315px;">
 								</section>
@@ -194,7 +191,8 @@
 								</section>
 							</div>
 						</div>
-						<div class="row align-items-center bg-color-grey">
+						{{-- <div class="row align-items-center bg-color-grey"> --}}
+						<div class="row bg-color-grey">
 							<div class="col-lg-6 order-2 order-lg-1 p-0">
 								<section class="section section-no-border h-100 m-0">
 									<div class="row justify-content-end m-0">
@@ -218,7 +216,8 @@
 								</section>
 							</div>
 						</div>
-						<div class="row align-items-center bg-color-grey">
+						{{-- <div class="row align-items-center bg-color-grey"> --}}
+							<div class="row  bg-color-grey">
 							<div class="col-lg-6 p-0">
 								<section class="parallax section section-parallax custom-parallax-bg-pos-left custom-sec-left h-100 m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'horizontalPosition': '100%'}" data-image-src="{{asset('theme/img/generic/generic-corporate-3-3-full.jpg')}}" style="min-height: 315px;">
 								</section>
@@ -392,92 +391,187 @@
 					</div>
 				</section>
 
-				<div id="team" class="container pb-4">
-					<div class="row pt-5 mt-5 mb-4">
-						<div class="col text-center appear-animation" data-appear-animation="fadeInUpShorter">
-							<h2 class="font-weight-bold mb-1">Meet Our Team</h2>
-							<p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT</p>
+				<section class="section section-default border-0 my-5" id="team">
+					<div class="container py-4">
+
+						<div class="row">
+							<div class="col pb-4 text-center">
+								<h2 class="text-color-dark font-weight-normal text-7 mb-0 pt-2">Meet <strong class="font-weight-extra-bold">Our Team</strong></h2>
+								
+							</div>
+						</div>
+						<div class="row pb-4 mb-2">
+							<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorter">
+								<span class="thumb-info thumb-info-hide-wrapper-bg bg-transparent border-radius-0">
+									<span class="thumb-info-wrapper border-radius-0">
+										<a href="about-me.html">
+											<img src="{{asset('theme/img/team/team-1.jpg')}}" class="img-fluid border-radius-0" alt="">
+											<span class="thumb-info-title">
+												<span class="thumb-info-inner">John Doe</span>
+												<span class="thumb-info-type">CEO</span>
+											</span>
+										</a>
+									</span>
+									<span class="thumb-info-caption">
+										<span class="thumb-info-caption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ligula mi, non suscipitaccumsan</span>
+										<span class="thumb-info-social-icons">
+											<a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+											<a href="https://www.twitter.com/"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+											<a href="http://www.linkedin.com/"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
+										</span>
+									</span>
+								</span>
+							</div>
+							<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
+								<span class="thumb-info thumb-info-hide-wrapper-bg bg-transparent border-radius-0">
+									<span class="thumb-info-wrapper border-radius-0">
+										<a href="about-me.html">
+											<img src="{{asset('theme/img/team/team-2.jpg')}}" class="img-fluid border-radius-0" alt="">
+											<span class="thumb-info-title">
+												<span class="thumb-info-inner">Jessica Doe</span>
+												<span class="thumb-info-type">Marketing</span>
+											</span>
+										</a>
+									</span>
+									<span class="thumb-info-caption">
+										<span class="thumb-info-caption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ligula mi, non suscipitaccumsan</span>
+										<span class="thumb-info-social-icons">
+											<a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+											<a href="https://www.twitter.com/"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+											<a href="http://www.linkedin.com/"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
+										</span>
+									</span>
+								</span>
+							</div>
+							<div class="col-sm-6 col-lg-3 mb-4 mb-sm-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
+								<span class="thumb-info thumb-info-hide-wrapper-bg bg-transparent border-radius-0">
+									<span class="thumb-info-wrapper border-radius-0">
+										<a href="about-me.html">
+											<img src="{{asset('theme/img/team/team-3.jpg')}}" class="img-fluid border-radius-0" alt="">
+											<span class="thumb-info-title">
+												<span class="thumb-info-inner">Rick Edward Doe</span>
+												<span class="thumb-info-type">Developer</span>
+											</span>
+										</a>
+									</span>
+									<span class="thumb-info-caption">
+										<span class="thumb-info-caption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ligula mi, non suscipitaccumsan</span>
+										<span class="thumb-info-social-icons">
+											<a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+											<a href="https://www.twitter.com/"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+											<a href="http://www.linkedin.com/"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
+										</span>
+									</span>
+								</span>
+							</div>
+							<div class="col-sm-6 col-lg-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">
+								<span class="thumb-info thumb-info-hide-wrapper-bg bg-transparent border-radius-0">
+									<span class="thumb-info-wrapper border-radius-0">
+										<a href="about-me.html">
+											<img src="{{asset('theme/img/team/team-4.jpg')}}" class="img-fluid border-radius-0" alt="">
+											<span class="thumb-info-title">
+												<span class="thumb-info-inner">Melinda Wolosky</span>
+												<span class="thumb-info-type">Design</span>
+											</span>
+										</a>
+									</span>
+									<span class="thumb-info-caption">
+										<span class="thumb-info-caption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ligula mi, non suscipitaccumsan</span>
+										<span class="thumb-info-social-icons">
+											<a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+											<a href="https://www.twitter.com/"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+											<a href="http://www.linkedin.com/"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
+										</span>
+									</span>
+								</span>
+							</div>
+							<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorter">
+								<span class="thumb-info thumb-info-hide-wrapper-bg bg-transparent border-radius-0">
+									<span class="thumb-info-wrapper border-radius-0">
+										<a href="about-me.html">
+											<img src="{{asset('theme/img/team/team-1.jpg')}}" class="img-fluid border-radius-0" alt="">
+											<span class="thumb-info-title">
+												<span class="thumb-info-inner">John Doe</span>
+												<span class="thumb-info-type">CEO</span>
+											</span>
+										</a>
+									</span>
+									<span class="thumb-info-caption">
+										<span class="thumb-info-caption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ligula mi, non suscipitaccumsan</span>
+										<span class="thumb-info-social-icons">
+											<a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+											<a href="https://www.twitter.com/"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+											<a href="http://www.linkedin.com/"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
+										</span>
+									</span>
+								</span>
+							</div>
+							<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
+								<span class="thumb-info thumb-info-hide-wrapper-bg bg-transparent border-radius-0">
+									<span class="thumb-info-wrapper border-radius-0">
+										<a href="about-me.html">
+											<img src="{{asset('theme/img/team/team-2.jpg')}}" class="img-fluid border-radius-0" alt="">
+											<span class="thumb-info-title">
+												<span class="thumb-info-inner">Jessica Doe</span>
+												<span class="thumb-info-type">Marketing</span>
+											</span>
+										</a>
+									</span>
+									<span class="thumb-info-caption">
+										<span class="thumb-info-caption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ligula mi, non suscipitaccumsan</span>
+										<span class="thumb-info-social-icons">
+											<a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+											<a href="https://www.twitter.com/"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+											<a href="http://www.linkedin.com/"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
+										</span>
+									</span>
+								</span>
+							</div>
+							<div class="col-sm-6 col-lg-3 mb-4 mb-sm-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
+								<span class="thumb-info thumb-info-hide-wrapper-bg bg-transparent border-radius-0">
+									<span class="thumb-info-wrapper border-radius-0">
+										<a href="about-me.html">
+											<img src="{{asset('theme/img/team/team-3.jpg')}}" class="img-fluid border-radius-0" alt="">
+											<span class="thumb-info-title">
+												<span class="thumb-info-inner">Rick Edward Doe</span>
+												<span class="thumb-info-type">Developer</span>
+											</span>
+										</a>
+									</span>
+									<span class="thumb-info-caption">
+										<span class="thumb-info-caption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ligula mi, non suscipitaccumsan</span>
+										<span class="thumb-info-social-icons">
+											<a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+											<a href="https://www.twitter.com/"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+											<a href="http://www.linkedin.com/"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
+										</span>
+									</span>
+								</span>
+							</div>
+							<div class="col-sm-6 col-lg-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600">
+								<span class="thumb-info thumb-info-hide-wrapper-bg bg-transparent border-radius-0">
+									<span class="thumb-info-wrapper border-radius-0">
+										<a href="about-me.html">
+											<img src="{{asset('theme/img/team/team-4.jpg')}}" class="img-fluid border-radius-0" alt="">
+											<span class="thumb-info-title">
+												<span class="thumb-info-inner">Melinda Wolosky</span>
+												<span class="thumb-info-type">Design</span>
+											</span>
+										</a>
+									</span>
+									<span class="thumb-info-caption">
+										<span class="thumb-info-caption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ligula mi, non suscipitaccumsan</span>
+										<span class="thumb-info-social-icons">
+											<a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+											<a href="https://www.twitter.com/"><i class="fab fa-twitter"></i><span>Twitter</span></a>
+											<a href="http://www.linkedin.com/"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
+										</span>
+									</span>
+								</span>
+							</div>
 						</div>
 					</div>
-					<div class="row pb-5 mb-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-						<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-							<span class="thumb-info thumb-info-hide-wrapper-bg thumb-info-no-zoom">
-								<span class="thumb-info-wrapper">
-									<a href="about-me.html">
-										<img src="{{asset('theme/img/team/team-1.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</span>
-								<span class="thumb-info-caption">
-									<h3 class="font-weight-extra-bold text-color-dark text-4 line-height-1 mt-3 mb-0">John Doe</h3>
-									<span class="text-2 mb-0">CEO</span>
-									<span class="thumb-info-caption-text pt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ligula mi, non suscipitaccumsan</span>
-									<span class="thumb-info-social-icons">
-										<a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
-										<a href="https://www.twitter.com/"><i class="fab fa-twitter"></i><span>Twitter</span></a>
-										<a href="http://www.linkedin.com/"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
-									</span>
-								</span>
-							</span>
-						</div>
-						<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-							<span class="thumb-info thumb-info-hide-wrapper-bg thumb-info-no-zoom">
-								<span class="thumb-info-wrapper">
-									<a href="about-me.html">
-										<img src="{{asset('theme/img/team/team-1.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</span>
-								<span class="thumb-info-caption">
-									<h3 class="font-weight-extra-bold text-color-dark text-4 line-height-1 mt-3 mb-0">Jessica Doe</h3>
-									<span class="text-2 mb-0">DESIGNER</span>
-									<span class="thumb-info-caption-text pt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ligula mi, non suscipitaccumsan</span>
-									<span class="thumb-info-social-icons">
-										<a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
-										<a href="https://www.twitter.com/"><i class="fab fa-twitter"></i><span>Twitter</span></a>
-										<a href="http://www.linkedin.com/"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
-									</span>
-								</span>
-							</span>
-						</div>
-						<div class="col-sm-6 col-lg-3 mb-4 mb-sm-0">
-							<span class="thumb-info thumb-info-hide-wrapper-bg thumb-info-no-zoom">
-								<span class="thumb-info-wrapper">
-									<a href="about-me.html">
-										<img src="{{asset('theme/img/team/team-1.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</span>
-								<span class="thumb-info-caption">
-									<h3 class="font-weight-extra-bold text-color-dark text-4 line-height-1 mt-3 mb-0">Ricki Doe</h3>
-									<span class="text-2 mb-0">DEVELOPER</span>
-									<span class="thumb-info-caption-text pt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ligula mi, non suscipitaccumsan</span>
-									<span class="thumb-info-social-icons">
-										<a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
-										<a href="https://www.twitter.com/"><i class="fab fa-twitter"></i><span>Twitter</span></a>
-										<a href="http://www.linkedin.com/"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
-									</span>
-								</span>
-							</span>
-						</div>
-						<div class="col-sm-6 col-lg-3">
-							<span class="thumb-info thumb-info-hide-wrapper-bg thumb-info-no-zoom">
-								<span class="thumb-info-wrapper">
-									<a href="about-me.html">
-										<img src="{{asset('theme/img/team/team-1.jpg')}}" class="img-fluid" alt="">
-									</a>
-								</span>
-								<span class="thumb-info-caption">
-									<h3 class="font-weight-extra-bold text-color-dark text-4 line-height-1 mt-3 mb-0">Melinda Doe</h3>
-									<span class="text-2 mb-0">SEO ANALYST</span>
-									<span class="thumb-info-caption-text pt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ligula mi, non suscipitaccumsan</span>
-									<span class="thumb-info-social-icons">
-										<a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
-										<a href="https://www.twitter.com/"><i class="fab fa-twitter"></i><span>Twitter</span></a>
-										<a href="http://www.linkedin.com/"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
-									</span>
-								</span>
-							</span>
-						</div>
-					</div>
-				</div>
+				</section>
 
 				<section id="contact" class="section bg-color-grey-scale-2 border-0 py-0 m-0">
 					<div class="container-fluid">
@@ -535,6 +629,8 @@
 					</div>
 				</section>
 
+				
+
 				<section class="section bg-primary border-0 m-0">
 					<div class="container">
 						<div class="row justify-content-center text-center text-lg-start py-4">
@@ -586,7 +682,7 @@
 					<div class="container py-2">
 						<div class="row py-4">
 							<div class="col d-flex align-items-center justify-content-center">
-								<p><strong>Sasema Management Company</strong> - © Copyright 2021. All Rights Reserved.</p>
+								<p> Copyright © 2021 <strong>Sasema Management Company</strong> All Rights Reserved.</p>
 							</div>
 						</div>
 					</div>

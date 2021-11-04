@@ -58,6 +58,19 @@ class HomeController extends Controller
         return view('front.about',compact('page_title'));
     }
 
+    public function team()
+    {
+        SEOTools::setTitle('Meet Our Team | Sasema Management Company | Investment advisor in Kenya, Investment advisor in Mauritius');
+        SEOTools::setDescription('Sasema Management Company is an investment advisory,mergers and acquisitions and family business consulting firm. ');
+        SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/about-us');
+        SEOTools::setCanonical('https://www.sasemagroup.com/about-us');
+        SEOTools::opengraph()->addProperty('type', 'articles');
+        SEOTools::twitter()->setSite('@sasemaM');
+        SEOTools::jsonLd()->addImage('https://sasemagroup.com/');
+        $page_title = "Sasema Management Company";
+        return view('front.team',compact('page_title'));
+    }
+
     public function services()
     {
         SEOTools::setTitle('Our Services | Sasema Management Company | Investment advisor in Kenya, Investment advisor in Mauritius');

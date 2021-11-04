@@ -18,6 +18,8 @@ use App\Http\Controllers\AdminsController;
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/parallax', [App\Http\Controllers\HomeController::class, 'parallax'])->name('parallax');
 Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'about'])->name('about');
+Route::get('/meet-our-team', [App\Http\Controllers\HomeController::class, 'team'])->name('team');
+Route::get('/meet-our-team/{slung}', [App\Http\Controllers\HomeController::class, 'team_single'])->name('team-single');
 Route::get('/our-services', [App\Http\Controllers\HomeController::class, 'services'])->name('services');
 Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
 Route::get('/terms-and-conditions', [App\Http\Controllers\HomeController::class, 'terms'])->name('terms');
