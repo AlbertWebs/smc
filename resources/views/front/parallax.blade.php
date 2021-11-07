@@ -242,9 +242,6 @@
 					
 				<section>
 
-				
-
-			
 				<section class="section section-height-3 bg-color-grey-scale-1 m-0 border-0" id="who">
 					<div class="container">
 						<div class="row align-items-center justify-content-center">
@@ -280,6 +277,7 @@
 					</div>
 					
 				</div>
+
 				<section class="section section-height-1 bg-color-grey-scale-1 m-0 border-1">
 					<div  class="container container-xl-custom py-5 my-5 bg-color-grey-scale-1">
 						<div class="row featured-boxes featured-boxes-style-4 bg-color-grey-scale-1">
@@ -675,6 +673,7 @@
 						</div>
 					</div>
 				</section>
+
 			</div>
 			
 			<footer id="footer" class="mt-0">
