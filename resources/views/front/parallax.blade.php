@@ -10,7 +10,7 @@
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Sasema - Responsive HTML5 Template">
-		<meta name="author" content="okler.net">
+		<meta name="author" content="designekta.com">
 
 		
 
@@ -66,8 +66,8 @@
 							<div class="header-column">
 								<div class="header-row">
 									<div class="header-logo">
-										<a href="index.html">
-											<img alt="Sasema" width="82" height="40" src="{{asset('theme/img/logo-default-slim-dark-small.png')}}">
+										<a href="#home">
+											<img alt="Sasema Management Company" src="{{asset('theme/img/logos/SASEMA-LOGO-04.png')}}">
 										</a>
 									</div>
 								</div>
@@ -78,29 +78,29 @@
 										<div class="header-nav-main header-nav-main-font-lg header-nav-main-font-lg-upper-2 header-nav-main-mobile-dark header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
 											<nav class="collapse">
 												<ul class="nav nav-pills" id="mainNav">
-													<li class="dropdown">
+													<li>
 														<a data-hash class="nav-link active" href="#home">
 															Home
 														</a>
 													</li>
-													<li class="dropdown">
-														<a data-hash class="nav-link active" href="#home-intro">
+													<li>
+														<a data-hash class="nav-link" href="#welcome">
 															Who we Are
 														</a>
 				
 													</li>
 													<li>
-														<a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="68" href="#services">Services</a>
+														<a data-hash class="nav-link"  href="#services">Services</a>
 													</li>
 													
 													<li>
-														<a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="68" href="#clients">Clients</a>
+														<a data-hash class="nav-link"  href="#clients">Clients</a>
 													</li>
 													<li>
-														<a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="68" href="#team">Meet the Team</a>
+														<a data-hash class="nav-link" href="#team">Meet the Team</a>
 													</li>
 													<li>
-														<a class="nav-link" data-hash data-hash-offset="0" data-hash-offset-lg="68" href="#contact">Contact Us</a>
+														<a data-hash class="nav-link" href="#contact-us">Contact Us</a>
 													</li>
 												</ul>
 											</nav>
@@ -144,30 +144,32 @@
 								</div>
 							</div>
 						</div>
-						<a href="#home-intro" class="slider-scroll-button position-absolute bottom-10 left-50pct transform3dx-n50" data-hash data-hash-offset="0" data-hash-offset-lg="80">Sroll To Bottom</a>
+						<a href="#welcome" class="slider-scroll-button position-absolute bottom-10 left-50pct transform3dx-n50" data-hash data-hash-offset="0" data-hash-offset-lg="80">Sroll To Bottom</a>
 					</div>
 				</section>
-				<div class="home-intro bg-primary" id="home-intro">
-					<div class="container">
+				<section id="welcome" class="section bg-color-grey border-0 m-0" style="padding:0px">
+					<div class="home-intro bg-primary" >
+						<div class="container">
 
-						<div class="row align-items-center">
-							<div class="col-lg-8">
-								<p>
-									Trusted and reliable advisory and investment service since <span class="highlighted-word">2008</span>
-									{{-- <span>Check out our options and features included.</span> --}}
-								</p>
-							</div>
-							<div class="col-lg-4">
-								<div class="get-started text-start text-lg-end">
-									<a href="#who" class="btn btn-dark btn-lg text-3 font-weight-semibold px-4 py-3 transform3dx-n50" data-hash data-hash-offset="0" data-hash-offset-lg="68">What We Do</a>
-									{{-- <div class="learn-more">or <a href="index.html">learn more.</a></div> --}}
+							<div class="row align-items-center">
+								<div class="col-lg-8">
+									<p>
+										Trusted and reliable advisory and investment service since <span class="highlighted-word">2008</span>
+										{{-- <span>Check out our options and features included.</span> --}}
+									</p>
+								</div>
+								<div class="col-lg-4">
+									<div class="get-started text-start text-lg-end">
+										<a href="#who" class="btn btn-dark btn-lg text-3 font-weight-semibold px-4 py-3 transform3dx-n50" data-hash data-hash-offset="0" data-hash-offset-lg="68">What We Do</a>
+										{{-- <div class="learn-more">or <a href="#home">learn more.</a></div> --}}
+									</div>
 								</div>
 							</div>
-						</div>
 
+						</div>
 					</div>
-				</div>
-				<section class="section bg-color-grey border-0 m-0" style="padding:0px" id="services">
+				</section>
+				<section id="services" class="section bg-color-grey border-0 m-0" style="padding:0px">
 					<div class="container-fluid">
 						{{-- <div class="row align-items-center bg-color-grey"> --}}
 						<div class="row bg-color-grey">
@@ -185,7 +187,7 @@
 											<div class="overflow-hidden mb-2">
 												<p class="mb-0 lead text-4 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">The best partner for fast moving consumer goods is Sasema Management Company. We have many years of experience with distributing consumer goods into retail market. We have a team of international buyers and account managers.</p>
 											</div>
-											<br><a href="#" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">LEARN MORE</a>
+											<br><a target="new" href="{{url('/our-services')}}/serviceName" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">LEARN MORE</a>
 										</div>
 									</div>
 								</section>
@@ -204,7 +206,7 @@
 												<p class="mb-0 lead text-4 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">We focus on addressing key issues such as succession and structuring to enable families to build successful multi-generational businesses, that will leave lasting legacies.
 
 												</p>
-												<br><a href="#" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">LEARN MORE</a>
+												<br><a target="new" href="{{url('/our-services')}}/serviceName" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">LEARN MORE</a>
 											</div>
 											
 										</div>
@@ -231,7 +233,7 @@
 											</div>
 											<div class="overflow-hidden mb-2">
 												<p class="mb-0 lead text-4 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">Sasema works with businesses who have already identified their ideal investment partner and/or are at the middle of a transaction (be it an M&A or Private Equity), to enable them manage the deal process and achieve the best outcomes from the investment process.</p>
-												<br><a href="#" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">LEARN MORE</a>
+												<br><a target="new" href="{{url('/our-services')}}/serviceName" class="btn btn-dark font-weight-semibold btn-px-4 btn-py-2 text-2 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="200">LEARN MORE</a>
 											</div>
 										</div>
 									</div>
@@ -242,7 +244,7 @@
 					
 				<section>
 
-				<section class="section section-height-3 bg-color-grey-scale-1 m-0 border-0" id="who">
+				<section id="who" class="section section-height-3 bg-color-grey-scale-1 m-0 border-0">
 					<div class="container">
 						<div class="row align-items-center justify-content-center">
 							<div class="col-lg-6 pb-sm-4 pb-lg-0 pe-lg-5 mb-sm-5 mb-lg-0">
@@ -267,16 +269,18 @@
 					</div>
 				</section>
 
-				<div  class="container container-xl-custom py-5 my-5">
-					<div class="row justify-content-center">
-						<div class="col-xl-6 text-center">
-							<h2 class="font-weight-bold text-11 appear-animation" data-appear-animation="fadeInUpShorter">THE HISTORY OF SASEMA MANAGEMENT COMPANY</h3>
-							<span class="position-absolute left-50pct transform3dx-n50 top-0 mt-3"><img src="{{asset('/')}}/theme/img/slides/slide-blue-line.png" class="w-auto appear-animation animated appear-animation-visible" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" alt=""></span>
-							<h5 class="line-height-9 appear-animation mb-0 lead" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" style="text-transform: capitalize">Sasema Management Company is an investment advisory, mergers and acquisitions and family business consulting firm.<br>Sasema was established in Mauritius in 2008 and is currently based in Nairobi, Kenya, primarily servicing the East African region but with extensive Pan-African networks.</h5>
+				<section>
+					<div  class="container container-xl-custom py-5 my-5">
+						<div class="row justify-content-center">
+							<div class="col-xl-6 text-center">
+								<h2 class="font-weight-bold text-11 appear-animation" data-appear-animation="fadeInUpShorter">THE HISTORY OF SASEMA MANAGEMENT COMPANY</h3>
+								<span class="position-absolute left-50pct transform3dx-n50 top-0 mt-3"><img src="{{asset('/')}}/theme/img/slides/slide-blue-line.png" class="w-auto appear-animation animated appear-animation-visible" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" alt=""></span>
+								<h5 class="line-height-9 appear-animation mb-0 lead" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" style="text-transform: capitalize">Sasema Management Company is an investment advisory, mergers and acquisitions and family business consulting firm.<br>Sasema was established in Mauritius in 2008 and is currently based in Nairobi, Kenya, primarily servicing the East African region but with extensive Pan-African networks.</h5>
+							</div>
 						</div>
+						
 					</div>
-					
-				</div>
+				</section>
 
 				<section class="section section-height-1 bg-color-grey-scale-1 m-0 border-1">
 					<div  class="container container-xl-custom py-5 my-5 bg-color-grey-scale-1">
@@ -319,7 +323,7 @@
 				</section>
 			
 
-				<section id="clients" class="section section-background section-height-4 overlay overlay-show overlay-op-9 border-0 m-0" style="background-image: url({{asset('theme/img/bg-one-page-1-1.jpg')}}); background-size: cover; background-position: center;">
+				<section id="clients" class="section section-background section-height-4 overlay overlay-show overlay-op-9 border-0 m-0 my-5" style="background-image: url({{asset('theme/img/bg-one-page-1-1.jpg')}}); background-size: cover; background-position: center;">
 					<div class="container">
 						<div class="row">
 							<div class="col text-center">
@@ -389,7 +393,7 @@
 					</div>
 				</section>
 
-				<section class="section section-default border-0 my-5" id="team">
+				<section  id="team" class="section section-default border-0 my-5">
 					<div class="container py-4">
 
 						<div class="row">
@@ -571,7 +575,7 @@
 					</div>
 				</section>
 
-				<section id="contact" class="section bg-color-grey-scale-2 border-0 py-0 m-0">
+				<section id="contact-us" class="section section-default bg-color-grey-scale-2 border-0 py-0 m-0">
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-md-6">
@@ -626,8 +630,6 @@
 						</div>
 					</div>
 				</section>
-
-				
 
 				<section class="section bg-primary border-0 m-0">
 					<div class="container">
@@ -719,6 +721,14 @@
 		<script src="{{asset('theme/js/examples/examples.portfolio.js')}}"></script>
 
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhpYHdYRY2U6V_VfyyNtkPHhywLjDkhfg"></script>
+		<script>
+			$(document).ready(function() {
+				$(".nav .nav-link").on("click", function(){
+					$(".nav").find(".active").removeClass("active");
+					$(this).addClass("active");
+				});	
+			});
+		</script>
 		<script>
 
 			/*

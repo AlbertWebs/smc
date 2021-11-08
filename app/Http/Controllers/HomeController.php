@@ -27,7 +27,7 @@ class HomeController extends Controller
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/');
         $page_title = "Sasema Management Company";
-        return view('front.index',compact('page_title'));
+        return view('front.website.index',compact('page_title'));
     }
 
     public function parallax()
@@ -82,6 +82,19 @@ class HomeController extends Controller
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/our-services');
         $page_title = "Sasema Management Company";
         return view('front.services',compact('page_title'));
+    }
+
+    public function service()
+    {
+        SEOTools::setTitle('Service Name | Sasema Management Company | Investment advisor in Kenya, Investment advisor in Mauritius');
+        SEOTools::setDescription('Sasema Management Company is an investment advisory,mergers and acquisitions and family business consulting firm. ');
+        SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/our-services');
+        SEOTools::setCanonical('https://www.sasemagroup.com/our-services');
+        SEOTools::opengraph()->addProperty('type', 'articles');
+        SEOTools::twitter()->setSite('@sasemaM');
+        SEOTools::jsonLd()->addImage('https://sasemagroup.com/our-services');
+        $page_title = "Sasema Management Company";
+        return view('front.service',compact('page_title'));
     }
 
     public function contact()
