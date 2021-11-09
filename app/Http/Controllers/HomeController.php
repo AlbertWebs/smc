@@ -124,7 +124,8 @@ class HomeController extends Controller
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/');
         $page_title = "Sasema Management Company";
-        return view('front.terms',compact('page_title'));
+        $page_name = "Terms & Conditions";
+        return view('front.website.terms',compact('page_title','page_name'));
     }
 
     public function privacy()
@@ -137,7 +138,8 @@ class HomeController extends Controller
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/');
         $page_title = "Sasema Management Company";
-        return view('front.privacy',compact('page_title'));
+        $page_name = "Terms & Conditions";
+        return view('front.website.privacy',compact('page_title','page_name'));
     }
 
     public function copyright()
@@ -150,7 +152,8 @@ class HomeController extends Controller
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/');
         $page_title = "Sasema Management Company";
-        return view('front.copyright',compact('page_title'));
+        $page_name = "Terms & Conditions";
+        return view('front.website.copyright',compact('page_title','page_name'));
     }
     
 

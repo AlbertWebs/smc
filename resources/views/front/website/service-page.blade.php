@@ -6,7 +6,7 @@
 
                 <div class="row align-items-center pt-4 appear-animation animated fadeInLeftShorter appear-animation-visible" data-appear-animation="fadeInLeftShorter" style="animation-delay: 100ms;">
                     <div class="col-md-4 mb-4 mb-md-0">
-                        <img class="img-fluid scale-2 pe-5 pe-md-0 my-4" src="{{asset('theme/img/layout-styles.png')}}" alt="layout styles">
+                        <img class="img-fluid scale-2 pe-5 pe-md-0 my-4" src="http://sasemagroup.com/wp-content/uploads/2018/03/bg2.jpg" alt="layout styles">
                     </div>
                     <div class="col-md-8 ps-md-5">
                         <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">Mergers & Acquisitions Advisory</strong></h2>
@@ -27,7 +27,7 @@
                         <a href="#" class="btn btn-modern btn-dark mt-3">Learn More</a>
                     </div>
                     <div class="col-md-4 px-5 px-md-3">
-                        <img class="img-fluid scale-2 my-4" src="{{asset('theme/img/style-switcher.png')}}" alt="style switcher">
+                        <img class="img-fluid scale-2 my-4" src="http://sasemagroup.com/wp-content/uploads/2018/03/bg2.jpg" alt="style switcher">
                     </div>
                 </div>
 
@@ -35,7 +35,7 @@
 
                 <div class="row align-items-center pt-4 appear-animation animated fadeInLeftShorter appear-animation-visible" data-appear-animation="fadeInLeftShorter" style="animation-delay: 100ms;">
                     <div class="col-md-4 mb-4 mb-md-0">
-                        <img class="img-fluid scale-2 pe-5 pe-md-0 my-4" src="{{asset('theme/img/layout-styles.png')}}" alt="layout styles">
+                        <img class="img-fluid scale-2 pe-5 pe-md-0 my-4" src="http://sasemagroup.com/wp-content/uploads/2018/03/bg2.jpg" alt="layout styles">
                     </div>
                     <div class="col-md-8 ps-md-5">
                         <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">Debt Capital Raising</strong> </h2>
@@ -52,7 +52,7 @@
                         <a href="#" class="btn btn-modern btn-dark mt-3">Learn More</a>
                     </div>
                     <div class="col-md-4 px-5 px-md-3">
-                        <img class="img-fluid scale-2 my-4" src="{{asset('theme/img/style-switcher.png')}}" alt="style switcher">
+                        <img class="img-fluid scale-2 my-4" src="http://sasemagroup.com/wp-content/uploads/2018/03/bg2.jpg" alt="style switcher">
                     </div>
                 </div>
 

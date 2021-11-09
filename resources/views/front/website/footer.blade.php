@@ -41,31 +41,49 @@
                 </ul>
             </div>
             <div class="col-lg-4 mb-4 mb-lg-0">
-                <!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.865272236757!2d36.7142064!3d-1.3466735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x15eb4c5d2db6bd2d!2sSasema%20Management%20Company!5e0!3m2!1sen!2ske!4v1635079643605!5m2!1sen!2ske" width="100%" height="190px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  
+                    <h5 class="text-6 text-transform-none font-weight-semibold text-color-light mb-4">Newsletter</h5>
+                    <p class="text-4 mb-1">Get all the latest informationon Sales and Offers.</p>
+                    <p class="text-4">Sign up for newsletter today.</p>
+                    <div class="alert alert-success d-none" id="newsletterSuccess">
+                        <strong>Success!</strong> You've been added to our email list.
+                    </div>
+                    <div class="alert alert-danger d-none" id="newsletterError"></div>
+                    <form id="newsletterForm" action="https://www.okler.net/previews/porto/9.2.0/php/newsletter-subscribe.php" method="POST" class="mw-100" novalidate="novalidate">
+                        <div class="input-group input-group-rounded">
+                            <input class="form-control form-control-sm bg-light px-4 text-3" placeholder="Email Address..." name="newsletterEmail" id="newsletterEmail" type="email">
+                            <button class="btn btn-primary text-color-light text-2 py-3 px-4" type="submit"><strong>SUBSCRIBE!</strong></button>
+                        </div>
+                    </form>
+                    <br>
+                    <div class="col-lg-12 col-md-12" id="TheCapcha">
+                        <div class="g-recaptcha" data-sitekey="6LexmiEdAAAAAMFjtBTEl4ECXqu0nPXBQ9c037Wo" data-callback="correctCaptcha"></div>
+                        <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+                    </div>
             </div>
             <div class="col-lg-2">
                 <h4 class="font-weight-bold text-5">Useful Links</h4>
                 <ul class="list list-icons list-icons-sm">
                     <li>
                         <i class="fas fa-angle-right text-color-default"></i>
-                        <a href="demo-business-consulting-3-contact.html" class="link-hover-style-1 ms-1"> Contact Us</a>
+                        <a href="{{url('/')}}" class="link-hover-style-1 ms-1"> Our Services</a>
                     </li>
                     <li>
                         <i class="fas fa-angle-right text-color-default"></i>
-                        <a href="demo-business-consulting-3-services.html" class="link-hover-style-1 ms-1"> Our Services</a>
+                        <a href="{{url('/')}}" class="link-hover-style-1 ms-1"> Contact Us</a>
+                    </li>
+                    
+                    <li>
+                        <i class="fas fa-angle-right text-color-default"></i>
+                        <a href="{{url('/')}}/terms-and-conditions" class="link-hover-style-1 ms-1"> Terms and Services</a>
                     </li>
                     <li>
                         <i class="fas fa-angle-right text-color-default"></i>
-                        <a href="#" class="link-hover-style-1 ms-1"> Payment Methods</a>
+                        <a href="{{url('/')}}/privacy-policy" class="link-hover-style-1 ms-1"> Privacy Policy</a>
                     </li>
                     <li>
                         <i class="fas fa-angle-right text-color-default"></i>
-                        <a href="#" class="link-hover-style-1 ms-1"> Services Guide</a>
-                    </li>
-                    <li>
-                        <i class="fas fa-angle-right text-color-default"></i>
-                        <a href="#" class="link-hover-style-1 ms-1"> FAQs</a>
+                        <a href="{{url('/')}}/copyright" class="link-hover-style-1 ms-1"> Copyright</a>
                     </li>
                 </ul>
             </div>

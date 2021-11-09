@@ -105,11 +105,11 @@
                                         </li>
                                       
                                      
-                                        <li>
+                                        {{-- <li>
                                             <a class="nav-link" href="{{url('/')}}/latest-news">
                                                 Blog
                                             </a>
-                                        </li>
+                                        </li> --}}
                                         <li class="d-lg-none">
                                             <a class="nav-link @if($page_name == "Contact Us") active @endif" href="{{url('/')}}/contact-us">
                                                 Contact Us 
