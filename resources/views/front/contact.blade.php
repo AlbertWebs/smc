@@ -67,6 +67,11 @@
                                 <textarea maxlength="5000" data-msg-required="Please enter your message." rows="8" class="form-control text-3 h-auto py-2" name="message" required></textarea>
                             </div>
                         </div>
+                        <div class="col-lg-12 col-md-12" id="TheCapcha">
+                            <div class="g-recaptcha" data-sitekey="6LexmiEdAAAAAMFjtBTEl4ECXqu0nPXBQ9c037Wo" data-callback="correctCaptcha"></div>
+                            <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+                        </div>
+                        <br>
                         <div class="row">
                             <div class="form-group col">
                                 <input type="submit" value="Send Message" class="btn btn-primary btn-modern" data-loading-text="Loading...">
@@ -80,9 +85,9 @@
                     <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800">
                         <h4 class="mt-2 mb-1">Our <strong>Office</strong></h4>
                         <ul class="list list-icons list-icons-style-2 mt-2">
-                            <li><i class="fas fa-map-marker-alt top-6"></i> <strong class="text-dark">Address:</strong> 1234 Street Name, City Name, United States</li>
-                            <li><i class="fas fa-phone top-6"></i> <strong class="text-dark">Phone:</strong> (123) 456-789</li>
-                            <li><i class="fas fa-envelope top-6"></i> <strong class="text-dark">Email:</strong> <a href="https://www.okler.net/cdn-cgi/l/email-protection#c9a4a8a0a589acb1a8a4b9a5ace7aaa6a4"><span class="__cf_email__" data-cfemail="472a262e2b07223f262a372b226924282a">[email&#160;protected]</span></a></li>
+                            <li><i class="fas fa-map-marker-alt top-6"></i> <strong class="text-dark">Address:</strong> <a target="new" href="https://maps.google.com/maps/dir//Sasema+Management+Company+Karen+Road,+Cara+House,+1st+Floor+suite+9/@-1.3466735,36.7142064,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x182f053086d9c215:0x15eb4c5d2db6bd2d">Karen Road, Cara House, 1st Floor suite 9</a></li>
+                            <li><i class="fas fa-phone top-6"></i> <strong class="text-dark">Phone:</strong> <a href="tel:0746512186"> 0746512186 </a></li>
+                            <li><i class="fas fa-envelope top-6"></i> <strong class="text-dark">Email:</strong> <a href="mailto:info@sasemagroup.com"><span class="__cf_email__" data-cfemail="472a262e2b07223f262a372b226924282a">info@sasemagroup.com</span></a></li>
                         </ul>
                     </div>
 
@@ -96,7 +101,7 @@
                     </div>
 
                     <h4 class="pt-5">Get in <strong>Touch</strong></h4>
-                    <p class="lead mb-0 text-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="lead mb-0 text-4">Sasema  was established in 2008 in Mauritius and has been built on the founder’s over 20 years Pan African work experience. While in Mauritius, Sasema completed projects worth over $50 million and has since expanded to East Africa.</p>
 
                 </div>
 
@@ -111,13 +116,13 @@
             <div class="row">
                 <div class="col-md-9 col-lg-9">
                     <div class="call-to-action-content">
-                        <h2 class="font-weight-normal text-6 mb-0">Sasema is <strong class="font-weight-extra-bold">everything</strong> you need to create an <strong class="font-weight-extra-bold">awesome</strong> website!</h2>
-                        <p class="mb-0">The Best HTML Site Template on designekta themes</p>
+                        <h2 class="font-weight-normal text-6 mb-0"><strong class="font-weight-extra-bold">Sasema Management Company </strong> is an investment advisory, mergers and acquisitions and family business consulting firm </h2>
+                        <p class="mb-0">Behind SASEMA’s success is a dedicated professional team with a successful track record.</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-lg-3">
                     <div class="call-to-action-btn">
-                        <a href="https://themeforest.net/item/Sasema-responsive-html5-template/4106987" target="_blank" class="btn btn-dark btn-lg text-3 font-weight-semibold px-4 py-3">Get Started Now</a><span class="arrow hlb d-none d-md-block" data-appear-animation="rotateInUpLeft" style="top: -40px; left: 70%;"></span>
+                        <a href="{{url('/')}}/meet-our-team" target="_blank" class="btn btn-dark btn-lg text-3 font-weight-semibold px-4 py-3">Meet The Team</a><span class="arrow hlb d-none d-md-block" data-appear-animation="rotateInUpLeft" style="top: -40px; left: 70%;"></span>
                     </div>
                 </div>
             </div>

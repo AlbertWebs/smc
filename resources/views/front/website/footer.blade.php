@@ -75,7 +75,7 @@
         <div class="row pb-5">
             <div class="col-lg-12 text-center m-0">
                 <hr class="bg-color-light opacity-1 mt-5 mb-4">
-                <p class="text-3-4">Sasema Management Company. © 2021. All Rights Reserved</p>
+                <p class="text-3-4">© copyright <?php echo date('Y') ?> Sasema Management Company All Rights Reserved</p>
             </div>
         </div>
     </div>

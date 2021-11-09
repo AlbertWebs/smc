@@ -55,7 +55,8 @@ class HomeController extends Controller
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/');
         $page_title = "Sasema Management Company";
-        return view('front.about',compact('page_title'));
+        $page_name = "About Sasema Management Company";
+        return view('front.website.about',compact('page_title','page_name'));
     }
 
     public function team()
@@ -107,7 +108,8 @@ class HomeController extends Controller
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/');
         $page_title = "Sasema Management Company";
-        return view('front.contact',compact('page_title'));
+        $page_name = "Contact Us";
+        return view('front.contact',compact('page_title','page_name'));
     }
 
     public function terms()

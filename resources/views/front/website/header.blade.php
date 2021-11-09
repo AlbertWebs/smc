@@ -111,11 +111,11 @@
                                             </a>
                                         </li>
                                         <li class="d-lg-none">
-                                            <a class="nav-link" href="{{url('/')}}/contact-us">
+                                            <a class="nav-link @if($page_name == "Contact Us") active @endif" href="{{url('/')}}/contact-us">
                                                 Contact Us 
                                             </a>
                                         </li>
-                                    </ul>
+                                    </ul>                                    
                                 </nav>
                             </div>
                         </div>
@@ -128,16 +128,8 @@
                             <a href="#" class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch">
                                 <i class="icons icon-magnifier header-nav-top-icon text-3-5 text-color-dark text-color-hover-primary font-weight-semibold top-3"></i>
                             </a>
-                            <div class="header-nav-features-dropdown header-nav-features-dropdown-mobile-fixed border-radius-0" id="headerTopSearchDropdown">
-                                <form role="search" action="https://www.okler.net/previews/porto/9.2.0/page-search-results.html" method="get">			
-                                    <div class="simple-search input-group">
-                                        <input class="form-control text-1" id="headerSearch" name="q" type="search" value="" placeholder="Search...">
-                                        <button class="btn" type="submit">
-                                            <i class="icons icon-magnifier header-nav-top-icon text-color-dark text-color-hover-primary top-2"></i>
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
+                            
+                            
                         </div>
                     </div>
                     <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
