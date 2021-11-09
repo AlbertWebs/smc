@@ -89,7 +89,7 @@
                                         </li>
 
                                         <li class="dropdown">
-                                            <a class="nav-link dropdown-toggle" href="{{url('/')}}/our-services">
+                                            <a class="nav-link dropdown-toggle @if($page_name=='Sasema Services') active @endif" href="{{url('/')}}/our-services">
                                                 Services
                                             </a>
                                             <ul class="dropdown-menu">

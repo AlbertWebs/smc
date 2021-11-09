@@ -83,7 +83,7 @@ class HomeController extends Controller
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/our-services');
         $page_title = "Sasema Management Company";
-        $page_name = "Our Services";
+        $page_name = "Sasema Services";
         return view('front.services',compact('page_title','page_name'));
     }
 
