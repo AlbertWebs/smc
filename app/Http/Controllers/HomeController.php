@@ -27,7 +27,8 @@ class HomeController extends Controller
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/');
         $page_title = "Sasema Management Company";
-        return view('front.website.index',compact('page_title'));
+        $page_name = "Sasema Management Company";
+        return view('front.website.index',compact('page_title','page_name'));
     }
 
     public function parallax()
@@ -82,7 +83,8 @@ class HomeController extends Controller
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/our-services');
         $page_title = "Sasema Management Company";
-        return view('front.services',compact('page_title'));
+        $page_name = "Our Services";
+        return view('front.services',compact('page_title','page_name'));
     }
 
     public function service()

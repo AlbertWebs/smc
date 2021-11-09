@@ -67,13 +67,13 @@
                                 <nav class="collapse">
                                     <ul class="nav nav-pills" id="mainNav">
                                         <li>
-                                            <a class="nav-link active" href="{{url('/')}}">
+                                            <a class="nav-link @if($page_name=='Sasema Management Company') active @endif" href="{{url('/')}}">
                                                 Home &nbsp; <i class="fas fa-home top-6"></i>
                                             </a>
                                         </li>
                                       
                                         <li class="dropdown">
-                                            <a class="nav-link dropdown-toggle" href="{{url('/')}}/about-us">
+                                            <a class="nav-link dropdown-toggle @if($page_name=='About Sasema Management Company') active @endif" href="{{url('/')}}/about-us">
                                                 About us
                                             </a>
                                             <ul class="dropdown-menu">
