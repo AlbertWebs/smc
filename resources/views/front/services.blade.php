@@ -24,10 +24,7 @@
 
 		@include('front.website.service-page')
 
-		@include('front.website.get-in-touch')
-
-		@include('front.website.testimonials')
-
+	
 	</div>
 
 	@include('front.website.footer')
