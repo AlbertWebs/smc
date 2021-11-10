@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html data-style-switcher-options="{'changeLogo': false, 'colorPrimary': '#f04c23', 'colorSecondary': '#e36159', 'colorTertiary': '#2baab1', 'colorQuaternary': '#383f48', 'borderRadius': 0}">
 	
-<head>
+    <head>
 		
 		<!-- Basic -->
 		<meta charset="utf-8">

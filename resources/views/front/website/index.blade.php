@@ -92,10 +92,6 @@
 			@include('front.website.footer')
 		</div>
 
-		<a class="style-switcher-open-loader" href="#" data-base-path="" data-skin-src="master/less/skin-business-consulting-3.less" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Style Switcher"><i class="fas fa-cogs"></i><div class="style-switcher-tooltip"><strong>Style Switcher</strong><p>Check out different color options and styles.</p></div></a>
-		
-		<a class="envato-buy-redirect" href="https://themeforest.net/checkout/from_item/4106987?license=regular&amp;support=bundle_6month&amp;ref=Okler" target="_blank" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Buy Porto"><i class="fas fa-shopping-cart"></i></a>
-		<a class="demos-redirect" href="index.html#demos" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="right" title="Demos"><img src="{{asset('theme/img/icons/demos-redirect.png')}}" class="img-fluid" /></a>
 		
 
 		<!-- Vendor -->

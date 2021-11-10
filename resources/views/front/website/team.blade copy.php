@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
 		
 		<!-- Basic -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title>Single Service | Sasema Management Company</title>	
+		<title>Sasema Management Company - Responsive HTML5 With Laravel</title>	
 
 		<meta name="keywords" content="HTML5 Template" />
-		<meta name="description" content="Porto - Responsive HTML5 Template">
-		<meta name="author" content="designekta.com">
+		<meta name="description" content="Sasema - Responsive HTML5 Template">
+		<meta name="author" content="okler.net">
 
-        @include('favicon')
+		
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
@@ -35,11 +35,8 @@
 		<link rel="stylesheet" href="{{asset('theme/css/theme-blog.css')}}">
 		<link rel="stylesheet" href="{{asset('theme/css/theme-shop.css')}}">
 
-		<!-- Demo CSS -->
-		<link rel="stylesheet" href="{{asset('theme/css/demos/demo-business-consulting-3.css')}}">
-
 		<!-- Skin CSS -->
-		<link id="skinCSS" rel="stylesheet" href="{{asset('theme/css/skins/skin-business-consulting-3.css')}}">
+		<link id="skinCSS" rel="stylesheet" href="{{asset('theme/css/skins/default.css')}}">
 
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="{{asset('theme/css/custom.css')}}">
@@ -47,22 +44,22 @@
 		<!-- Head Libs -->
 		<script src="{{asset('theme/vendor/modernizr/modernizr.min.js')}}"></script>
 
-
+        @include('favicon')
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SEP1T05Z5V"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-Sasema"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 
-		  gtag('config', 'G-SEP1T05Z5V');
+		  gtag('config', 'G-Sasema');
 		</script>
 
 	</head>
 	<body id="body" class="one-page alternative-font-5" data-plugin-scroll-spy data-plugin-options="{'target': '#header'}">
 		<div class="body">
 
-			@include('front.website.header')
+			@include('front.headers')
 
 			<div role="main" class="main">
 				<section class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-7" style="background-image: url({{asset('theme/img/page-header/page-header-background-transparent-2.jpg')}});">
