@@ -7,10 +7,10 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title>Single Service | Sasema Management Company</title>	
+		{!! SEO::generate() !!}	
 
-		<meta name="keywords" content="HTML5 Template" />
-		<meta name="description" content="Porto - Responsive HTML5 Template">
+		<meta name="keywords" content="Sasema" />
+
 		<meta name="author" content="designekta.com">
 
         @include('favicon')

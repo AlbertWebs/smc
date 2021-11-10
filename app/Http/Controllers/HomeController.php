@@ -71,7 +71,7 @@ class HomeController extends Controller
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/');
         $page_title = "Sasema Management Company";
         $page_name = "Sasema Team";
-        return view('front.website.team',compact('page_title'));
+        return view('front.website.team',compact('page_title','page_name'));
     }
 
     public function services()

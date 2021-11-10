@@ -77,11 +77,9 @@
                                                 About us
                                             </a>
                                             <ul class="dropdown-menu">
+                                              
                                                 <li>
-                                                    <a href="demo-business-consulting-3-services-detail.html" class="dropdown-item">What We Do</a>
-                                                </li>
-                                                <li>
-                                                    <a href="demo-business-consulting-3-services-detail.html" class="dropdown-item">Our Team</a>
+                                                    <a href="{{url('/')}}/meet-our-team" class="dropdown-item">Our Team</a>
                                                 </li>
                                              
                                                 
