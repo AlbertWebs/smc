@@ -1,28 +1,28 @@
-<section class="section section-height-3 section-with-shape-divider position-relative border-0 m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'parallaxHeight': '120%'}" data-image-src="{{asset('theme/img/demos/business-consulting-3/backgrounds/background-1.jpg')}}">
-    <img src="{{asset('theme/img/demos/business-consulting-3/backgrounds/background-woman.png')}}" class="img-fluid position-absolute top-0 right-0 d-none d-md-block appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1100" alt="" />
-    <div class="container pb-5 pb-xl-0 mt-md-3 mb-5">
-        <div class="row">
-            <div class="col-md-7 col-lg-12">
-                <h1 class="custom-text-background custom-big-font-size-1 text-14 font-weight-bold float-xl-end clearfix line-height-1 custom-ws-mobile-wrap ws-nowrap pb-2 mb-3 mb-xl-5 lazyload appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250" data-bg-src="{{asset('theme/img/demos/business-consulting-3/backgrounds/text-background.jpg')}}">SASEMA GROUP</h1>
+<div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center dots-light show-dots-hover nav-inside nav-inside-plus nav-dark nav-md nav-font-size-md show-nav-hover mb-0" data-plugin-options="{'autoplayTimeout': 7000}" data-dynamic-height="['670px','670px','670px','550px','500px']" style="height: 670px;">
+    <div class="owl-stage-outer">
+        <div class="owl-stage">
+
+            <!-- Carousel Slide 2 -->
+            <div class="owl-item position-relative overlay overlay-show overlay-op-8" style="background-image: url({{asset('theme/img/slides/slide-corporate-1-2.jpg')}}); background-size: cover; background-position: center;">
+                <div class="container position-relative z-index-3 h-100">
+                    <div class="row justify-content-center align-items-center h-100">
+                        <div class="col-lg-7">
+                            <div class="d-flex flex-column align-items-center">
+                                <h2 class="text-color-light font-weight-extra-bold text-13 mb-4 appear-animation" data-appear-animation="blurIn" data-plugin-options="{'minWindowWidth': 0}">SASEMA</h2>
+                                <p class="text-4-5 text-color-light font-weight-light opacity-7 text-center mb-4" data-plugin-animated-letters data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 25}">Sasema Management Company is an investment advisory, mergers and acquisitions and family business consulting firm</p>
+                                <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="3300">
+                                    <div class="d-flex align-items-center mt-2">
+                                        <a href="{{url('/')}}/about-us" class="btn btn-light btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">LEARN MORE</a>
+                                        {{-- <a href="#" class="btn btn-primary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">GET STARTED NOW <i class="fas fa-arrow-right ms-2"></i></a> --}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row pb-5 mb-5">
-            <div class="col-md-7 col-xl-5 pb-5 pb-xl-0 mb-5">
-                <strong class="d-block font-weight-semibold text-color-dark text-5-5 line-height-4 mb-3 pb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Accelerate Strategy Execution and Consistency in <span class="custom-highlight-text-1 font-weight-bold">Revenue Growth!</span></strong>
-                <p class="text-3-5 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. </p>
-                <a href="#aboutus" data-hash data-hash-offset="0" data-hash-offset-lg="100" class="d-inline-flex align-items-center text-decoration-none appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
-                    <img width="30" height="30" src="{{asset('theme/img/demos/business-consulting-3/icons/mouse.svg')}}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary me-2'}" />
-                    Scroll Down
-                </a>
-            </div>
+
         </div>
     </div>
-    <div class="shape-divider shape-divider-bottom" style="height: 212px;">
-        <div class="shape-divider-horizontal-animation shape-divider-horizontal-animation-to-left">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 212" preserveAspectRatio="xMinYMin">
-                <polygon fill="#F3F3F3" points="0,75 479,161 1357,28 1701,56 1920,26 1920,213 0,212 "/>
-                <polygon fill="#FFFFFF" points="0,91 481,177 1358,44 1702,72 1920,42 1920,212 0,212 "/>
-            </svg>
-        </div>
-    </div>
-</section>
+    
+</div>
