@@ -10,74 +10,87 @@
             <div class="col-lg-11 col-xl-10 text-center">
                 <h2 class="custom-highlight-text-1 d-inline-block line-height-5 text-4 positive-ls-3 font-weight-medium text-color-primary mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">WHAT WE DO</h2>
                 <h3 class="text-9 line-height-3 text-transform-none font-weight-semibold mb-3 pb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Our Services</h3>
-                <p class="text-3-5 pb-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula leo, vel efficitur felis ultrices non. Cras a elit sit amet leo acun volutpat. Suspendisse hendrerit vehicula leo, vel efficitur fel. </p>
+                {{-- <p class="text-3-5 pb-3 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula leo, vel efficitur felis ultrices non. Cras a elit sit amet leo acun volutpat. Suspendisse hendrerit vehicula leo, vel efficitur fel. </p> --}}
             </div>
         </div>
-        <div class="row row-gutter-sm justify-content-center mb-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
-            <div class="col-sm-9 col-md-6 col-lg-4 mb-4">
-                <a href="demo-business-consulting-3-services-detail.html" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus">
-                    <div class="card box-shadow-4">
-                        <div class="card-img-top position-relative overlay overlay-show">
-                            <div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
-                                <h4 class="font-weight-semibold text-color-light text-6 mb-1">Sales & Marketing</h4>
-                                <div class="custom-crooked-line">
-                                    <img width="154" height="26" src="{{asset('theme/img/demos/business-consulting-3/icons/infinite-crooked-line.svg')}}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" />
-                                </div>
+        <div class="container py-4">
+
+            <div class="row py-3 justify-content-center text-center">
+                <div class="col-sm-8 col-md-4 mb-4 mb-md-0 appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" style="animation-delay: 100ms;">
+                    <article>
+                        <div class="row">
+                            <div class="col">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="{{asset('theme/img/generic/generic-corporate-3-2-full.jpg')}}" class="img-fluid hover-effect-2 mb-3" alt="">
+                                </a>
                             </div>
-                            <img src="{{asset('theme/img/demos/business-consulting-3/services/services-1.jpg')}}" class="img-fluid" alt="Card Image" />
                         </div>
-                        <div class="card-body d-flex align-items-center custom-view-more px-4">
-                            <p class="card-text w-100 mb-0">Cras a elit sit amet leo accumsan. Suspendisse hendrerit. </p>
-                            <img width="50" height="50" class="w-auto" src="{{asset('theme/img/demos/business-consulting-3/icons/arrow-right.svg')}}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 50px;" />
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-9 col-md-6 col-lg-4 mb-4">
-                <a href="demo-business-consulting-3-services-detail.html" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus">
-                    <div class="card box-shadow-4">
-                        <div class="card-img-top position-relative overlay overlay-show">
-                            <div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
-                                <h4 class="font-weight-semibold text-color-light text-6 mb-1">Strategic Planning</h4>
-                                <div class="custom-crooked-line">
-                                    <img width="154" height="26" src="{{asset('theme/img/demos/business-consulting-3/icons/infinite-crooked-line.svg')}}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" />
-                                </div>
+                        <div class="row">
+                            <div class="col">
+                                <h4 class="mb-0"><a href="#" class="text-3 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">Mergers & Acquisitions Advisory</a></h4>
+                                <p class="mb-2 lead text-4">Sasema Management Company leverages our extensive buy side network to market companies in strict confidence to qualified buyers. </p>
+                               
                             </div>
-                            <img src="{{asset('theme/img/demos/business-consulting-3/services/services-2.jpg')}}" class="img-fluid" alt="Card Image" />
                         </div>
-                        <div class="card-body d-flex align-items-center custom-view-more px-4">
-                            <p class="card-text w-100 mb-0">Cras a elit sit amet leo accumsan. Suspendisse hendrerit. </p>
-                            <img width="50" height="50" class="w-auto" src="{{asset('theme/img/demos/business-consulting-3/icons/arrow-right.svg')}}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 50px;" />
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-sm-9 col-md-6 col-lg-4 mb-4">
-                <a href="demo-business-consulting-3-services-detail.html" class="custom-link-hover-effects text-decoration-none" data-cursor-effect-hover="plus">
-                    <div class="card box-shadow-4">
-                        <div class="card-img-top position-relative overlay overlay-show">
-                            <div class="position-absolute bottom-0 left-0 w-100 py-3 px-4 z-index-3">
-                                <h4 class="font-weight-semibold text-color-light text-6 mb-1">Operations</h4>
-                                <div class="custom-crooked-line">
-                                    <img width="154" height="26" src="{{asset('theme/img/demos/business-consulting-3/icons/infinite-crooked-line.svg')}}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 154px;" />
-                                </div>
+                    </article>
+                </div>
+                <div class="col-sm-8 col-md-4 mb-4 mb-md-0 appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" data-appear-animation-delay="250" style="animation-delay: 250ms;">
+                    <article>
+                        <div class="row">
+                            <div class="col">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="{{asset('theme/img/generic/generic-corporate-3-2-full.jpg')}}" class="img-fluid hover-effect-2 mb-3" alt="">
+                                </a>
                             </div>
-                            <img src="{{asset('theme/img/demos/business-consulting-3/services/services-3.jpg')}}" class="img-fluid" alt="Card Image" />
                         </div>
-                        <div class="card-body d-flex align-items-center custom-view-more px-4">
-                            <p class="card-text w-100 mb-0">Cras a elit sit amet leo accumsan. Suspendisse hendrerit. </p>
-                            <img width="50" height="50" class="w-auto" src="{{asset('theme/img/demos/business-consulting-3/icons/arrow-right.svg')}}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-primary'}" style="width: 50px;" />
+                        <div class="row">
+                            <div class="col">
+                                <h4 class="mb-0"><a href="#" class="text-3 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">Equity Capital Raising</a></h4>
+                                <p class="mb-2 lead text-4">We help our clients prepare for and execute equity capital raising or placement transactions.</p>
+                               
+                            </div>
                         </div>
-                    </div>
-                </a>
+                    </article>
+                </div>
+                <div class="col-sm-8 col-md-4 appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" data-appear-animation-delay="500" style="animation-delay: 500ms;">
+                    <article>
+                        <div class="row">
+                            <div class="col">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="{{asset('theme/img/generic/generic-corporate-3-2-full.jpg')}}" class="img-fluid hover-effect-2 mb-3" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h4 class="mb-0"><a href="#" class="text-3 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">Debt Capital Raising</a></h4>
+                                <p class="mb-2 lead text-4">We help clients raise debt capital by leveraging our relationships with a broad spectrum of lenders.</p>
+                               
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-8 col-md-4 appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" data-appear-animation-delay="500" style="animation-delay: 500ms;">
+                    <article>
+                        <div class="row">
+                            <div class="col">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="{{asset('theme/img/generic/generic-corporate-3-2-full.jpg')}}" class="img-fluid hover-effect-2 mb-3" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h4 class="mb-0"><a href="#" class="text-3 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">Private Equity Advisory</a></h4>
+                                <p class="mb-2 lead text-4">We help our clients identify and unlock untapped value in their investments. </p>
+                                <a href="#" class="btn btn-modern btn-dark mt-3 text-center">Learn More</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
+
         </div>
-        <div class="row">
-            <div class="col text-center">
-                <a href="demo-business-consulting-3-services.html" class="btn btn-primary custom-btn-style-1 font-weight-semibold btn-px-4 btn-py-2 text-3-5" data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light">
-                    <span>All Services</span>
-                </a>
-            </div>
-        </div>
+        
     </div>
 </section>

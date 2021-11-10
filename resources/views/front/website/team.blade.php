@@ -55,8 +55,8 @@
                         <hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
                         <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
                             <div class="col-lg-6">
-                                <a href="#" class="btn btn-modern btn-dark mt-3">Get In Touch</a>
-                                <a href="#" class="btn btn-modern btn-primary mt-3">Hire Me</a>
+                                <a href="{{url('/')}}/meet-our-team/sample-page" class="btn btn-modern btn-dark mt-3">Learn More</a>
+                                <a href="{{url('/')}}/contact-us" class="btn btn-modern btn-primary mt-3">Contact Us</a>
                             </div>
                             <div class="col-sm-6 text-lg-end my-4 my-lg-0">
                                 <strong class="text-uppercase text-1 me-3 text-dark">follow me</strong>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <div class="col-md-5 order-md-2 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorter">
-                        <img src="{{asset('uploads/teams/gutsche.jpg')}}" class="img-fluid" alt="">
+                        <img style="max-height:500px" src="{{asset('uploads/teams/gutsche.jpg')}}" class="img-fluid" alt="">
                     </div>
                 </div>
         
@@ -81,7 +81,7 @@
         
                 <div class="row">
                     <div class="col-md-5 order-md-2 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorter">
-                        <img src="{{asset('uploads/teams/odeke.jpg')}}" class="img-fluid" alt="">
+                        <img style="max-height:500px" src="{{asset('uploads/teams/odeke.jpg')}}" class="img-fluid" alt="">
                     </div>
                     <div class="col-md-7 order-2">
                         <div class="overflow-hidden">
@@ -95,8 +95,8 @@
                         <hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
                         <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
                             <div class="col-lg-6">
-                                <a href="#" class="btn btn-modern btn-dark mt-3">Get In Touch</a>
-                                <a href="#" class="btn btn-modern btn-primary mt-3">Hire Me</a>
+                                <a href="{{url('/')}}/meet-our-team/sample-page" class="btn btn-modern btn-dark mt-3">Learn More</a>
+                                <a href="{{url('/')}}/contact-us" class="btn btn-modern btn-primary mt-3">Contact Us</a>
                             </div>
                             <div class="col-sm-6 text-lg-end my-4 my-lg-0">
                                 <strong class="text-uppercase text-1 me-3 text-dark">follow me</strong>
@@ -130,8 +130,8 @@
                         <hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
                         <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
                             <div class="col-lg-6">
-                                <a href="#" class="btn btn-modern btn-dark mt-3">Get In Touch</a>
-                                <a href="#" class="btn btn-modern btn-primary mt-3">Hire Me</a>
+                                <a href="{{url('/')}}/meet-our-team/sample-page" class="btn btn-modern btn-dark mt-3">Learn More</a>
+                                <a href="{{url('/')}}/contact-us" class="btn btn-modern btn-primary mt-3">Contact Us</a>
                             </div>
                             <div class="col-sm-6 text-lg-end my-4 my-lg-0">
                                 <strong class="text-uppercase text-1 me-3 text-dark">follow me</strong>
@@ -144,7 +144,7 @@
                         </div>
                     </div>
                     <div class="col-md-5 order-md-2 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorter">
-                        <img src="{{asset('uploads/teams/reuben.jpg')}}" class="img-fluid" alt="">
+                       <img style="max-height:500px" src="{{asset('uploads/teams/reuben.jpg')}}" class="img-fluid" alt="">
                     </div>
                 </div>
         
@@ -159,7 +159,7 @@
                 {{--  --}}
                 <div class="row">
                     <div class="col-md-5 order-md-2 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorter">
-                        <img src="{{asset('uploads/teams/aurore.jpg')}}" class="img-fluid" alt="">
+                       <img style="max-height:500px" src="{{asset('uploads/teams/aurore.jpg')}}" class="img-fluid" alt="">
                     </div>
                     <div class="col-md-7 order-2">
                         <div class="overflow-hidden">
@@ -173,8 +173,8 @@
                         <hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
                         <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
                             <div class="col-lg-6">
-                                <a href="#" class="btn btn-modern btn-dark mt-3">Get In Touch</a>
-                                <a href="#" class="btn btn-modern btn-primary mt-3">Hire Me</a>
+                                <a href="{{url('/')}}/meet-our-team/sample-page" class="btn btn-modern btn-dark mt-3">Learn More</a>
+                                <a href="{{url('/')}}/contact-us" class="btn btn-modern btn-primary mt-3">Contact Us</a>
                             </div>
                             <div class="col-sm-6 text-lg-end my-4 my-lg-0">
                                 <strong class="text-uppercase text-1 me-3 text-dark">follow me</strong>
@@ -207,8 +207,8 @@
                         <hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
                         <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
                             <div class="col-lg-6">
-                                <a href="#" class="btn btn-modern btn-dark mt-3">Get In Touch</a>
-                                <a href="#" class="btn btn-modern btn-primary mt-3">Hire Me</a>
+                                <a href="{{url('/')}}/meet-our-team/sample-page" class="btn btn-modern btn-dark mt-3">Learn More</a>
+                                <a href="{{url('/')}}/contact-us" class="btn btn-modern btn-primary mt-3">Contact Us</a>
                             </div>
                             <div class="col-sm-6 text-lg-end my-4 my-lg-0">
                                 <strong class="text-uppercase text-1 me-3 text-dark">follow me</strong>
@@ -221,7 +221,7 @@
                         </div>
                     </div>
                     <div class="col-md-5 order-md-2 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorter">
-                        <img src="{{asset('uploads/teams/ndungu.jpg')}}" class="img-fluid" alt="">
+                       <img style="max-height:500px" src="{{asset('uploads/teams/ndungu.jpg')}}" class="img-fluid" alt="">
                     </div>
                 </div>
         
@@ -236,7 +236,7 @@
                 {{--  --}}
                 <div class="row">
                     <div class="col-md-5 order-md-2 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorter">
-                        <img src="{{asset('uploads/teams/lorraine.jpg')}}" class="img-fluid" alt="">
+                       <img style="max-height:500px" src="{{asset('uploads/teams/lorraine.jpg')}}" class="img-fluid" alt="">
                     </div>
                     <div class="col-md-7 order-2">
                         <div class="overflow-hidden">
@@ -251,8 +251,8 @@
                         <hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
                         <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
                             <div class="col-lg-6">
-                                <a href="#" class="btn btn-modern btn-dark mt-3">Get In Touch</a>
-                                <a href="#" class="btn btn-modern btn-primary mt-3">Hire Me</a>
+                                <a href="{{url('/')}}/meet-our-team/sample-page" class="btn btn-modern btn-dark mt-3">Learn More</a>
+                                <a href="{{url('/')}}/contact-us" class="btn btn-modern btn-primary mt-3">Contact Us</a>
                             </div>
                             <div class="col-sm-6 text-lg-end my-4 my-lg-0">
                                 <strong class="text-uppercase text-1 me-3 text-dark">follow me</strong>
@@ -285,8 +285,8 @@
                         <hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
                         <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
                             <div class="col-lg-6">
-                                <a href="#" class="btn btn-modern btn-dark mt-3">Get In Touch</a>
-                                <a href="#" class="btn btn-modern btn-primary mt-3">Hire Me</a>
+                                <a href="{{url('/')}}/meet-our-team/sample-page" class="btn btn-modern btn-dark mt-3">Learn More</a>
+                                <a href="{{url('/')}}/contact-us" class="btn btn-modern btn-primary mt-3">Contact Us</a>
                             </div>
                             <div class="col-sm-6 text-lg-end my-4 my-lg-0">
                                 <strong class="text-uppercase text-1 me-3 text-dark">follow me</strong>
@@ -299,7 +299,7 @@
                         </div>
                     </div>
                     <div class="col-md-5 order-md-2 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorter">
-                        <img src="{{asset('uploads/teams/moreen.jpg')}}" class="img-fluid" alt="">
+                       <img style="max-height:500px" src="{{asset('uploads/teams/moreen.jpg')}}" class="img-fluid" alt="">
                     </div>
                 </div>
         
@@ -314,7 +314,7 @@
                 {{--  --}}
                 <div class="row">
                     <div class="col-md-5 order-md-2 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorter">
-                        <img src="{{asset('uploads/teams/marie.jpg')}}" class="img-fluid" alt="">
+                       <img style="max-height:500px" src="{{asset('uploads/teams/marie.jpg')}}" class="img-fluid" alt="">
                     </div>
                     <div class="col-md-7 order-2">
                         <div class="overflow-hidden">
@@ -329,8 +329,8 @@
                         <hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
                         <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
                             <div class="col-lg-6">
-                                <a href="#" class="btn btn-modern btn-dark mt-3">Get In Touch</a>
-                                <a href="#" class="btn btn-modern btn-primary mt-3">Hire Me</a>
+                                <a href="{{url('/')}}/meet-our-team/sample-page" class="btn btn-modern btn-dark mt-3">Learn More</a>
+                                <a href="{{url('/')}}/contact-us" class="btn btn-modern btn-primary mt-3">Contact Us</a>
                             </div>
                             <div class="col-sm-6 text-lg-end my-4 my-lg-0">
                                 <strong class="text-uppercase text-1 me-3 text-dark">follow me</strong>
@@ -365,8 +365,8 @@
                         <hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
                         <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
                             <div class="col-lg-6">
-                                <a href="#" class="btn btn-modern btn-dark mt-3">Get In Touch</a>
-                                <a href="#" class="btn btn-modern btn-primary mt-3">Hire Me</a>
+                                <a href="{{url('/')}}/meet-our-team/sample-page" class="btn btn-modern btn-dark mt-3">Learn More</a>
+                                <a href="{{url('/')}}/contact-us" class="btn btn-modern btn-primary mt-3">Contact Us</a>
                             </div>
                             <div class="col-sm-6 text-lg-end my-4 my-lg-0">
                                 <strong class="text-uppercase text-1 me-3 text-dark">follow me</strong>
@@ -379,7 +379,7 @@
                         </div>
                     </div>
                     <div class="col-md-5 order-md-2 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorter">
-                        <img src="{{asset('uploads/teams/catherine.jpg')}}" class="img-fluid" alt="">
+                       <img style="max-height:500px" src="{{asset('uploads/teams/catherine.jpg')}}" class="img-fluid" alt="">
                     </div>
                 </div>
         
@@ -393,7 +393,7 @@
         
                 <div class="row">
                     <div class="col-md-5 order-md-2 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorter">
-                        <img src="{{asset('uploads/teams/team-2.jpg')}}" class="img-fluid" alt="">
+                       <img style="max-height:500px" src="{{asset('uploads/teams/team-2.jpg')}}" class="img-fluid" alt="">
                     </div>
                     <div class="col-md-7 order-2">
                         <div class="overflow-hidden">
@@ -408,8 +408,8 @@
                         <hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
                         <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
                             <div class="col-lg-6">
-                                <a href="#" class="btn btn-modern btn-dark mt-3">Get In Touch</a>
-                                <a href="#" class="btn btn-modern btn-primary mt-3">Hire Me</a>
+                                <a href="{{url('/')}}/meet-our-team/sample-page" class="btn btn-modern btn-dark mt-3">Learn More</a>
+                                <a href="{{url('/')}}/contact-us" class="btn btn-modern btn-primary mt-3">Contact Us</a>
                             </div>
                             <div class="col-sm-6 text-lg-end my-4 my-lg-0">
                                 <strong class="text-uppercase text-1 me-3 text-dark">follow me</strong>

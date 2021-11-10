@@ -30,18 +30,19 @@
                                     </li>
                                 </ul>
                                 <ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-big m-0 ms-lg-2">
-                                    <li class="social-icons-instagram">
-                                        <a href="https://www.instagram.com/" target="_blank" class="text-4" title="Instagram" data-cursor-effect-hover="fit"><i class="fab fa-instagram"></i></a>
-                                    </li>
-                                    <li class="social-icons-twitter">
-                                        <a href="https://www.twitter.com/" target="_blank" class="text-4" title="Twitter" data-cursor-effect-hover="fit"><i class="fab fa-twitter"></i></a>
-                                    </li>
                                     <li class="social-icons-facebook">
-                                        <a href="https://www.facebook.com/" target="_blank" class="text-4" title="Facebook" data-cursor-effect-hover="fit"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://web.facebook.com/sasemaMC" target="_blank" class="text-4" title="Facebook" data-cursor-effect-hover="fit"><i class="fab fa-facebook-f"></i></a>
                                     </li>
                                     <li class="social-icons-linkedin">
-                                        <a href="https://www.linkedin.com/" target="_blank" class="text-4" title="Linkedin" data-cursor-effect-hover="fit"><i class="fab fa-linkedin"></i></a>
+                                        <a href="https://ke.linkedin.com/company/sasema-management-company" target="_blank" class="text-4" title="Linkedin" data-cursor-effect-hover="fit"><i class="fab fa-linkedin"></i></a>
                                     </li>
+                                    <li class="social-icons-instagram">
+                                        <a href="https://www.instagram.com/sasemamanagement/" target="_blank" class="text-4" title="Instagram" data-cursor-effect-hover="fit"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li class="social-icons-twitter">
+                                        <a href="https://twitter.com/SasemaM" target="_blank" class="text-4" title="Twitter" data-cursor-effect-hover="fit"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                 
                                 </ul>
                             </div>
                         </div>
@@ -92,13 +93,18 @@
                                             </a>
                                             <ul class="dropdown-menu">
                                                 <li>
-                                                    <a href="demo-business-consulting-3-services-detail.html" class="dropdown-item">What We Do</a>
+                                                    <a href="#" class="dropdown-item">Mergers & Acquisitions Advisory</a>
                                                 </li>
                                                 <li>
-                                                    <a href="demo-business-consulting-3-services-detail.html" class="dropdown-item">Our Team</a>
+                                                    <a href="#" class="dropdown-item">Equity Capital Raising</a>
                                                 </li>
                                              
-                                                
+                                                <li>
+                                                    <a href="#" class="dropdown-item">Debt Capital Raising</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="dropdown-item">Private Equity Advisory</a>
+                                                </li>
                                             </ul>
                                         </li>
                                       
