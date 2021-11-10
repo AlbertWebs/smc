@@ -13,21 +13,22 @@
             </div>
             <div class="col-lg-6">
                 <h2 class="custom-highlight-text-1 d-inline-block line-height-5 text-4 positive-ls-3 font-weight-medium text-color-primary mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">WHY US</h2>
-                <h3 class="text-9 line-height-3 text-transform-none font-weight-medium text-color-light ls-0 mb-3 pb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Learn Here The Main Reasons Why You Should Choose Us</h3>
-                <p class="text-3-5 pb-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendreriast ehicula leo, vel efficitur felis ultrices non. </p>
+                <h3 class="text-9 line-height-3 text-transform-none font-weight-medium text-color-light ls-0 mb-3 pb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">Here is why we stand out</h3>
+                <p class="lead mb-0 appear-animation animated maskUp appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">As an independent advisory firm, we deliver swift and seamless services bypassing the usual bureaucracy associated with larger firms. </p>
+                <p class="lead mb-0 appear-animation animated maskUp appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">Sasema’s Purpose is to contribute towards sustainable economic growth. Our advisory services supports :</p>
+                <br>
                 <ul class="list ps-0 pe-lg-5 mb-0">
                     <li class="d-flex align-items-start pb-1 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
-                        <i class="fas fa-check text-color-light text-4 custom-bg-color-grey-1 rounded-circle p-3"></i> 
-                        <span class="text-3-5 ps-3">We wil identify where you're getting off-track in all areas and not just</span>
+                        <i class="fas fa-check text-color-light lead custom-bg-color-grey-1 rounded-circle p-3"></i> &nbsp; &nbsp; <span class="lead"> &nbsp; Employment Enhancement </span>
+                       
                     </li>
-                    <li class="d-flex align-items-start pb-1 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1250">
-                        <i class="fas fa-check text-color-light text-4 custom-bg-color-grey-1 rounded-circle p-3"></i>
-                        <span class="text-3-5 ps-3">We create a program that accelerates your strategic execution and growth goals.
-                        </span>
+                    <li class="d-flex align-items-start pb-1 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
+                        <i class="fas fa-check text-color-light lead custom-bg-color-grey-1 rounded-circle p-3"></i> &nbsp; &nbsp; <span class="lead">&nbsp;  Taxes Creation  </span>
+                       
                     </li>
-                    <li class="d-flex align-items-start appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1500">
-                        <i class="fas fa-check text-color-light text-4 custom-bg-color-grey-1 rounded-circle p-3"></i>
-                        <span class="text-3-5 ps-3">Consistently hit strategic objectives and revenue targets, and grow, year over year.</span>
+                    <li class="d-flex align-items-start pb-1 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
+                        <i class="fas fa-check text-color-light lead custom-bg-color-grey-1 rounded-circle p-3"></i> &nbsp; &nbsp; <span class="lead"> &nbsp; Stakeholder Value Addition </span>
+                       
                     </li>
                 </ul>
             </div>

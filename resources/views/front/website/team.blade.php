@@ -3,15 +3,7 @@
 <div class="body">
     @include('front.website.header')
   
-    <style>
-        .content-area{
-           background-color:#000000 !important;
-           display: table-cell;
-           vertical-align: middle;
-           position: relative;
-           top:50% !important;
-        }
-    </style>
+
 
     <div role="main" class="main">
         {{-- <section class="page-header page-header-classic page-header-sm">
