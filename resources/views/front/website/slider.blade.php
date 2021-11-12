@@ -1,28 +1,31 @@
-<div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual dots-inside dots-horizontal-center dots-light show-dots-hover nav-inside nav-inside-plus nav-dark nav-md nav-font-size-md show-nav-hover mb-0" data-plugin-options="{'autoplayTimeout': 7000, 'autoplay': false}" data-dynamic-height="['670px','670px','670px','550px','500px']" style="height: 670px;">
-    <div class="owl-stage-outer">
-        <div class="owl-stage">
-
-            <!-- Carousel Slide 2 -->
-            <div class="owl-item position-relative overlay overlay-show overlay-op-8" style="background-image: url({{asset('theme/img/slides/slide-corporate-1-2.jpg')}}); background-size: cover; background-position: center;">
-                <div class="container position-relative z-index-3 h-100">
-                    <div class="row justify-content-center align-items-center h-100">
-                        <div class="col-lg-7">
-                            <div class="d-flex flex-column align-items-center">
-                                <h2 class="text-color-light font-weight-extra-bold text-13 mb-4 appear-animation" data-appear-animation="blurIn" data-plugin-options="{'minWindowWidth': 0}">SASEMA</h2>
-                                <p class="text-4-5 text-color-light font-weight-light opacity-7 text-center mb-4" data-plugin-animated-letters data-plugin-options="{'startDelay': 1000, 'minWindowWidth': 0, 'animationSpeed': 25}">Sasema Management Company is an investment advisory, mergers and acquisitions and family business consulting firm</p>
-                                <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="3300">
-                                    <div class="d-flex align-items-center mt-2">
-                                        <a href="{{url('/')}}/about-us" class="btn btn-light btn-modern text-color-primary font-weight-bold text-2 py-3 btn-px-4">LEARN MORE</a>
-                                        {{-- <a href="#" class="btn btn-primary btn-modern font-weight-bold text-2 py-3 btn-px-4 ms-4">GET STARTED NOW <i class="fas fa-arrow-right ms-2"></i></a> --}}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<section id="home" class="section border-0 video overlay overlay-show overlay-op-8 m-0" data-video-path="{{asset('theme/video/memory-of-a-woman')}}" data-plugin-video-background data-plugin-options="{'posterType': 'jpg', 'position': '50% 50%'}" style="height: 100vh;">
+    <div class="container position-relative z-index-3 h-100">
+        <div class="row align-items-center h-100">
+            <div class="col">
+                <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                    <h1 class="position-relative text-color-light text-5 line-height-5 font-weight-medium px-4 mb-2 appear-animation" data-appear-animation="fadeInDownShorterPlus" data-plugin-options="{'minWindowWidth': 0}">
+                        <span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
+                            <img src="{{asset('theme/img/slides/slide-title-border-light.png')}}" class="w-auto appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
+                        </span>
+                        SASEMA MANAGEMENT <span class="position-relative">COMPANY<span class="position-absolute left-50pct transform3dx-n50 top-0 mt-3"><img src="{{asset('theme/img/slides/slide-blue-line.png')}}" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" alt="" /></span></span>
+                        <span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
+                            <img src="{{asset('theme/img/slides/slide-title-border-light.png')}}" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
+                        </span>
+                    </h1>
+                    {{-- <h1 class="text-color-light font-weight-extra-bold text-12 line-height-1 mb-2 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}">Sasema Management Company</h1> --}}
+                    {{-- <p class="text-4 text-color-light font-weight-light opacity-7 mb-0" data-plugin-animated-letters data-plugin-options="{'startDelay': 2000, 'minWindowWidth': 0}">SMC Tagline Goes Here</p> --}}
+                    <h1 class="word-rotator letters type type-clean-light text-color-light font-weight-extra-bold text-12 line-height-2 mb-3 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
+                        
+                        <span class="word-rotator-words waiting">
+                            <b class="is-visible">Mergers & Acquisitions Advisory</b>
+                            <b>Equity Capital Raising</b>
+                            <b>Debt Capital Raising</b>
+                            <b>Private Equity Advisory</b>
+                        </span>
+                    </h1>
                 </div>
             </div>
-
         </div>
+        <a href="#welcome" class="slider-scroll-button position-absolute bottom-10 left-50pct transform3dx-n50" data-hash data-hash-offset="0" data-hash-offset-lg="80">Sroll To Bottom</a>
     </div>
-    
-</div>
+</section>

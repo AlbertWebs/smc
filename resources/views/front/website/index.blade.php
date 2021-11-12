@@ -1,7 +1,7 @@
 @extends('front.master-sasema')
 @section('content')
 <div class="body">
-    @include('front.website.header')
+    @include('front.website.headers')
 
     <div role="main" class="main">
 

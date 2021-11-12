@@ -18,10 +18,10 @@
                 </a>
                 <p class="text-3-5">Sasema Management Company is an investment advisory, mergers and acquisitions and family business consulting firm. </p>
                 <ul class="social-icons social-icons-clean social-icons-clean-with-border social-icons-medium social-icons-icon-light">
-                    <li class="social-icons-facebook"><a href="https://www.facebook.com/" target="_blank" title="Facebook" data-cursor-effect-hover="fit"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="social-icons-twitter mx-2"><a href="https://www.twitter.com/" target="_blank" title="Twitter" data-cursor-effect-hover="fit"><i class="fab fa-twitter"></i></a></li>
-                    <li class="social-icons-linkedin"><a href="https://www.linkedin.com/" target="_blank" title="Linkedin" data-cursor-effect-hover="fit"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="social-icons-instagram"><a href="https://www.instagram.com/" target="_blank" title="instagram" data-cursor-effect-hover="fit"><i class="fab fa-instagram"></i></a></li>
+                    <li class="social-icons-facebook"><a href="https://web.facebook.com/sasemaMC" target="_blank" title="Facebook" data-cursor-effect-hover="fit"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social-icons-twitter mx-2"><a href="https://twitter.com/SasemaM" target="_blank" title="Twitter" data-cursor-effect-hover="fit"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social-icons-linkedin"><a href="https://ke.linkedin.com/company/sasema-management-company" target="_blank" title="Linkedin" data-cursor-effect-hover="fit"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="social-icons-instagram"><a href="https://www.instagram.com/sasemamanagement/" target="_blank" title="instagram" data-cursor-effect-hover="fit"><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
             <div class="col-lg-3 mb-4 mb-lg-0">
@@ -92,6 +92,7 @@
     <div class="footer-copyright container bg-transparent">
         <div class="row pb-5">
             <div class="col-lg-12 text-center m-0">
+                
                 <hr class="bg-color-light opacity-1 mt-5 mb-4">
                 <p class="text-3-4">© copyright <?php echo date('Y') ?> Sasema Management Company All Rights Reserved</p>
             </div>
