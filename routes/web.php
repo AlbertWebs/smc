@@ -28,6 +28,9 @@ Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'priv
 Route::get('/copyright', [App\Http\Controllers\HomeController::class, 'copyright'])->name('copyright');
 Route::post('/news-letters', [HomeController::class, 'news_letters'])->name('news-letters');
 
+Route::get('/slungyfy', [App\Http\Controllers\HomeController::class, 'slungyfy'])->name('slungyfy');
+
+
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');

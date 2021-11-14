@@ -28,7 +28,8 @@
                         <div class="row">
                             <div class="col">
                                 <h4 class="mb-0"><a href="#" class="text-3 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">Mergers & Acquisitions Advisory</a></h4>
-                                <p class="mb-2 lead text-4">Sasema Management Company leverages our extensive buy side network to market companies in strict confidence to qualified buyers. </p>
+                                <p class="mb-2 lead text-4 min-height">Sasema Management Company leverages our extensive buy side network to market companies in strict confidence to qualified buyers. </p>
+                                <a href="#" class="btn btn-modern btn-dark mt-3 text-center m-b">Learn More</a>
                                
                             </div>
                         </div>
@@ -46,7 +47,8 @@
                         <div class="row">
                             <div class="col">
                                 <h4 class="mb-0"><a href="#" class="text-3 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">Equity Capital Raising</a></h4>
-                                <p class="mb-2 lead text-4">We help our clients prepare for and execute equity capital raising or placement transactions.</p>
+                                <p class="mb-2 lead text-4 min-height">We help our clients prepare for and execute equity capital raising or placement transactions.</p>
+                                <a href="#" class="btn btn-modern btn-dark mt-3 text-center m-b">Learn More</a>
                                
                             </div>
                         </div>
@@ -64,7 +66,8 @@
                         <div class="row">
                             <div class="col">
                                 <h4 class="mb-0"><a href="#" class="text-3 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">Debt Capital Raising</a></h4>
-                                <p class="mb-2 lead text-4">We help clients raise debt capital by leveraging our relationships with a broad spectrum of lenders.</p>
+                                <p class="mb-2 lead text-4 min-height">We help clients raise debt capital by leveraging our relationships with a broad spectrum of lenders.</p>
+                                <a href="#" class="btn btn-modern btn-dark mt-3 text-center m-b">Learn More</a>
                                
                             </div>
                         </div>
@@ -82,8 +85,8 @@
                         <div class="row">
                             <div class="col">
                                 <h4 class="mb-0"><a href="#" class="text-3 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">Private Equity Advisory</a></h4>
-                                <p class="mb-2 lead text-4">We help our clients identify and unlock untapped value in their investments. </p>
-                                <a href="#" class="btn btn-modern btn-dark mt-3 text-center">Learn More</a>
+                                <p class="mb-2 lead text-4 min-height">We help our clients identify and unlock untapped value in their investments. </p>
+                                <a href="#" class="btn btn-modern btn-dark mt-3 text-center m-b">Learn More</a>
                             </div>
                         </div>
                     </article>

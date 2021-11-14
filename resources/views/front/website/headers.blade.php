@@ -35,9 +35,9 @@
                                             <a data-hash class="nav-link"  href="{{url('/')}}/our-services">Services</a>
                                         </li>
                                         
-                                        <li>
+                                        {{-- <li>
                                             <a data-hash class="nav-link"  href="#clients">Clients</a>
-                                        </li>
+                                        </li> --}}
                                        
                                         <li>
                                             <a data-hash class="nav-link" href="{{url('/contact-us')}}">Contact Us</a>

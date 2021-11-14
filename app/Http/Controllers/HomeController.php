@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Artesaos\SEOTools\Facades\SEOTools;
 use DB;
 use Newsletter;
+use Illuminate\Support\Str;
 
 
 class HomeController extends Controller
@@ -70,22 +71,29 @@ class HomeController extends Controller
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/');
         $page_title = "Sasema Management Company";
-        $page_name = "Sasema Team";
-        return view('front.website.team',compact('page_title','page_name'));
+        $page_name = "About Sasema Management Company";
+        $Team = DB::table('teams')->get();
+        return view('front.website.team',compact('page_title','page_name','Team'));
     }
 
-    public function team_single()
+    public function team_single($slung)
     {
-        SEOTools::setTitle('Sample Single Page | Sasema Management Company | Investment advisor in Kenya, Investment advisor in Mauritius');
-        SEOTools::setDescription('Sasema Management Company is an investment advisory,mergers and acquisitions and family business consulting firm. ');
-        SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/about-us');
-        SEOTools::setCanonical('https://www.sasemagroup.com/about-us');
-        SEOTools::opengraph()->addProperty('type', 'articles');
-        SEOTools::twitter()->setSite('@sasemaM');
-        SEOTools::jsonLd()->addImage('https://sasemagroup.com/');
-        $page_title = "Sasema Management Company";
-        $page_name = "Sasema Team";
-        return view('front.website.team-single',compact('page_title','page_name'));
+        $Team = DB::table('teams')->where('slung',$slung)->get();
+        foreach($Team as $team)
+        {
+            SEOTools::setTitle(' '.$team->name.' | Sasema Management Company | Investment advisor in Kenya, Investment advisor in Mauritius');
+            SEOTools::setDescription('Sasema Management Company is an investment advisory,mergers and acquisitions and family business consulting firm. ');
+            SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/about-us');
+            SEOTools::setCanonical('https://www.sasemagroup.com/about-us');
+            SEOTools::opengraph()->addProperty('type', 'articles');
+            SEOTools::twitter()->setSite('@sasemaM');
+            SEOTools::jsonLd()->addImage('https://sasemagroup.com/');
+            $page_title = "Sasema Management Company";
+            $page_name = "About Sasema Management Company";
+            $Team = DB::table('teams')->where('slung',$slung)->get();
+            return view('front.website.team-single',compact('page_title','page_name','Team'));
+        }
+        
     }
 
     
@@ -101,20 +109,26 @@ class HomeController extends Controller
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/our-services');
         $page_title = "Sasema Management Company";
         $page_name = "Sasema Services";
-        return view('front.services',compact('page_title','page_name'));
+        $Services = DB::table('services')->get();
+        return view('front.services',compact('page_title','page_name','Services'));
     }
 
-    public function service()
+    public function service($slung)
     {
-        SEOTools::setTitle('Service Name | Sasema Management Company | Investment advisor in Kenya, Investment advisor in Mauritius');
-        SEOTools::setDescription('Sasema Management Company is an investment advisory,mergers and acquisitions and family business consulting firm. ');
-        SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/our-services');
-        SEOTools::setCanonical('https://www.sasemagroup.com/our-services');
-        SEOTools::opengraph()->addProperty('type', 'articles');
-        SEOTools::twitter()->setSite('@sasemaM');
-        SEOTools::jsonLd()->addImage('https://sasemagroup.com/our-services');
-        $page_title = "Sasema Management Company";
-        return view('front.service',compact('page_title'));
+        $Services = DB::table('services')->where('slung',$slung)->get();
+        foreach ($Services as $key => $value) {
+            SEOTools::setTitle(' '.$value->title.' | Sasema Management Company | Investment advisor in Kenya, Investment advisor in Mauritius');
+            SEOTools::setDescription('Sasema Management Company is an investment advisory,mergers and acquisitions and family business consulting firm. ');
+            SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/our-services');
+            SEOTools::setCanonical('https://www.sasemagroup.com/our-services');
+            SEOTools::opengraph()->addProperty('type', 'articles');
+            SEOTools::twitter()->setSite('@sasemaM');
+            SEOTools::jsonLd()->addImage('https://sasemagroup.com/our-services');
+            $page_title = "Sasema Management Company";
+            $page_name = "Sasema Services";
+            return view('front.service',compact('page_title','page_name','Services'));
+        }
+        
     }
 
     public function contact()
@@ -180,6 +194,18 @@ class HomeController extends Controller
             if ( ! Newsletter::isSubscribed($request->user_email) ) {
                 Newsletter::subscribe($request->user_email);
             }
+    }
+
+    public function slungyfy(){
+        $Team = DB::table('services')->get();
+        foreach($Team as $team){
+            $updateDetails = array(
+                'slung' => Str::slug($team->title),
+            );
+            DB::table('services')->where('id',$team->id)->update($updateDetails);
+        }
+        
+        return "Done";
     }
 
 

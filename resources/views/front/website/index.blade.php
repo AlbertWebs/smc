@@ -1,5 +1,13 @@
 @extends('front.master-sasema')
 @section('content')
+<style>
+    .min-height{
+        min-height:85px !important;
+    }
+    .m-b{
+        margin-bottom: 10px;
+    }
+</style>
 <div class="body">
     @include('front.website.headers')
 

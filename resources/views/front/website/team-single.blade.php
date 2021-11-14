@@ -6,25 +6,26 @@
 
 
     <div role="main" class="main">
-       
+        @foreach($Team as $team)
         <div role="main" class="main">
             <section class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-7" style="background-image: url({{asset('theme/img/page-header/page-header-background-transparent-2.jpg')}});">
                 <div class="container">
                     <div class="row mt-5">
                         <div class="col-md-12 align-self-center p-static order-2 text-center">
-                            <h1 class="text-12 font-weight-semibold">Member Name Here</h1>
+                            <h1 class="text-12 font-weight-semibold">{{$team->name}}</h1>
                         </div>
                         <div class="col-md-12 align-self-center order-1">
                             <ul class="breadcrumb breadcrumb-light d-block text-center">
                                 <li><a href="#">Home</a></li>
                                 <li><a href="{{url('/')}}/about-us">About Us</a></li>
-                                <li class="active">Member Name Here</li>
+                                <li class="active">{{$team->name}}</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
         
+
             <div class="container py-5">
                 <div class="row">
                     <div class="col pb-3 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="100">
@@ -32,32 +33,35 @@
                             <div class="col-lg-5">
                                 <div class="card border-radius-0 box-shadow-1 border-0 me-lg-5 p-3 mb-3 mb-lg-0">
                                     <a href="demo-business-consulting-2-team-detail.html" class="d-block p-relative">
-                                        <img src="{{asset('uploads/teams/gutsche.jpg')}}" class="img-fluid border-radius-0" alt="">
+                                        <img src="{{url('/')}}/uploads/teams/{{$team->image}}" class="img-fluid border-radius-0" alt="{{$team->name}}">
                                     </a>
                                 </div>
                             </div>
                             <div class="col-lg-7 ps-2 ps-lg-0 pt-4 pt-lg-0">
-                                <p class="mb-0 text-uppercase">CEO</p>
-                                <h4 class="mb-3 text-7 text-dark font-weight-bold">Robert Doe</h4>
-                                <p class="text-4 line-height-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero id nisi euismod, sed porta est consectetur. Vestibulum auctor felis eget orci semr vestibulum. Pellentesque ultricies nibh gravida, accumsan libero luctus.</p>
-                                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem ipsum erat orci, ac auctor lacus tincidunt ut...</p>
-
-                                <p class="mb-3 text-4"><strong class="text-dark">Succeeded Projects:</strong> 198</p>
-                                <p class="mb-3 text-4"><strong class="text-dark">Main Services:</strong> Management Consulting</p>
-
+                                <p class="mb-0 text-uppercase">{{$team->position}}</p>
+                                <h4 class="mb-3 text-7 text-dark font-weight-bold">{{$team->name}}</h4>
+                                <p class="text-4 line-height-9">{!!html_entity_decode($team->description)!!}</p>
+                                {{-- <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem ipsum erat orci, ac auctor lacus tincidunt ut...</p> --}}
+                                <a href="mailto:{{$team->email}}" class="btn btn-modern btn-primary mt-3">Contact Me</a>
+                               
                                 <ul class="social-icons custom-social-icons pt-3">
                                     <li class="social-icons-instagram">
-                                        <a class="custom-bg-color-light-grey" href="https://www.instagram.com/" target="_blank" title="Instagram">
+                                        <a class="custom-bg-color-light-grey" href="{{$team->linkedin}}" target="_blank" title="Linkedin">
+                                            <i class="fab fa-linkedin text-4 font-weight-semibold text-color-secondary"></i>
+                                        </a>
+                                    </li>
+                                    <li class="social-icons-instagram">
+                                        <a class="custom-bg-color-light-grey" href="{{$team->instagram}}" target="_blank" title="Instagram">
                                             <i class="fab fa-instagram text-4 font-weight-semibold text-color-secondary"></i>
                                         </a>
                                     </li>
                                     <li class="social-icons-twitter">
-                                        <a class="custom-bg-color-light-grey" href="https://www.twitter.com/" target="_blank" title="Twitter">
+                                        <a class="custom-bg-color-light-grey" href="{{$team->twitter}}" target="_blank" title="Twitter">
                                             <i class="fab fa-twitter text-4 font-weight-semibold text-color-secondary"></i>
                                         </a>
                                     </li>
                                     <li class="social-icons-facebook">
-                                        <a class="custom-bg-color-light-grey" href="https://www.facebook.com/" target="_blank" title="Facebook">
+                                        <a class="custom-bg-color-light-grey" href="{{$team->facebook}}" target="_blank" title="Facebook">
                                             <i class="fab fa-facebook-f text-4 font-weight-semibold text-color-secondary"></i>
                                         </a>
                                     </li>
@@ -86,6 +90,7 @@
                 </div>
             </section>
         </div>
+        @endforeach
 
     
        

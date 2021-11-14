@@ -88,6 +88,14 @@
                                         </li>
 
                                         <li class="dropdown">
+                                            <a class="nav-link dropdown-toggle @if($page_name=='About Sasema Management Company') active @endif" href="{{url('/')}}/meet-our-team"">
+                                                Meet Our Team
+                                            </a>
+                                            
+                                        </li>
+
+
+                                        <li class="dropdown">
                                             <a class="nav-link dropdown-toggle @if($page_name=='Sasema Services') active @endif" href="{{url('/')}}/our-services">
                                                 Services
                                             </a>
