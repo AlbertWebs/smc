@@ -1,3 +1,5 @@
+<?php $SiteSettings = DB::table('_site_settings')->get(); ?>
+@foreach ($SiteSettings as $item)
 <footer id="footer" class="border-top-0 m-0 lazyload" data-bg-src="#" style="background-size: cover; background-position: center; background-repeat: no-repeat;">
     <div class="container pt-3">
         <div class="row justify-content-between align-items-center py-5 mb-3">
@@ -28,31 +30,36 @@
                 <ul class="list list-icons list-icons-lg">
                     <li class="d-flex px-0 mb-1">
                         <img width="25" src="{{asset('theme/img/demos/business-consulting-3/icons/phone.svg')}}" alt="Phone Icon" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
-                        <a href="tel:+254746512186" class="text-color-light font-weight-semibold text-3-4 ms-2">+254746512186</a>
+                        <a href="tel:{{$item->mobile_one}}" class="text-color-light font-weight-semibold text-3-4 ms-2">{{$item->mobile_one}}</a>
                     </li>
                     <li class="d-flex px-0 my-3">
                         <img width="25" src="{{asset('theme/img/demos/business-consulting-3/icons/email.svg')}}" alt="Email Icon" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
-                        <a href="mailto:info@sasemagroup.com" class="text-color-light font-weight-semibold text-3-4 ms-2"><span class="__cf_email__" data-cfemail="f989968b8d96b989968b8d968d919c949cd79a9694">info@sasemagroup.com</span></a>
+                        <a href="mailto:{{$item->email}}" class="text-color-light font-weight-semibold text-3-4 ms-2"><span class="__cf_email__" data-cfemail="f989968b8d96b989968b8d968d919c949cd79a9694">{{$item->email}}</span></a>
+                    </li>
+                    <li class="d-flex px-0 my-3">
+                        <img width="25" src="{{asset('theme/img/demos/business-consulting-3/icons/email.svg')}}" alt="Email Icon" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
+                        <a href="mailto:{{$item->email_one}}" class="text-color-light font-weight-semibold text-3-4 ms-2"><span class="__cf_email__" data-cfemail="f989968b8d96b989968b8d968d919c949cd79a9694">{{$item->email_one}}</span></a>
                     </li>
                     <li class="d-flex font-weight-semibold text-color-light px-0 mb-1">
                         <img width="25" src="{{asset('theme/img/demos/business-consulting-3/icons/map-pin.svg')}}" alt="Location" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light me-2'}" />
-                        Karen Road, Cara House, 1st Floor suite 9
+                        {{$item->location}}
                     </li>
                 </ul>
             </div>
             <div class="col-lg-4 mb-4 mb-lg-0">
   
                     <h5 class="text-6 text-transform-none font-weight-semibold text-color-light mb-4">Newsletter</h5>
-                    <p class="text-4 mb-1">Get all the latest informationon Sales and Offers.</p>
+                    <p class="text-4 mb-1">Get all the latest updates on our product and services.</p>
                     <p class="text-4">Sign up for newsletter today.</p>
-                    <div class="alert alert-success d-none" id="newsletterSuccess">
+                    <div class="alert alert-success" id="newsletterSuccess">
                         <strong>Success!</strong> You've been added to our email list.
                     </div>
                     <div class="alert alert-danger d-none" id="newsletterError"></div>
-                    <form id="newsletterForm" action="https://www.okler.net/previews/porto/9.2.0/php/newsletter-subscribe.php" method="POST" class="mw-100" novalidate="novalidate">
+                    <form id="newsletterForms" action="{{url('/')}}/news-letters" method="POST" class="mw-100" novalidate="novalidate">
+                        {{csrf_field()}}
                         <div class="input-group input-group-rounded">
-                            <input class="form-control form-control-sm bg-light px-4 text-3" placeholder="Email Address..." name="newsletterEmail" id="newsletterEmail" type="email">
-                            <button class="btn btn-primary text-color-light text-2 py-3 px-4" type="submit"><strong>SUBSCRIBE!</strong></button>
+                            <input class="form-control form-control-sm bg-light px-4 text-3" placeholder="Email Address..." name="user_email" id="newsletterEmail" type="email">
+                            <button class="btn btn-primary text-color-light text-2 py-3 px-4" type="submit"><strong>SUBSCRIBE!</strong><img class="loading-imagers" width="22"  src="{{url('/')}}/uploads/preloaders/loading.gif"></button>
                         </div>
                     </form>
                     <br>
@@ -99,3 +106,4 @@
         </div>
     </div>
 </footer>
+@endforeach

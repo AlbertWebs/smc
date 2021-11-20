@@ -20,7 +20,7 @@
                 </div>
             </div>
         </section>
-       
+        @foreach ($About as $item)       
         <div class="container pb-1">
 
             <div class="row pt-4">
@@ -30,8 +30,6 @@
                             <span>History of</span>
                             <span class="word-rotator-words bg-primary">
                                 <b class="is-visible">Sasema Management Company</b>
-                                {{-- <b>Sasema Management Company</b>
-                                <b>Sasema Management Company</b> --}}
                             </span>
                         </h2>
                     </div>
@@ -42,7 +40,8 @@
                 <div class="col-lg-10">
                     <div class="overflow-hidden">
                         <p class="lead mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="250">
-                            Sasema  was established in 2008 in Mauritius and has been built on the founder’s over 20 years Pan African work experience. While in Mauritius, Sasema completed projects worth over $50 million and has since expanded to East Africa. 
+                            {!!html_entity_decode($item->company)!!}
+                           
                             {{-- <span class="alternative-font">metus.</span>  --}}
                         </p>
                     </div>
@@ -60,24 +59,14 @@
                     <div class="col-md-6 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="1000">
                         <div class="owl-carousel owl-theme nav-inside mb-0" data-plugin-options="{'items': 1, 'margin': 10, 'animateOut': 'fadeOut', 'autoplay': true, 'autoplayTimeout': 6000, 'loop': true}">
                             <div>
-                                <img alt="" class="img-fluid" src="{{asset('theme/img/generic/generic-corporate-3-2-full.jpg')}}">
+                                <img alt="" class="img-fluid" src="{{url('/')}}/uploads/about/{{$item->image_one}}">
                             </div>
                             <div>
-                                <img alt="" class="img-fluid" src="{{asset('theme/img/generic/generic-corporate-3-3-full.jpg')}}">
+                                <img alt="" class="img-fluid" src="{{url('/')}}/uploads/about/{{$item->image_two}}">">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="overflow-hidden mb-2">
-                            <h2 class="text-color-dark font-weight-normal text-7 mb-0 pt-0 mt-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="1200">Who <strong class="font-weight-extra-bold">and Where We Are</strong></h2>
-                        </div>
-                        <p class="lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">Sasema Management Company is an investment advisory, mergers and acquisitions and family business consulting firm.<br><br>Sasema was established in Mauritius in 2008 and is currently based in Nairobi, Kenya, primarily servicing the East African region but with extensive Pan-African networks.</p>
-                        <div class="overflow-hidden mb-2">
-                            <h2 class="text-color-dark font-weight-normal text-7 mb-0 pt-0 mt-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="1200">What <strong class="font-weight-extra-bold">We Do</strong></h2>
-                        </div>
-                        <p class="lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">Sasema provides consultancy services in investment advisory, M&A  and family business and has worked in the following sectors; FMCG (retail), agribusiness, banking, real estate, and private equity among others.</p>
-                        
-                    </div>
+                    {!!html_entity_decode($item->content)!!}
                 </div>
 
             </div>
@@ -92,29 +81,29 @@
                                 <div class="box-content px-lg-4 px-xl-5 py-lg-5">
                                     <i class="icon-featured icons icon-layers text-color-primary"></i>
                                     <h2>Our Vision</h2>
-                                    <p style="min-height:85px" class="font-weight-light lead">To be a trusted and reliable advisory and investment services partner in Africa. </p>
+                                    <p style="min-height:85px" class="font-weight-light lead">{!!html_entity_decode($item->vision)!!} </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-10 col-md-7 col-lg-4 mb-4 mb-lg-0 appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400" style="animation-delay: 400ms;">
+                    <div class="col-sm-10 col-md-7 col-lg-4 mb-4 mb-lg-0 appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeInDownShorter" data-appear-animation-delay="400" style="animation-delay: 400ms;">
                         <div class="featured-boxes featured-boxes-modern-style-2 featured-boxes-modern-style-primary">
                             <div class="featured-box">
                                 <div class="box-content px-lg-4 px-xl-5 py-lg-5">
                                     <i class="icon-featured icons icon-layers text-color-primary"></i>
                                     <h2>Our Mission</h2>
-                                    <p style="min-height:85px" class="font-weight-light lead">To deliver sustainable value to all stakeholders. </p>
+                                    <p style="min-height:85px" class="font-weight-light lead">{!!html_entity_decode($item->mission)!!} </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-10 col-md-7 col-lg-4 mb-4 mb-lg-0 appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400" style="animation-delay: 400ms;">
+                    <div class="col-sm-10 col-md-7 col-lg-4 mb-4 mb-lg-0 appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="400" style="animation-delay: 400ms;">
                         <div class="featured-boxes featured-boxes-modern-style-2 featured-boxes-modern-style-primary">
                             <div class="featured-box">
                                 <div class="box-content px-lg-4 px-xl-5 py-lg-5">
                                     <i class="icon-featured icons icon-layers text-color-primary"></i>
                                     <h2>Our Goals</h2>
-                                    <p style="min-height:85px" class="font-weight-light lead">To create big african businesses, in AFRICA, for AFRICA, by AFRICANS. </p>
+                                    <p style="min-height:85px" class="font-weight-light lead">{!!html_entity_decode($item->values)!!}</p>
                                 </div>
                             </div>
                         </div>
@@ -124,53 +113,77 @@
         </section>
         {{--  --}}
 
+
         <div class="container" style="padding-top:50px">
 
            
             <div class="row">
                 <div class="col-md-8 mx-md-auto text-center">
 
-                    <h2 class="text-color-dark font-weight-normal text-7 mb-0 pt-2">Our <strong class="font-weight-extra-bold">History</strong></h2>
-                    <p>How we started, lorem ipsum dolor sit amet, consectetur adipiscing elit ac laoreet libero.</p>
+                    <h2 class="text-color-dark font-weight-normal text-7 mb-0 pt-2">Our <strong class="font-weight-extra-bold">Core Values</strong></h2>
+                    <p>We Pride Ourselves with Passion, Stewardship, Integrity and Service to give our clients unmatched Excellence</p>
 
                     <section class="timeline" id="timeline">
                         <div class="timeline-body">
                             <div class="timeline-date">
-                                <h3 class="text-primary font-weight-bold">2021</h3>
+                                <h3 class="text-primary font-weight-bold">Passion</h3>
                             </div>
 
                             <article class="timeline-box left text-start appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
                                 <div class="timeline-box-arrow"></div>
                                 <div class="p-2">
-                                    <img alt="" class="img-fluid" src="{{asset('theme/img/history/history-3.jpg')}}" />
-                                    <h3 class="font-weight-bold text-3 mt-3 mb-1">Kenya</h3>
-                                    <p class="mb-0 text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante.</p>
+                                    <p class="mb-0 lead">With Passion at the heart of everything we do, we nurture ideas, inspire excellence, and find creative ways to eliminate obstacles for cultivating growth</p>
                                 </div>
                             </article>
+                           
+                            {{--  --}}
 
                             <div class="timeline-date">
-                                <h3 class="text-primary font-weight-bold">2012</h3>
+                                <h3 class="text-primary font-weight-bold">Stewardship</h3>
                             </div>
 
                             <article class="timeline-box right text-start appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="400">
                                 <div class="timeline-box-arrow"></div>
                                 <div class="p-2">
-                                    <img alt="" class="img-fluid" src="{{asset('theme/img/history/history-2.jpg')}}" />
-                                    <h3 class="font-weight-bold text-3 mt-3 mb-1">Mauritius</h3>
-                                    <p class="mb-0 text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat.</p>
+                                    <p class="mb-0 lead"> We take responsibility for actions and resources entrusted to us.</p>
                                 </div>
                             </article>
 
+                            {{--  --}}
+
                             <div class="timeline-date">
-                                <h3 class="text-primary font-weight-bold">2008</h3>
+                                <h3 class="text-primary font-weight-bold">Integrity</h3>
                             </div>
 
                             <article class="timeline-box left text-start appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="600">
                                 <div class="timeline-box-arrow"></div>
                                 <div class="p-2">
-                                    <img alt="" class="img-fluid" src="{{asset('theme/img/history/history-1.jpg')}}" />
-                                    <h3 class="font-weight-bold text-3 mt-3 mb-1">Foundation</h3>
-                                    <p class="mb-0 text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel consequat, ante.</p>
+                                    <p class="mb-0 lead">We keep our word and expect honesty, accountability and transparency from our staff, partners, and clients.</p>
+                                </div>
+                            </article>
+
+                            {{--  --}}
+                            <div class="timeline-date">
+                                <h3 class="text-primary font-weight-bold">Service</h3>
+                            </div>
+
+                            <article class="timeline-box right text-start appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="400">
+                                <div class="timeline-box-arrow"></div>
+                                <div class="p-2">
+                                    <p class="mb-0 lead"> We provide timely, complete, and high-quality services to our clients and partners.</p>
+                                </div>
+                            </article>
+
+                            {{--  --}}
+
+                            <div class="timeline-date">
+                                <h3 class="text-primary font-weight-bold">Excellence</h3>
+                            </div>
+
+                            <article class="timeline-box left text-start appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="600">
+                                <div class="timeline-box-arrow"></div>
+                                <div class="p-2">
+                                    <p class="mb-0 lead">We thrive to offer the best services through rigorous research and personalized attention</p>
                                 </div>
                             </article>
                         </div>
@@ -183,7 +196,7 @@
 
     
        
-
+        @endforeach
     </div>
 
   

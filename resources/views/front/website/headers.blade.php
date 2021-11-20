@@ -1,3 +1,5 @@
+<?php $SiteSettings = DB::table('_site_settings')->get(); ?>
+@foreach ($SiteSettings as $Settings)
 <header id="header" class="header-transparent header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
     <div class="header-body border-top-0 bg-dark box-shadow-none">
         <div class="header-container container">
@@ -6,7 +8,7 @@
                     <div class="header-row">
                         <div class="header-logo">
                             <a href="#home">
-                                <img alt="Sasema Management Company" src="{{asset('theme/img/logos/SASEMA-LOGO-04.png')}}">
+                                <img alt="Sasema Management Company" src="{{url('/')}}/uploads/logo/{{$Settings->logo}}">
                             </a>
                         </div>
                     </div>
@@ -35,9 +37,9 @@
                                             <a data-hash class="nav-link"  href="{{url('/')}}/our-services">Services</a>
                                         </li>
                                         
-                                        {{-- <li>
-                                            <a data-hash class="nav-link"  href="#clients">Clients</a>
-                                        </li> --}}
+                                        <li>
+                                            <a data-hash class="nav-link"  href="{{url('/')}}/projects">Projects</a>
+                                        </li>
                                        
                                         <li>
                                             <a data-hash class="nav-link" href="{{url('/contact-us')}}">Contact Us</a>
@@ -55,3 +57,4 @@
         </div>
     </div>
 </header>
+@endforeach

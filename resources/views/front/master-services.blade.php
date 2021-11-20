@@ -38,6 +38,7 @@
 
 		<!-- Demo CSS -->
 		<link rel="stylesheet" href="{{asset('theme/css/demos/demo-business-consulting-3.css')}}">
+        <link rel="stylesheet" href="{{asset('theme/css/demos/demo-cleaning-services.css')}}">
 
 		<!-- Skin CSS -->
 		<link id="skinCSS" rel="stylesheet" href="{{asset('theme/css/skins/skin-business-consulting-3.css')}}">

@@ -29,7 +29,9 @@ class HomeController extends Controller
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/');
         $page_title = "Sasema Management Company";
         $page_name = "Sasema Management Company";
-        return view('front.website.index',compact('page_title','page_name'));
+        $About = DB::table('abouts')->get();
+        $Projects = DB::table('projects')->get();
+        return view('front.website.index',compact('page_title','page_name','Projects','About'));
     }
 
     public function parallax()
@@ -58,8 +60,26 @@ class HomeController extends Controller
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/');
         $page_title = "Sasema Management Company";
         $page_name = "About Sasema Management Company";
-        return view('front.website.about',compact('page_title','page_name'));
+        $About = DB::table('abouts')->get();
+        return view('front.website.about',compact('page_title','page_name','About'));
     }
+
+    public function projects()
+    {
+        SEOTools::setTitle('Projects | Sasema Management Company | Investment advisor in Kenya, Investment advisor in Mauritius');
+        SEOTools::setDescription('Sasema Management Company is an investment advisory,mergers and acquisitions and family business consulting firm. ');
+        SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/about-us');
+        SEOTools::setCanonical('https://www.sasemagroup.com/about-us');
+        SEOTools::opengraph()->addProperty('type', 'articles');
+        SEOTools::twitter()->setSite('@sasemaM');
+        SEOTools::jsonLd()->addImage('https://sasemagroup.com/');
+        $page_title = "Sasema Management Company";
+        $page_name = "projects";
+        $Projects = DB::table('projects')->get();
+        return view('front.website.projects',compact('page_title','page_name','Projects'));
+    }
+
+    
 
     public function team()
     {
@@ -147,7 +167,7 @@ class HomeController extends Controller
 
     public function terms()
     {
-        SEOTools::setTitle('Contact us | Sasema Management Company | Investment advisor in Kenya, Investment advisor in Mauritius');
+        SEOTools::setTitle('Terms and Conditions | Sasema Management Company | Investment advisor in Kenya, Investment advisor in Mauritius');
         SEOTools::setDescription('Sasema Management Company is an investment advisory,mergers and acquisitions and family business consulting firm. ');
         SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/terms-and-conditions');
         SEOTools::setCanonical('https://www.sasemagroup.com/terms-and-conditions');
@@ -156,12 +176,13 @@ class HomeController extends Controller
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/');
         $page_title = "Sasema Management Company";
         $page_name = "Terms & Conditions";
-        return view('front.website.terms',compact('page_title','page_name'));
+        $Terms = DB::table('terms')->get();
+        return view('front.website.terms',compact('page_title','page_name','Terms'));
     }
 
     public function privacy()
     {
-        SEOTools::setTitle('Contact us | Sasema Management Company | Investment advisor in Kenya, Investment advisor in Mauritius');
+        SEOTools::setTitle('Privacy Policy | Sasema Management Company | Investment advisor in Kenya, Investment advisor in Mauritius');
         SEOTools::setDescription('Sasema Management Company is an investment advisory,mergers and acquisitions and family business consulting firm. ');
         SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/privacy-policy');
         SEOTools::setCanonical('https://www.sasemagroup.com/privacy-policy');
@@ -170,12 +191,13 @@ class HomeController extends Controller
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/');
         $page_title = "Sasema Management Company";
         $page_name = "Terms & Conditions";
-        return view('front.website.privacy',compact('page_title','page_name'));
+        $Privacy = DB::table('privacies')->get();
+        return view('front.website.privacy',compact('page_title','page_name','Privacy'));
     }
 
     public function copyright()
     {
-        SEOTools::setTitle('Contact us | Sasema Management Company | Investment advisor in Kenya, Investment advisor in Mauritius');
+        SEOTools::setTitle('Copyright Statement | Sasema Management Company | Investment advisor in Kenya, Investment advisor in Mauritius');
         SEOTools::setDescription('Sasema Management Company is an investment advisory,mergers and acquisitions and family business consulting firm. ');
         SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/copyright');
         SEOTools::setCanonical('https://www.sasemagroup.com/copyright');
@@ -184,7 +206,8 @@ class HomeController extends Controller
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/');
         $page_title = "Sasema Management Company";
         $page_name = "Terms & Conditions";
-        return view('front.website.copyright',compact('page_title','page_name'));
+        $Copyright = DB::table('copyright')->get();
+        return view('front.website.copyright',compact('page_title','page_name','Copyright'));
     }
     
 

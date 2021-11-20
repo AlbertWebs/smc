@@ -30,7 +30,11 @@
                    
                     <div class="col-md-12">
                        
-                        <p class="lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">Sasema Management Company is an investment advisory, mergers and acquisitions and family business consulting firm. Sasema Management Company is an investment advisory, mergers and acquisitions and family business consulting firm. Sasema Management Company is an investment advisory, mergers and acquisitions and family business consulting firm.<br> was established in Mauritius in 2008 and is currently based in Nairobi, Kenya, primarily servicing the East African region but with extensive Pan-African networks.</p>
+                        <p class="lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">
+                            @foreach($Copyright as $copyright)
+                            {!!html_entity_decode($copyright->content)!!}
+                            @endforeach
+                        </p>
                         
                     </div>
                 </div>

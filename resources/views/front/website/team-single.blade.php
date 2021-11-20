@@ -44,7 +44,7 @@
                                 {{-- <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem ipsum erat orci, ac auctor lacus tincidunt ut...</p> --}}
                                 <a href="mailto:{{$team->email}}" class="btn btn-modern btn-primary mt-3">Contact Me</a>
                                
-                                <ul class="social-icons custom-social-icons pt-3">
+                                {{-- <ul class="social-icons custom-social-icons pt-3">
                                     <li class="social-icons-instagram">
                                         <a class="custom-bg-color-light-grey" href="{{$team->linkedin}}" target="_blank" title="Linkedin">
                                             <i class="fab fa-linkedin text-4 font-weight-semibold text-color-secondary"></i>
@@ -65,7 +65,7 @@
                                             <i class="fab fa-facebook-f text-4 font-weight-semibold text-color-secondary"></i>
                                         </a>
                                     </li>
-                                </ul>
+                                </ul> --}}
                             </div>
                         </div>
                     </div>

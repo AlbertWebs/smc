@@ -14,85 +14,32 @@
             </div>
         </div>
         <div class="container py-4">
-
+            <?php $Services = DB::table('services')->get(); ?>
+            
             <div class="row py-3 justify-content-center text-center">
-                <div class="col-sm-8 col-md-4 mb-4 mb-md-0 appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" style="animation-delay: 100ms;">
+                @foreach ($Services as $item)
+                <div class="col-sm-8 col-md-4 appear-animation animated fadeIn appear-animation-visible" {!!html_entity_decode($item->animate)!!}>
                     <article>
                         <div class="row">
                             <div class="col">
                                 <a href="#" class="text-decoration-none">
-                                    <img src="{{asset('theme/img/generic/generic-corporate-3-2-full.jpg')}}" class="img-fluid hover-effect-2 mb-3" alt="">
+                                    <img style="min-height:232px;" src="{{url('/')}}/uploads/services/{{$item->image}}" class="img-fluid hover-effect-2 mb-3" alt="{{$item->title}}">
                                 </a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <h4 class="mb-0"><a href="#" class="text-3 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">Mergers & Acquisitions Advisory</a></h4>
-                                <p class="mb-2 lead text-4 min-height">Sasema Management Company leverages our extensive buy side network to market companies in strict confidence to qualified buyers. </p>
-                                <a href="#" class="btn btn-modern btn-dark mt-3 text-center m-b">Learn More</a>
-                               
+                                <h4 class="mb-0"><a href="#" class="text-3 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">{{$item->title}}</a></h4>
+                                <p class="mb-2 lead text-4 min-height">{!!html_entity_decode($item->meta)!!} </p>
+                                <a href="{{url('/our-services')}}/{{$item->slung}}" class="btn btn-modern btn-dark mt-3 text-center m-b">Learn More</a>
                             </div>
                         </div>
                     </article>
                 </div>
-                <div class="col-sm-8 col-md-4 mb-4 mb-md-0 appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" data-appear-animation-delay="250" style="animation-delay: 250ms;">
-                    <article>
-                        <div class="row">
-                            <div class="col">
-                                <a href="#" class="text-decoration-none">
-                                    <img src="{{asset('theme/img/generic/generic-corporate-3-2-full.jpg')}}" class="img-fluid hover-effect-2 mb-3" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <h4 class="mb-0"><a href="#" class="text-3 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">Equity Capital Raising</a></h4>
-                                <p class="mb-2 lead text-4 min-height">We help our clients prepare for and execute equity capital raising or placement transactions.</p>
-                                <a href="#" class="btn btn-modern btn-dark mt-3 text-center m-b">Learn More</a>
-                               
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-sm-8 col-md-4 appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" data-appear-animation-delay="500" style="animation-delay: 500ms;">
-                    <article>
-                        <div class="row">
-                            <div class="col">
-                                <a href="#" class="text-decoration-none">
-                                    <img src="{{asset('theme/img/generic/generic-corporate-3-2-full.jpg')}}" class="img-fluid hover-effect-2 mb-3" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <h4 class="mb-0"><a href="#" class="text-3 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">Debt Capital Raising</a></h4>
-                                <p class="mb-2 lead text-4 min-height">We help clients raise debt capital by leveraging our relationships with a broad spectrum of lenders.</p>
-                                <a href="#" class="btn btn-modern btn-dark mt-3 text-center m-b">Learn More</a>
-                               
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="col-sm-8 col-md-4 appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" data-appear-animation-delay="500" style="animation-delay: 500ms;">
-                    <article>
-                        <div class="row">
-                            <div class="col">
-                                <a href="#" class="text-decoration-none">
-                                    <img src="{{asset('theme/img/generic/generic-corporate-3-2-full.jpg')}}" class="img-fluid hover-effect-2 mb-3" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <h4 class="mb-0"><a href="#" class="text-3 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">Private Equity Advisory</a></h4>
-                                <p class="mb-2 lead text-4 min-height">We help our clients identify and unlock untapped value in their investments. </p>
-                                <a href="#" class="btn btn-modern btn-dark mt-3 text-center m-b">Learn More</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+                @endforeach
+                
             </div>
-
+            
         </div>
         
     </div>

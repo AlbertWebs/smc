@@ -27,6 +27,7 @@ Route::get('/terms-and-conditions', [App\Http\Controllers\HomeController::class,
 Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'privacy'])->name('privacy');
 Route::get('/copyright', [App\Http\Controllers\HomeController::class, 'copyright'])->name('copyright');
 Route::post('/news-letters', [HomeController::class, 'news_letters'])->name('news-letters');
+Route::get('/projects', [App\Http\Controllers\HomeController::class, 'projects'])->name('projects');
 
 Route::get('/slungyfy', [App\Http\Controllers\HomeController::class, 'slungyfy'])->name('slungyfy');
 

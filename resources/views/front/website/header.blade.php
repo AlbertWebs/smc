@@ -1,3 +1,5 @@
+<?php $SiteSettings = DB::table('_site_settings')->get(); ?>
+@foreach ($SiteSettings as $Settings)
 <header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 85}">
     <div class="header-body border-top-0">
         <div class="header-top header-top-default header-top-borders border-bottom-0 bg-color-light">
@@ -12,13 +14,13 @@
                                             <span>
                                                 <img width="25" src="{{asset('theme/img/demos/business-consulting-3/icons/phone.svg')}}" alt="Phone Icon" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
                                             </span>
-                                            <a class="text-color-light text-decoration-none font-weight-semibold text-3-5 ms-2" href="tel:+254723014032" data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light">0723014032</a>
+                                            <a class="text-color-light text-decoration-none font-weight-semibold text-3-5 ms-2" href="tel:{{$Settings->mobile_one}}" data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light">{{$Settings->mobile_one}}</a>
                                         </span>
                                         <span class="font-weight-normal align-items-center px-0 d-none d-xl-flex ms-3">
                                             <span>
                                                 <img width="25" src="{{asset('theme/img/demos/business-consulting-3/icons/email.svg')}}" alt="Email Icon" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
                                             </span>
-                                            <a class="text-color-light text-decoration-none font-weight-semibold text-3-5 ms-2" href="mailto:info@sasemagroup.com" data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light"><span class="__cf_email__" data-cfemail="f1819e83859eb1819e83859e8599949c94df929e9c">info@sasemagroup.com</span></a>
+                                            <a class="text-color-light text-decoration-none font-weight-semibold text-3-5 ms-2" href="mailto:{{$Settings->email}}" data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light"><span class="__cf_email__" data-cfemail="f1819e83859eb1819e83859e8599949c94df929e9c">{{$Settings->email}}</span></a>
                                         </span>
                                     </li>
                                 </ul>
@@ -31,16 +33,16 @@
                                 </ul>
                                 <ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-big m-0 ms-lg-2">
                                     <li class="social-icons-facebook">
-                                        <a href="https://web.facebook.com/sasemaMC" target="_blank" class="text-4" title="Facebook" data-cursor-effect-hover="fit"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="new" href="{{$Settings->facebook}}" target="_blank" class="text-4" title="Facebook" data-cursor-effect-hover="fit"><i class="fab fa-facebook-f"></i></a>
                                     </li>
                                     <li class="social-icons-linkedin">
-                                        <a href="https://ke.linkedin.com/company/sasema-management-company" target="_blank" class="text-4" title="Linkedin" data-cursor-effect-hover="fit"><i class="fab fa-linkedin"></i></a>
+                                        <a target="new" href="{{$Settings->linkedin}}" target="_blank" class="text-4" title="Linkedin" data-cursor-effect-hover="fit"><i class="fab fa-linkedin"></i></a>
                                     </li>
                                     <li class="social-icons-instagram">
-                                        <a href="https://www.instagram.com/sasemamanagement/" target="_blank" class="text-4" title="Instagram" data-cursor-effect-hover="fit"><i class="fab fa-instagram"></i></a>
+                                        <a target="new" href="{{$Settings->instagram}}" target="_blank" class="text-4" title="Instagram" data-cursor-effect-hover="fit"><i class="fab fa-instagram"></i></a>
                                     </li>
                                     <li class="social-icons-twitter">
-                                        <a href="https://twitter.com/SasemaM" target="_blank" class="text-4" title="Twitter" data-cursor-effect-hover="fit"><i class="fab fa-twitter"></i></a>
+                                        <a target="new" href="{{$Settings->twitter}}" target="_blank" class="text-4" title="Twitter" data-cursor-effect-hover="fit"><i class="fab fa-twitter"></i></a>
                                     </li>
                                  
                                 </ul>
@@ -56,7 +58,7 @@
                     <div class="header-row">
                         <div class="header-logo">
                             <a href="{{url('/')}}">
-                                <img alt="Sasema Management Company"  src="{{asset('theme/img/logos/logo.png')}}">
+                                <img alt="Sasema Management Company"  src="{{url('/')}}/uploads/logo/{{$Settings->logo_two}}">
                             </a>
                         </div>
                     </div>
@@ -77,14 +79,7 @@
                                             <a class="nav-link dropdown-toggle @if($page_name=='About Sasema Management Company') active @endif" href="{{url('/')}}/about-us">
                                                 About us
                                             </a>
-                                            <ul class="dropdown-menu">
-                                              
-                                                <li>
-                                                    <a href="{{url('/')}}/meet-our-team" class="dropdown-item">Our Team</a>
-                                                </li>
-                                             
-                                                
-                                            </ul>
+                                           
                                         </li>
 
                                         <li class="dropdown">
@@ -100,19 +95,13 @@
                                                 Services
                                             </a>
                                             <ul class="dropdown-menu">
+                                                <?php $Servicess = DB::table('services')->get(); ?>
+                                                @foreach ($Servicess as $item)
                                                 <li>
-                                                    <a href="#" class="dropdown-item">Mergers & Acquisitions Advisory</a>
+                                                    <a href="{{url('/')}}/our-services/{{$item->slung}}" class="dropdown-item">{{$item->title}}</a>
                                                 </li>
-                                                <li>
-                                                    <a href="#" class="dropdown-item">Equity Capital Raising</a>
-                                                </li>
-                                             
-                                                <li>
-                                                    <a href="#" class="dropdown-item">Debt Capital Raising</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="dropdown-item">Private Equity Advisory</a>
-                                                </li>
+                                                @endforeach
+            
                                             </ul>
                                         </li>
                                       
@@ -122,6 +111,11 @@
                                                 Blog
                                             </a>
                                         </li> --}}
+                                        <li>
+                                            <a class="nav-link @if($page_name == "projects") active @endif" href="{{url('/')}}/projects">
+                                                Projects
+                                            </a>
+                                        </li>
                                         <li class="d-lg-none">
                                             <a class="nav-link @if($page_name == "Contact Us") active @endif" href="{{url('/')}}/contact-us">
                                                 Contact Us 
@@ -152,3 +146,4 @@
         </div>
     </div>
 </header>
+@endforeach
