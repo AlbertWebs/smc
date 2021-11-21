@@ -206,8 +206,11 @@
 		});
 	</script>
 
+ @include('schema')
 
-	<script defer src="../../../../static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6a206ceccf064f9f","version":"2021.10.0","r":1,"token":"03fa3b9eb60b49789931c4694c153f9b","si":100}'></script>
+
+
+	<script defer src="//static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6a206ceccf064f9f","version":"2021.10.0","r":1,"token":"03fa3b9eb60b49789931c4694c153f9b","si":100}'></script>
 </body>
 
 </html>
