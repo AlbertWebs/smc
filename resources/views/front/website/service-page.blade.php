@@ -24,7 +24,7 @@
                             <img class="img-fluid scale-2 pe-5 pe-md-0 my-4" src="{{url('/')}}/uploads/services/{{$service->image}}" alt="layout styles">
                         </div>
                         <div class="col-md-8 ps-md-5">
-                            <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">Mergers & Acquisitions Advisory</strong></h2>
+                            <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">{{$service->title}}</strong></h2>
                             <p class="text-4">{!!html_entity_decode($service->content)!!} </p>
                             <a href="{{url('/')}}/our-services/{{$service->slung}}" class="btn btn-modern btn-dark mt-3">Learn More</a>
                         </div>
