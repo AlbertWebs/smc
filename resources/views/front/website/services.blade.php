@@ -5,7 +5,7 @@
             <div class="col-md-10 col-lg-6 mb-5 mb-lg-0">
                 <div class="row row-gutter-sm">
                     <div class="col-12">
-                        <img src="{{url('/')}}/uploads/about/{{$item->image_one}}" class="img-fluid box-shadow-5" alt="" />
+                        <img  src="{{url('/')}}/uploads/about/{{$item->image_one}}" class="img-fluid box-shadow-5" alt="" />
                     </div>
                 </div>
             </div>

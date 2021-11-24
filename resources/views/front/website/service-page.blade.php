@@ -9,7 +9,7 @@
                     <div class="row align-items-center pt-5 pb-3 appear-animation animated fadeInRightShorter appear-animation-visible" data-appear-animation="fadeInRightShorter" style="animation-delay: 100ms;">
                         <div class="col-md-8 pe-md-5 mb-5 mb-md-0">
                             <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">{{$service->title}}</strong> </h2>
-                            <p class="text-4">{!!html_entity_decode($service->content)!!} </p>
+                            <p class="lead text-color-dark">{!!html_entity_decode($service->content)!!} </p>
                             <a href="{{url('/')}}/our-services/{{$service->slung}}" class="btn btn-modern btn-dark mt-3">Learn More</a>
                         </div>
                         <div class="col-md-4 px-5 px-md-3">
@@ -25,7 +25,7 @@
                         </div>
                         <div class="col-md-8 ps-md-5">
                             <h2 class="font-weight-normal text-6 mb-3"><strong class="font-weight-extra-bold">{{$service->title}}</strong></h2>
-                            <p class="text-4">{!!html_entity_decode($service->content)!!} </p>
+                            <p class="lead text-color-dark">{!!html_entity_decode($service->content)!!} </p>
                             <a href="{{url('/')}}/our-services/{{$service->slung}}" class="btn btn-modern btn-dark mt-3">Learn More</a>
                         </div>
                     </div>

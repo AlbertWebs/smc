@@ -18,7 +18,7 @@
                 <a href="demo-business-consulting-3.html" class="text-decoration-none">
                     <img src="{{asset('theme/img/logos/SASEMAA-LOGO-04.png')}}" class="img-fluid mb-4"  alt="" />
                 </a>
-                <p class="text-3-5">Sasema Management Company is an investment advisory, mergers and acquisitions and family business consulting firm. </p>
+                <p class="text-3-5">Sasema Management Company is a transaction advisory, mergers and acquisitions and family business consulting firm. </p>
                 <ul class="social-icons social-icons-clean social-icons-clean-with-border social-icons-medium social-icons-icon-light">
                     <li class="social-icons-facebook"><a href="https://web.facebook.com/sasemaMC" target="_blank" title="Facebook" data-cursor-effect-hover="fit"><i class="fab fa-facebook-f"></i></a></li>
                     <li class="social-icons-twitter mx-2"><a href="https://twitter.com/SasemaM" target="_blank" title="Twitter" data-cursor-effect-hover="fit"><i class="fab fa-twitter"></i></a></li>

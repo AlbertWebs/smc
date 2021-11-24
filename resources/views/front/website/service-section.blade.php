@@ -23,14 +23,16 @@
                         <div class="row">
                             <div class="col">
                                 <a href="#" class="text-decoration-none">
-                                    <img style="min-height:232px;" src="{{url('/')}}/uploads/services/{{$item->image}}" class="img-fluid hover-effect-2 mb-3" alt="{{$item->title}}">
+                                    <img style="min-height:252px; max-height:252px;" src="{{url('/')}}/uploads/services/{{$item->image}}" class="img-fluid hover-effect-2 mb-3" alt="{{$item->title}}">
                                 </a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <h4 class="mb-0"><a href="#" class="text-3 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">{{$item->title}}</a></h4>
-                                <p class="mb-2 lead text-4 min-height">{!!html_entity_decode($item->meta)!!} </p>
+                                {{-- <p class="mb-2 lead text-4 min-height">{!!html_entity_decode($item->meta)!!} </p> --}}
+                                <p class="mb-2 lead text-4 min-height"> {{ \Illuminate\Support\Str::limit($item->meta, 150, $end='...') }} </p>
+                                
                                 <a href="{{url('/our-services')}}/{{$item->slung}}" class="btn btn-modern btn-dark mt-3 text-center m-b">Learn More</a>
                             </div>
                         </div>

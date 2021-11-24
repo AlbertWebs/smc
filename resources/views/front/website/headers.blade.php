@@ -33,8 +33,31 @@
                                         <li>
                                             <a data-hash class="nav-link" href="{{url('/')}}/meet-our-team">Meet the Team</a>
                                         </li>
-                                        <li>
+                                        {{-- <li>
                                             <a data-hash class="nav-link"  href="{{url('/')}}/our-services">Services</a>
+                                            <ul class="dropdown-menu">
+                                                <?php $Servicess = DB::table('services')->get(); ?>
+                                                @foreach ($Servicess as $item)
+                                                <li>
+                                                    <a href="{{url('/')}}/our-services/{{$item->slung}}" class="dropdown-item">{{$item->title}}</a>
+                                                </li>
+                                                @endforeach
+            
+                                            </ul>
+                                        </li> --}}
+                                        <li class="dropdown">
+                                            <a class="nav-link dropdown-toggle @if($page_name=='Sasema Services') active @endif" href="{{url('/')}}/our-services">
+                                                Services
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <?php $Servicess = DB::table('services')->get(); ?>
+                                                @foreach ($Servicess as $item)
+                                                <li>
+                                                    <a href="{{url('/')}}/our-services/{{$item->slung}}" class="dropdown-item">{{$item->title}}</a>
+                                                </li>
+                                                @endforeach
+            
+                                            </ul>
                                         </li>
                                         
                                         <li>

@@ -94,9 +94,9 @@
                     <div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="950">
                         <h4 class="pt-5">Business <strong>Hours</strong></h4>
                         <ul class="list list-icons list-dark mt-2">
-                            <li><i class="far fa-clock top-6"></i> Monday - Friday - 9am to 5pm</li>
-                            <li><i class="far fa-clock top-6"></i> Saturday - 9am to 2pm</li>
-                            <li><i class="far fa-clock top-6"></i> Sunday - Closed</li>
+                            <li><i class="far fa-clock top-6"></i> Monday - Friday - 8:30am to 5pm</li>
+                            {{-- <li><i class="far fa-clock top-6"></i> Saturday - 9am to 2pm</li> --}}
+                            <li><i class="far fa-clock top-6"></i> Weekend - Closed</li>
                         </ul>
                     </div>
 

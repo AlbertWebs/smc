@@ -28,7 +28,7 @@
                             <div class="d-flex align-items-center w-100">
                                 <ul class="ps-0 ms-auto mb-0">
                                     <li class="nav-item font-weight-semibold text-1 text-lg-2 text-color-dark d-none d-md-flex justify-content-end me-3">
-                                        Mon - Sat 9:00am - 6:00pm / Sunday - CLOSED
+                                        Mon - Fri 8:30am - 5:00pm / Weekend - CLOSED
                                     </li>
                                 </ul>
                                 <ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-big m-0 ms-lg-2">

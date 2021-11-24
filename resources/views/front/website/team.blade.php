@@ -49,7 +49,11 @@
                             <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
                                 <div class="col-lg-6">
                                     <a href="{{url('/')}}/meet-our-team/{{$team->slung}}" class="btn btn-modern btn-dark mt-3">Learn More</a>
+                                    @if($team->email == null)
+
+                                    @else
                                     <a href="mailto:{{$team->email}}" class="btn btn-modern btn-primary mt-3">Contact Me</a>
+                                    @endif
                                 </div>
                                 <div class="col-sm-6 text-lg-end my-4 my-lg-0">
                                     
@@ -83,7 +87,11 @@
                             <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
                                 <div class="col-lg-6">
                                     <a href="{{url('/')}}/meet-our-team/{{$team->slung}}" class="btn btn-modern btn-dark mt-3">Learn More</a>
+                                    @if($team->email == null)
+                                    
+                                    @else
                                     <a href="mailto:{{$team->email}}" class="btn btn-modern btn-primary mt-3">Contact Me</a>
+                                    @endif
                                 </div>
                                 <div class="col-sm-6 text-lg-end my-4 my-lg-0">
                                     
