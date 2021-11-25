@@ -7,7 +7,7 @@
                 <h2 class="font-weight-semibold text-color-light text-10 ls-0 mb-0">Sasema Management Company</h2>
             </div>
             <div class="col-auto">
-                <a href="demo-business-consulting-3-contact.html" class="btn btn-primary custom-btn-style-1 font-weight-medium btn-px-4 btn-py-2 text-4" data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light">
+                <a href="{{url('/')}}/contact-us" class="btn btn-primary custom-btn-style-1 font-weight-medium btn-px-4 btn-py-2 text-4" data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light">
                     <span class="text-color-light">Contact Us</span>
                 </a>
             </div>
@@ -15,7 +15,7 @@
         <hr class="bg-color-light opacity-1 my-0">
         <div class="row pt-3 mt-5">
             <div class="col-lg-3 mb-4 mb-lg-0">
-                <a href="demo-business-consulting-3.html" class="text-decoration-none">
+                <a href="{{url('/')}}" class="text-decoration-none">
                     <img src="{{asset('theme/img/logos/SASEMAA-LOGO-04.png')}}" class="img-fluid mb-4"  alt="" />
                 </a>
                 <p class="text-3-5">Sasema Management Company is a transaction advisory, mergers and acquisitions and family business consulting firm. </p>
