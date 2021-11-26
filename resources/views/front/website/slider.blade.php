@@ -20,7 +20,7 @@
                             <b class="is-visible">Mergers & Acquisitions Advisory</b>
                             <b>Equity Capital Raising</b>
                             <b>Debt Capital Raising</b>
-                            <b>Private Equity Advisory</b>
+                            <b>Family Business Advisory</b>
                         </span>
                     </h1>
                 </div>

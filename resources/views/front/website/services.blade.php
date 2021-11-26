@@ -25,11 +25,11 @@
                             </span>
                         </div>
                     </div>
-                    {{-- <div class="col-7">
+                    <div class="col-7">
                         <blockquote class="custom-blockquote-style-1 m-0 pt-1 pb-2">
-                            <p class="mb-0">Cras a elit sit amet leo accumsan volutpat. Suspendisse. </p>
+                            <p class="mb-0 font-weight-bold" style="color:#212529 !important">SMC was the lead Transaction Advisor in the Large Cap Deal of the year 2020 </p>
                         </blockquote>
-                    </div> --}}
+                    </div>
                 </div>
             
             </div>
@@ -37,3 +37,21 @@
         @endforeach
     </div>
 </section>
+{{-- <div class="container py-5 mt-5 mb-3 bg-grey">
+    <div class="row justify-content-center py-5 my-4">
+        <div class="col-lg-9 col-xl-7 text-center px-lg-4">
+            <h2 class="text-color-light font-weight-medium text-11 line-height-5 mb-2 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" style="animation-delay: 200ms; color:#000000 !important;">High Quality <span class="font-weight-bold custom-highlight-1 ws-nowrap custom-highlight-1-primary p-2 appear-animation animated customHighlightAnim appear-animation-visible" data-appear-animation="customHighlightAnim" data-appear-animation-delay="1s">Cleaning Services</span> for all type of facilities</h2>
+        </div>
+    </div>
+</div> --}}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">
+            <div class="owl-carousel owl-theme carousel-center-active-item custom-carousel-vertical-center-items custom-dots-style-1" data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 3}, '768': {'items': 1}, '992': {'items': 1}, '1200': {'items': 1}, '1600': {'items': 1}}, 'autoplay': false, 'autoplayTimeout': 3000, 'dots': true}">
+                <div class="text-center">
+                    <img class="d-inline-block img-fluid" src="{{url('/')}}/uploads/APEVCA-Logo-Proportioned.png" alt="" style="max-width: 500px;" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -7,7 +7,7 @@
                 <a href="#" class="card-action card-action-dismiss" data-card-dismiss=""></a>
             </div>
 
-            <h2 class="card-title">Existing Business Development</h2>
+            <h2 class="card-title">Existing Project Pipeline and Completed Projects</h2>
         </header>
         <div class="card-body">
             <table class="table table-bordered table-striped" id="datatable-ajax" data-url="//www.okler.net/previews/porto-admin/edge/ajax/ajax-datatables-sample.json">
