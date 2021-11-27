@@ -7,7 +7,8 @@ use Artesaos\SEOTools\Facades\SEOTools;
 use DB;
 use Newsletter;
 use Illuminate\Support\Str;
-
+use App\Models\SendMails;
+use App\Models\Message;
 
 class HomeController extends Controller
 {
@@ -214,10 +215,57 @@ class HomeController extends Controller
     // Subscribe Mail Chimp
     public function news_letters(Request $request)
     {   
+        if($request->filled('website')) {
+            return response()->json(['response'=>'success']);
+        }
+        else
+        {
             if ( ! Newsletter::isSubscribed($request->user_email) ) {
                 Newsletter::subscribe($request->user_email);
             }
+        }
     }
+
+    public function submit_message(Request $request)
+    {   
+            if($request->filled('website')) {
+                return response()->json(['response'=>'success']);
+            } else {
+                $Message = new Message;
+                $Message->name = $request->name;
+                $Message->email = $request->email;
+                $Message->subject = $request->subject;
+                $Message->content = $request->message;
+                $Message->save();
+                // Send Email to Notify
+                SendMails::contact_form($request->name,$request->email,$request->subject,$request->message);
+                return response()->json(['response'=>'success']);
+            }
+    }
+
+    public function submit_messages(Request $request)
+    {   
+            if($request->filled('website')) {
+                return response()->json(['response'=>'success']);
+            } else {
+                $rawSubject= $request->subject;
+                $relSubject = "Call Me Back";
+                $rawMessage = "Hello, My name is $request->name, Call me on <a href='tel:$request->phone'>$request->phone</a>, We Talk about $request->subject";
+                $email = "mailer@sasemagroup.com";
+                $Message = new Message;
+                $Message->name = $request->name;
+                $Message->email = $email;
+                $Message->subject = $relSubject;
+                $Message->content = $rawMessage;
+                $Message->save();
+                // Send Email to Notify
+                SendMails::contact_form($request->name,$email,$relSubject,$rawMessage);
+                return response()->json(['response'=>'success']);
+            }
+    }
+    
+
+
 
     public function slungyfy(){
         $Team = DB::table('services')->get();

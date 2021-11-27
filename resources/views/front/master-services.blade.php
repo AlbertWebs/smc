@@ -166,14 +166,14 @@
 		</script>
 		{{--  --}}
 		<script>
-			$("form").each(function() {
-				$(this).find(':input[type="submit"]').prop('disabled', true);
-			});
-			function correctCaptcha() {
-				$("form").each(function() {
-					$(this).find(':input[type="submit"]').prop('disabled', false);
-				});
-			}
+			// $("form").each(function() {
+			// 	$(this).find(':input[type="submit"]').prop('disabled', true);
+			// });
+			// function correctCaptcha() {
+			// 	$("form").each(function() {
+			// 		$(this).find(':input[type="submit"]').prop('disabled', false);
+			// 	});
+			// }
 		</script>
 
 	<script>

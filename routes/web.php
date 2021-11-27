@@ -28,6 +28,9 @@ Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'priv
 Route::get('/copyright', [App\Http\Controllers\HomeController::class, 'copyright'])->name('copyright');
 Route::post('/news-letters', [HomeController::class, 'news_letters'])->name('news-letters');
 Route::get('/projects', [App\Http\Controllers\HomeController::class, 'projects'])->name('projects');
+Route::post('/submit-message', [HomeController::class, 'submit_message'])->name('submit-message');
+Route::post('/submit-messages', [HomeController::class, 'submit_messages'])->name('submit-messages');
+
 
 Route::get('/slungyfy', [App\Http\Controllers\HomeController::class, 'slungyfy'])->name('slungyfy');
 

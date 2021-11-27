@@ -52,7 +52,8 @@
 							<div class="card-body py-5">
 								<h2 class="text-color-secondary font-weight-bold text-6 line-height-1 pb-1 mb-2">Request a Callback</h2>
 								<p class="custom-font-secondary text-4 pb-1 mb-4">Enter your details in the form and we will call you back.</p>
-								<form class="contact-form custom-form-style-1" action="php/contact-form.php" method="POST">
+								<form class="contact-form custom-form-style-1" action="{{url('/')}}/submit-messages" method="POST">
+								    @csrf
 									<div class="contact-form-success alert alert-success d-none mt-4">
 										<strong>Success!</strong> Your request has been sent to us.
 									</div>
@@ -75,7 +76,7 @@
 									<div class="row">
 										<div class="form-group col pb-1 mb-3">
 											<div class="custom-select-1">
-												<select data-msg-required="Please select a service." class="form-control" name="service" required>
+												<select data-msg-required="Please select a service." class="form-control" name="subject" required>
 													<option value="" selected>Select Service</option>
 													@foreach($AllServices as $all)
 													<option value="{{$all->title}}">{{$all->title}}</option>
@@ -90,6 +91,7 @@
 										<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=en"></script>
 									</div>
 									<br>
+									<input style="display:none;" type="text" id="website" name="website"/>
 									<div class="row">
 										<div class="form-group col">
 											<button type="submit" class="btn btn-primary btn-modern font-weight-bold text-3 px-5 py-3" data-loading-text="Loading...">CALL ME BACK</button>

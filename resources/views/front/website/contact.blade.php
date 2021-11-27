@@ -34,7 +34,8 @@
                     <h2 class="font-weight-bold text-8 mt-2 mb-0">Contact Us</h2>
                     <p class="mb-4">Feel free to ask for details, don't save any questions!</p>
 
-                    <form class="contact-form" action="https://www.okler.net/previews/Sasema/9.2.0/php/contact-form.php" method="POST">
+                    <form class="contact-form" action="{{url('/')}}/submit-message" method="POST">
+                        @csrf
                         <div class="contact-form-success alert alert-success d-none mt-4">
                             <strong>Success!</strong> Your message has been sent to us.
                         </div>
@@ -77,6 +78,7 @@
                                 <input type="submit" value="Send Message" class="btn btn-primary btn-modern" data-loading-text="Loading...">
                             </div>
                         </div>
+                        <input style="display:none;" type="text" id="website" name="website"/>
                     </form>
 
                 </div>

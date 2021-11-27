@@ -21,7 +21,7 @@ class SendMails extends Model
 
         $subject = "Contact Form: $subject";
      
-        $appEmail = 'mailer@pipdotfx.com';
+        $appEmail = 'mailer@sasemagroup.com';
     
     
         $SenderEmail = $email;
@@ -29,7 +29,7 @@ class SendMails extends Model
 
         $toVariable = $appEmail;
 
-        $toVariableName = 'Pipdot FX Consultants Limited';
+        $toVariableName = 'Sasema Management Company';
 
 
         Mail::send('mailTheme', $data, function($message) use ($subject,$SenderEmail,$SenderName,$toVariable,$toVariableName,$email,$name){
@@ -50,7 +50,7 @@ class SendMails extends Model
 
         $subject = "$subject";
      
-        $appEmail = 'mailer@pipdotfx.com';
+        $appEmail = 'mailer@sasemagroup.com';
     
     
         $SenderEmail = $email;
@@ -58,12 +58,12 @@ class SendMails extends Model
 
         $toVariable = $appEmail;
 
-        $toVariableName = 'Pipdot FX Consultants Limited';
+        $toVariableName = 'Sasema Management Company';
 
 
         Mail::send('mailTheme', $data, function($message) use ($subject,$SenderEmail,$SenderName,$toVariable,$toVariableName,$email,$name){
             $message->from($toVariable , $toVariableName);
-            $message->to('info@pipdotfx.com', 'PipdotFx')->cc('pipdotforex@gmail.com')->bcc('albertmuhatia@gmail.com')->replyTo($toVariable, $toVariableName)->subject($subject);
+            $message->to('info@sasemagroup.com', 'PipdotFx')->cc('pipdotforex@gmail.com')->bcc('albertmuhatia@gmail.com')->replyTo($toVariable, $toVariableName)->subject($subject);
         });
     }
 
@@ -79,7 +79,7 @@ class SendMails extends Model
 
         $subject = "$subject";
      
-        $appEmail = 'mailer@pipdotfx.com';
+        $appEmail = 'mailer@sasemagroup.com';
     
     
         $SenderEmail = $email;
@@ -87,12 +87,12 @@ class SendMails extends Model
 
         $toVariable = $appEmail;
 
-        $toVariableName = 'Pipdot FX Consultants Limited';
+        $toVariableName = 'Sasema Management Company';
 
 
         Mail::send('mailThemes', $data, function($message) use ($subject,$SenderEmail,$SenderName,$toVariable,$toVariableName,$email){
             $message->from($toVariable , $toVariableName);
-            $message->to('info@pipdotfx.com', 'PipdotFx')->cc('pipdotforex@gmail.com')->bcc('albertmuhatia@gmail.com')->replyTo($toVariable, $toVariableName)->subject($subject);
+            $message->to('info@sasemagroup.com', 'PipdotFx')->cc('pipdotforex@gmail.com')->bcc('albertmuhatia@gmail.com')->replyTo($toVariable, $toVariableName)->subject($subject);
         });
     }
 

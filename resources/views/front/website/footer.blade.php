@@ -61,6 +61,7 @@
                             <input class="form-control form-control-sm bg-light px-4 text-3" placeholder="Email Address..." name="user_email" id="newsletterEmail" type="email">
                             <button class="btn btn-primary text-color-light text-2 py-3 px-4" type="submit"><strong>SUBSCRIBE!</strong><img class="loading-imagers" width="22"  src="{{url('/')}}/uploads/preloaders/loading.gif"></button>
                         </div>
+                        <input style="display:none;" type="text" id="website" name="website"/>
                     </form>
                     <br>
                     <div class="col-lg-12 col-md-12" id="TheCapcha">
