@@ -27,7 +27,7 @@
                     </div>
                     <div class="col-7">
                         <blockquote class="custom-blockquote-style-1 m-0 pt-1 pb-2">
-                            <p class="mb-0 font-weight-bold" style="color:#212529 !important">SMC was the lead Transaction Advisor in the Large Cap Deal of the year 2020 </p>
+                            <p class="mb-0 font-weight-bold" style="color:#212529 !important">Family Business Advisory , Mergers & Acquisitions Advisory and Capital Raising </p>
                         </blockquote>
                     </div>
                 </div>
@@ -44,12 +44,16 @@
         </div>
     </div>
 </div> --}}
+<blockquote style="margin:0 auto; max-width:700px; color:#000000; font-size:16px;">
+    <h3>SMC was the lead Transaction Advisor in the Large Cap Deal of the year 2020, recognized by the African Private Equity and Venture Capital Association</h3>
+    {{-- <footer>Sasema Management Company </footer> --}}
+</blockquote>
 <div class="container-fluid">
     <div class="row">
         <div class="col appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">
             <div class="owl-carousel owl-theme carousel-center-active-item custom-carousel-vertical-center-items custom-dots-style-1" data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 3}, '768': {'items': 1}, '992': {'items': 1}, '1200': {'items': 1}, '1600': {'items': 1}}, 'autoplay': false, 'autoplayTimeout': 3000, 'dots': true}">
                 <div class="text-center">
-                    <img class="d-inline-block img-fluid" src="{{url('/')}}/uploads/APEVCA-Logo-Proportioned.png" alt="" style="max-width: 500px;" />
+                    <a target="new" href="https://www.avca-africa.org/newsroom/member-news/2020/deg-financing-for-supermarkets-in-kenya/"><img class="d-inline-block img-fluid" src="{{url('/')}}/uploads/APEVCA-Logo-Proportioned.png" alt="" style="max-width: 250px;" /></a>
                 </div>
             </div>
         </div>
