@@ -45,7 +45,7 @@
     </div>
 </div> --}}
 <blockquote style="margin:0 auto; max-width:700px; color:#000000; font-size:16px;">
-    <h3>SMC was the lead Transaction Advisor in the Large Cap Deal of the year 2020, recognized by the African Private Equity and Venture Capital Association</h3>
+    <h3 style="text-transform: capitalize">Sasema Management Company was the lead Transaction Advisor in the Large Cap Deal of the year 2020, recognized by the African Private Equity and Venture Capital Association</h3>
     {{-- <footer>Sasema Management Company </footer> --}}
 </blockquote>
 <div class="container-fluid">

@@ -76,8 +76,9 @@ class HomeController extends Controller
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/uploads/logo/logo.png');
         $page_title = "Sasema Management Company";
         $page_name = "projects";
-        $Projects = DB::table('projects')->get();
-        return view('front.website.projects',compact('page_title','page_name','Projects'));
+        $Projects = DB::table('projects')->where('status','0')->get();
+        $ProjectsComplete = DB::table('projects')->where('status','1')->get();
+        return view('front.website.projects',compact('page_title','page_name','Projects','ProjectsComplete'));
     }
 
     
