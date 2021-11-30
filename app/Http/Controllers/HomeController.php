@@ -31,8 +31,9 @@ class HomeController extends Controller
         $page_title = "Sasema Management Company";
         $page_name = "Sasema Management Company";
         $About = DB::table('abouts')->get();
-        $Projects = DB::table('projects')->get();
-        return view('front.website.index',compact('page_title','page_name','Projects','About'));
+        $ProjectsComplete = DB::table('projects')->where('status','1')->get();
+        $Projects = DB::table('projects')->where('status','0')->orderBy('orders','ASC')->get();
+        return view('front.website.index',compact('page_title','page_name','Projects','About','ProjectsComplete'));
     }
 
     public function parallax()
@@ -77,6 +78,7 @@ class HomeController extends Controller
         $page_title = "Sasema Management Company";
         $page_name = "projects";
         $Projects = DB::table('projects')->where('status','0')->get();
+        $Projects = DB::table('projects')->where('status','0')->orderBy('orders','ASC')->get();
         $ProjectsComplete = DB::table('projects')->where('status','1')->get();
         return view('front.website.projects',compact('page_title','page_name','Projects','ProjectsComplete'));
     }

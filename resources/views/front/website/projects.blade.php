@@ -43,7 +43,7 @@
                         <tbody>
                             @foreach ($Projects as $item)
                             <tr>
-                                <th width="15%">{{$item->id}}</th>
+                                <th width="15%">{{$item->orders}}</th>
                                 <th width="25%">{{$item->title}}</th>
                                 <th width="25%">{{$item->sector}}</th>
                                 <th width="25%">{{$item->ticket}}</th>
@@ -73,13 +73,15 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <?php $Order = 1; ?>
                             @foreach ($ProjectsComplete as $item)
                             <tr>
-                                <th width="15%">{{$item->id}}</th>
+                                <th width="15%">{{$Order}}</th>
                                 <th width="25%">{{$item->title}}</th>
                                 <th width="25%">{{$item->sector}}</th>
                                 <th width="25%">{{$item->ticket}}</th>
                             </tr>
+                            <?php $Order = $Order+1 ?>
                             @endforeach
                         </tbody>
                     </table>

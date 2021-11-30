@@ -1,38 +1,39 @@
 {{-- <section class=""> --}}
-<section class="border-0 m-0 lazyload card card-admin" style="padding: 100px">
-    <div class="container">
-        <header class="card-header">
-            <div class="card-actions">
-                <a href="#" class="card-action card-action-toggle" data-card-toggle=""></a>
-                <a href="#" class="card-action card-action-dismiss" data-card-dismiss=""></a>
-            </div>
+    <section class="card card-admin">
+        <div class="container">
+            <header class="card-header">
+                <div class="card-actions">
+                    <a href="#" class="card-action card-action-toggle" data-card-toggle=""></a>
+                    <a href="#" class="card-action card-action-dismiss" data-card-dismiss=""></a>
+                </div>
 
-            <h2 class="card-title">Existing Project Pipeline and Completed Projects</h2>
-        </header>
-        <div class="card-body">
-            <table class="table table-bordered table-striped" id="datatable-ajax" data-url="//www.okler.net/previews/porto-admin/edge/ajax/ajax-datatables-sample.json">
-                <thead>
-                    <tr>
-                        <th width="15%">NO#</th>
-                        <th width="25%">Project Name</th>
-                        <th width="25%">Sector</th>
-                        <th width="25%">Ticket Size</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($Projects as $item)
-                    <tr>
-                        <th width="15%">{{$item->id}}</th>
-                        <th width="25%">{{$item->title}}</th>
-                        <th width="25%">{{$item->sector}}</th>
-                        <th width="25%">{{$item->ticket}}</th>
-                    </tr>
-                    @endforeach
-                </tbody>
-            </table>
+            <h2 class="card-title">Existing Project Pipeline(EPP)</h2>
+            </header>
+            <div class="card-body">
+                <table class="table table-bordered table-striped" id="datatable-ajax" data-url="//www.okler.net/previews/porto-admin/edge/ajax/ajax-datatables-sample.json">
+                    <thead>
+                        <tr>
+                            <th width="15%">NO#</th>
+                            <th width="25%">Project Name</th>
+                            <th width="25%">Sector</th>
+                            <th width="25%">Ticket Size</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($Projects as $item)
+                        <tr>
+                            <th width="15%">{{$item->orders}}</th>
+                            <th width="25%">{{$item->title}}</th>
+                            <th width="25%">{{$item->sector}}</th>
+                            <th width="25%">{{$item->ticket}}</th>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
-</section>
+  
+    </section>
 
 
 <?php $Testimonials = DB::table('testimonials')->get(); ?>
