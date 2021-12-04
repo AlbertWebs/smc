@@ -42,8 +42,36 @@
                                 <h4 class="mb-3 text-7 text-dark font-weight-bold">{{$team->name}}</h4>
                                 <p class="text-4 line-height-9">{!!html_entity_decode($team->description)!!}</p>
                                 {{-- <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra lorem ipsum erat orci, ac auctor lacus tincidunt ut...</p> --}}
-                                <a href="mailto:{{$team->email}}" class="btn btn-modern btn-primary mt-3">Contact Me</a>
+                                {{-- <a href="mailto:{{$team->email}}" class="btn btn-modern btn-primary mt-3">Contact Me</a> --}}
                                
+                                <hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900">
+                                <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
+                                    <div class="col-lg-6">
+                                        {{-- <a href="{{url('/')}}/meet-our-team/{{$team->slung}}" class="btn btn-modern btn-dark mt-3">Learn More</a> --}}
+                                        @if($team->email == null)
+    
+                                        @else
+                                        <a href="mailto:{{$team->email}}" class="btn btn-modern btn-primary mt-3">Contact Me</a>
+                                        @endif
+                                    </div>
+                                    <div class="col-sm-6 text-lg-end my-4 my-lg-0">
+                                        @if($team->linkedin == null)
+    
+                                        @else
+                                        <strong class="text-uppercase text-1 me-3 text-dark">follow me</strong>
+                                        <ul class="social-icons float-lg-end">
+                                            {{-- <li class="social-icons-facebook"><a href="{{$team->facebook}}" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li class="social-icons-twitter"><a href="{{$team->twitter}}" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li> --}}
+                                            <li class="social-icons-linkedin"><a href="{{$team->linkedin}}" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                                        </ul>
+                                        {{-- <ul class="social-icons float-lg-end">
+                                            <li class="social-icons-facebook"><a href="{{$team->facebook}}" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li class="social-icons-twitter"><a href="{{$team->twitter}}" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                            <li class="social-icons-linkedin"><a href="{{$team->linkedin}}" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                                        </ul> --}}
+                                        @endif
+                                    </div>
+                                </div>
                                 {{-- <ul class="social-icons custom-social-icons pt-3">
                                     <li class="social-icons-instagram">
                                         <a class="custom-bg-color-light-grey" href="{{$team->linkedin}}" target="_blank" title="Linkedin">

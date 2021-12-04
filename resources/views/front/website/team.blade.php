@@ -56,12 +56,21 @@
                                     @endif
                                 </div>
                                 <div class="col-sm-6 text-lg-end my-4 my-lg-0">
-                                    
+                                    @if($team->linkedin == null)
+
+                                    @else
+                                    <strong class="text-uppercase text-1 me-3 text-dark">follow me</strong>
+                                    <ul class="social-icons float-lg-end">
+                                        {{-- <li class="social-icons-facebook"><a href="{{$team->facebook}}" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li class="social-icons-twitter"><a href="{{$team->twitter}}" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li> --}}
+                                        <li class="social-icons-linkedin"><a href="{{$team->linkedin}}" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
                                     {{-- <ul class="social-icons float-lg-end">
                                         <li class="social-icons-facebook"><a href="{{$team->facebook}}" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
                                         <li class="social-icons-twitter"><a href="{{$team->twitter}}" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
                                         <li class="social-icons-linkedin"><a href="{{$team->linkedin}}" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
                                     </ul> --}}
+                                    @endif
                                 </div>
                             </div>
                         </div>
@@ -94,7 +103,16 @@
                                     @endif
                                 </div>
                                 <div class="col-sm-6 text-lg-end my-4 my-lg-0">
-                                    
+                                    @if($team->linkedin == null)
+
+                                    @else
+                                    <strong class="text-uppercase text-1 me-3 text-dark">follow me</strong>
+                                    <ul class="social-icons float-lg-end">
+                                        {{-- <li class="social-icons-facebook"><a href="{{$team->facebook}}" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li class="social-icons-twitter"><a href="{{$team->twitter}}" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li> --}}
+                                        <li class="social-icons-linkedin"><a href="{{$team->linkedin}}" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                    @endif 
                                     {{-- <ul class="social-icons float-lg-end">
                                         <li class="social-icons-facebook"><a href="{{$team->facebook}}" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
                                         <li class="social-icons-twitter"><a href="{{$team->twitter}}" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
