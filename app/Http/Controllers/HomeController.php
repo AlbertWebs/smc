@@ -282,5 +282,10 @@ class HomeController extends Controller
         return "Done";
     }
 
+    public function getTables(){
+        $allTables = DB::select('SHOW TABLES');
+        var_dump($allTables);
+    }
+
 
 }
