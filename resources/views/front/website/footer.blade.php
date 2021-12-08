@@ -93,6 +93,10 @@
                         <i class="fas fa-angle-right text-color-default"></i>
                         <a href="{{url('/')}}/copyright" class="link-hover-style-1 ms-1"> Copyright</a>
                     </li>
+                    <li>
+                        <i class="fas fa-angle-right text-color-default"></i>
+                        <a href="#" class="link-hover-style-1 ms-1"> Careers</a>
+                    </li>
                 </ul>
             </div>
         </div>
