@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-9 col-lg-9">
                 <div class="call-to-action-content">
-                    <h2 class="font-weight-normal text-6 mb-0"><strong class="font-weight-extra-bold">Sasema Management Company </strong> is a transaction advisory, mergers and acquisitions and family business consulting firm </h2>
+                    <h2 class="font-weight-normal text-6 mb-0"><strong class="font-weight-extra-bold">Sasema Management Company </strong> is a Transaction Advisory, Mergers and Acquisitions and Family Business Consulting firm </h2>
                     <p class="mb-0">Behind SASEMA’s success is a dedicated professional team with a successful track record.</p>
                 </div>
             </div>
