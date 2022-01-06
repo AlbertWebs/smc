@@ -88,7 +88,7 @@
                         <h4 class="mt-2 mb-1">Our <strong>Office</strong></h4>
                         <ul class="list list-icons list-icons-style-2 mt-2">
                             <li><i class="fas fa-map-marker-alt top-6"></i> <strong class="text-dark">Address:</strong> <a target="new" href="https://maps.google.com/maps/dir//Sasema+Management+Company+Karen+Road,+Cara+House,+1st+Floor+suite+9/@-1.3466735,36.7142064,14z/data=!4m5!4m4!1m0!1m2!1m1!1s0x182f053086d9c215:0x15eb4c5d2db6bd2d">Karen Road, Cara House, 1st Floor suite 9</a></li>
-                            <li><i class="fas fa-phone top-6"></i> <strong class="text-dark">Phone:</strong> <a href="tel:0746512186"> 0746512186 </a></li>
+                            <li><i class="fas fa-phone top-6"></i> <strong class="text-dark">Phone:</strong> <a href="tel:+254 746 512 186"> +254 746 512 186 </a></li>
                             <li><i class="fas fa-envelope top-6"></i> <strong class="text-dark">Email:</strong> <a href="mailto:info@sasemagroup.com"><span class="__cf_email__" data-cfemail="472a262e2b07223f262a372b226924282a">info@sasemagroup.com</span></a></li>
                         </ul>
                     </div>

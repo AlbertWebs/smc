@@ -12,6 +12,12 @@
                 </a>
             </div>
         </div>
+
+       
+
+        <p class="font-weight-semibold text-color-light text-4 ls-0 mb-0 text-center" style="margin: 0px auto;">To contact us in regards to client, investor and career development queries, please reach us at <a href="mailto:info@sasemagroup.com">info@sasemagroup.com</a></p>
+
+        
         <hr class="bg-color-light opacity-1 my-0">
         <div class="row pt-3 mt-5">
             <div class="col-lg-3 mb-4 mb-lg-0">
