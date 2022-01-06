@@ -7,7 +7,7 @@
                 <h2 class="font-weight-semibold text-color-light text-10 ls-0 mb-0">Sasema Management Company</h2>
             </div>
             <div class="col-auto">
-                <a href="{{url('/')}}/contact-us" class="btn btn-primary custom-btn-style-1 font-weight-medium btn-px-4 btn-py-2 text-4" data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light">
+                <a href="mailto:{{$item->email}}" class="btn btn-primary custom-btn-style-1 font-weight-medium btn-px-4 btn-py-2 text-4" data-cursor-effect-hover="plus" data-cursor-effect-hover-color="light">
                     <span class="text-color-light">Contact Us</span>
                 </a>
             </div>
@@ -93,10 +93,10 @@
                         <i class="fas fa-angle-right text-color-default"></i>
                         <a href="{{url('/')}}/copyright" class="link-hover-style-1 ms-1"> Copyright</a>
                     </li>
-                    <li>
+                    {{-- <li>
                         <i class="fas fa-angle-right text-color-default"></i>
                         <a href="#" class="link-hover-style-1 ms-1"> Careers</a>
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
         </div>
