@@ -22,19 +22,19 @@
 		<link id="googleFonts" href="../../../../fonts.googleapis.com/css21dc.css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&amp;display=swap" rel="stylesheet" type="text/css">
 
 		<!-- Vendor CSS -->
-		<link onload = "this.media='all'" rel="stylesheet" href="{{asset('theme/vendor/bootstrap/css/bootstrap.min.css')}}">
-		<link onload = "this.media='all'" rel="stylesheet" href="{{asset('theme/vendor/fontawesome-free/css/all.min.css')}}">
-		<link onload = "this.media='all'" rel="stylesheet" href="{{asset('theme/vendor/animate/animate.compat.css')}}">
-		<link onload = "this.media='all'" rel="stylesheet" href="{{asset('theme/vendor/simple-line-icons/css/simple-line-icons.min.css')}}">
-		<link onload = "this.media='all'" rel="stylesheet" href="{{asset('theme/vendor/owl.carousel/assets/owl.carousel.min.css')}}">
-		<link onload = "this.media='all'" rel="stylesheet" href="{{asset('theme/vendor/owl.carousel/assets/owl.theme.default.min.css')}}">
-		<link onload = "this.media='all'" rel="stylesheet" href="{{asset('theme/vendor/magnific-popup/magnific-popup.min.css')}}">
+		<link rel="stylesheet" href="{{asset('theme/vendor/bootstrap/css/bootstrap.min.css')}}">
+		<link rel="stylesheet" href="{{asset('theme/vendor/fontawesome-free/css/all.min.css')}}">
+		<link rel="stylesheet" href="{{asset('theme/vendor/animate/animate.compat.css')}}">
+		<link rel="stylesheet" href="{{asset('theme/vendor/simple-line-icons/css/simple-line-icons.min.css')}}">
+		<link rel="stylesheet" href="{{asset('theme/vendor/owl.carousel/assets/owl.carousel.min.css')}}">
+		<link rel="stylesheet" href="{{asset('theme/vendor/owl.carousel/assets/owl.theme.default.min.css')}}">
+		<link rel="stylesheet" href="{{asset('theme/vendor/magnific-popup/magnific-popup.min.css')}}">
 
 		<!-- Theme CSS -->
-		<link onload = "this.media='all'" rel="stylesheet" href="{{asset('theme/css/theme.css')}}">
-		<link onload = "this.media='all'" rel="stylesheet" href="{{asset('theme/css/theme-elements.css')}}">
-		<link onload = "this.media='all'" rel="stylesheet" href="{{asset('theme/css/theme-blog.css')}}">
-		<link onload = "this.media='all'" rel="stylesheet" href="{{asset('theme/css/theme-shop.css')}}">
+		<link rel="stylesheet" href="{{asset('theme/css/theme.css')}}">
+		<link rel="stylesheet" href="{{asset('theme/css/theme-elements.css')}}">
+		<link rel="stylesheet" href="{{asset('theme/css/theme-blog.css')}}">
+		<link rel="stylesheet" href="{{asset('theme/css/theme-shop.css')}}">
 
 		<!-- Demo CSS -->
 		<link rel="stylesheet" href="{{asset('theme/css/demos/demo-business-consulting-3.css')}}">
@@ -46,7 +46,7 @@
 		<link rel="stylesheet" href="{{asset('theme/css/custom.css')}}">
 
 		<!-- Head Libs -->
-		<script src="{{asset('theme/vendor/modernizr/modernizr.min.js')}}"></script>
+		<script defer src="{{asset('theme/vendor/modernizr/modernizr.min.js')}}"></script>
 
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -69,7 +69,7 @@
 
 		<!-- Vendor -->
 		<script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js')}}"></script><script src="{{asset('theme/vendor/jquery/jquery.min.js')}}"></script>
-		<script src="{{asset('theme/vendor/jquery.appear/jquery.appear.min.js')}}"></script>
+		<script defer src="{{asset('theme/vendor/jquery.appear/jquery.appear.min.js')}}"></script>
 		<script src="{{asset('theme/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
 		<script src="{{asset('theme/vendor/jquery.cookie/jquery.cookie.min.js')}}"></script>
 		<script src="{{asset('theme/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
