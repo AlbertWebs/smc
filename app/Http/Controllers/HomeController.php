@@ -229,6 +229,23 @@ class HomeController extends Controller
         $Abouts = DB::table('abouts')->get();
         return view('front.website.page_careers',compact('page_title','page_name','About','Abouts'));
     }
+
+    public function sitemap()
+    {
+        SEOTools::setTitle('Careers | Sasema Management Company | Finacial advisor in Kenya');
+        SEOTools::setDescription('Sasema Management Company is an Finacial advisory,mergers and acquisitions and family business consulting firm. ');
+        SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/copyright');
+        SEOTools::setCanonical('https://www.sasemagroup.com/copyright');
+        SEOTools::opengraph()->addProperty('type', 'articles');
+        SEOTools::twitter()->setSite('@sasemaM');
+        SEOTools::jsonLd()->addImage('https://sasemagroup.com/uploads/logo/logo.png');
+        $page_title = "Sasema Management Company";
+        $page_name = "Careers";
+        $About = DB::table('careers')->get();
+        $Abouts = DB::table('abouts')->get();
+        return view('front.sitemap',compact('page_title','page_name','About','Abouts'));
+    }
+    
     
     
 

@@ -34,7 +34,7 @@ Route::post('/submit-messages', [HomeController::class, 'submit_messages'])->nam
 
 Route::get('/get-tables', [App\Http\Controllers\HomeController::class, 'getTables'])->name('getTables');
 
-
+Route::get('/sitemap', [App\Http\Controllers\HomeController::class, 'sitemap'])->name('sitemap');
 
 Route::get('/slungyfy', [App\Http\Controllers\HomeController::class, 'slungyfy'])->name('slungyfy');
 
