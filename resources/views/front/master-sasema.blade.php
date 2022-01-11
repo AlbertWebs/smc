@@ -58,7 +58,7 @@
 
 		  gtag('config', 'G-SEP1T05Z5V');
 		</script>
-
+        <meta name="google-site-verification" content="SBNgMoxXmX3TyTaLauYZx_kXDJKj9e8NHIhgrCZjgrI" />
 	</head>
 
 	<body data-plugin-cursor-effect>
