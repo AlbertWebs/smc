@@ -23,8 +23,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('Sasema Management Company | Finacial Advisor in Kenya');
         SEOTools::setDescription('Sasema Management Company is an Finacial advisory,mergers and acquisitions and family business consulting firm. ');
-        SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/');
-        SEOTools::setCanonical('https://www.sasemagroup.com/');
+        SEOTools::opengraph()->setUrl('https://sasemagroup.com/');
+        SEOTools::setCanonical('https://sasemagroup.com/');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/uploads/logo/logo.png');
@@ -40,8 +40,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('Sasema Management Company | Finacial advisor in Kenya');
         SEOTools::setDescription('Sasema Management Company is an Finacial advisory,mergers and acquisitions and family business consulting firm. ');
-        SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/');
-        SEOTools::setCanonical('https://www.sasemagroup.com/');
+        SEOTools::opengraph()->setUrl('https://sasemagroup.com/');
+        SEOTools::setCanonical('https://sasemagroup.com/');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/uploads/logo/logo.png');
@@ -55,8 +55,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('About us | Sasema Management Company | Finacial advisor in Kenya');
         SEOTools::setDescription('Sasema Management Company is an Finacial advisory,mergers and acquisitions and family business consulting firm. ');
-        SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/about-us');
-        SEOTools::setCanonical('https://www.sasemagroup.com/about-us');
+        SEOTools::opengraph()->setUrl('https://sasemagroup.com/about-us');
+        SEOTools::setCanonical('https://sasemagroup.com/about-us');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/uploads/logo/logo.png');
@@ -70,8 +70,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('Projects | Sasema Management Company | Finacial advisor in Kenya');
         SEOTools::setDescription('Sasema Management Company is an Finacial advisory,mergers and acquisitions and family business consulting firm. ');
-        SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/projects');
-        SEOTools::setCanonical('https://www.sasemagroup.com/projects');
+        SEOTools::opengraph()->setUrl('https://sasemagroup.com/projects');
+        SEOTools::setCanonical('https://sasemagroup.com/projects');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/uploads/logo/logo.png');
@@ -89,8 +89,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('Meet Our Team | Sasema Management Company | Finacial advisor in Kenya');
         SEOTools::setDescription('Sasema Management Company is an Finacial advisory,mergers and acquisitions and family business consulting firm. ');
-        SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/meet-our-team');
-        SEOTools::setCanonical('https://www.sasemagroup.com/meet-our-team');
+        SEOTools::opengraph()->setUrl('https://sasemagroup.com/meet-our-team');
+        SEOTools::setCanonical('https://sasemagroup.com/meet-our-team');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/uploads/logo/logo.png');
@@ -107,8 +107,8 @@ class HomeController extends Controller
         {
             SEOTools::setTitle(' '.$team->name.' | Sasema Management Company | Finacial advisor in Kenya');
             SEOTools::setDescription('Sasema Management Company is an Finacial advisory,mergers and acquisitions and family business consulting firm. ');
-            SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/meet-our-team/'.$slung.'');
-            SEOTools::setCanonical('https://www.sasemagroup.com/meet-our-team/'.$slung.'');
+            SEOTools::opengraph()->setUrl('https://sasemagroup.com/meet-our-team/'.$slung.'');
+            SEOTools::setCanonical('https://sasemagroup.com/meet-our-team/'.$slung.'');
             SEOTools::opengraph()->addProperty('type', 'articles');
             SEOTools::twitter()->setSite('@sasemaM');
             SEOTools::jsonLd()->addImage('https://sasemagroup.com/uploads/logo/logo.png');
@@ -126,8 +126,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('Our Services | Sasema Management Company | Finacial advisor in Kenya');
         SEOTools::setDescription('Sasema Management Company is an Finacial advisory,mergers and acquisitions and family business consulting firm. ');
-        SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/our-services');
-        SEOTools::setCanonical('https://www.sasemagroup.com/our-services');
+        SEOTools::opengraph()->setUrl('https://sasemagroup.com/our-services');
+        SEOTools::setCanonical('https://sasemagroup.com/our-services');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/uploads/logo/logo.png');
@@ -143,8 +143,8 @@ class HomeController extends Controller
         foreach ($Services as $key => $value) {
             SEOTools::setTitle(' '.$value->title.' | Sasema Management Company | Finacial advisor in Kenya');
             SEOTools::setDescription('Sasema Management Company is an Finacial advisory,mergers and acquisitions and family business consulting firm. ');
-            SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/our-services/'.$slung.'');
-            SEOTools::setCanonical('https://www.sasemagroup.com/our-services/'.$slung.'');
+            SEOTools::opengraph()->setUrl('https://sasemagroup.com/our-services/'.$slung.'');
+            SEOTools::setCanonical('https://sasemagroup.com/our-services/'.$slung.'');
             SEOTools::opengraph()->addProperty('type', 'articles');
             SEOTools::twitter()->setSite('@sasemaM');
             SEOTools::jsonLd()->addImage('https://sasemagroup.com/uploads/logo/logo.png');
@@ -159,8 +159,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('Contact us | Sasema Management Company | Finacial advisor in Kenya');
         SEOTools::setDescription('Sasema Management Company is an Finacial advisory,mergers and acquisitions and family business consulting firm. ');
-        SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/contact-us');
-        SEOTools::setCanonical('https://www.sasemagroup.com/contact-us');
+        SEOTools::opengraph()->setUrl('https://sasemagroup.com/contact-us');
+        SEOTools::setCanonical('https://sasemagroup.com/contact-us');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/uploads/logo/logo.png');
@@ -173,8 +173,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('Terms and Conditions | Sasema Management Company | Finacial advisor in Kenya');
         SEOTools::setDescription('Sasema Management Company is an Finacial advisory,mergers and acquisitions and family business consulting firm. ');
-        SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/terms-and-conditions');
-        SEOTools::setCanonical('https://www.sasemagroup.com/terms-and-conditions');
+        SEOTools::opengraph()->setUrl('https://sasemagroup.com/terms-and-conditions');
+        SEOTools::setCanonical('https://sasemagroup.com/terms-and-conditions');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/uploads/logo/logo.png');
@@ -188,8 +188,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('Privacy Policy | Sasema Management Company | Finacial advisor in Kenya');
         SEOTools::setDescription('Sasema Management Company is an Finacial advisory,mergers and acquisitions and family business consulting firm. ');
-        SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/privacy-policy');
-        SEOTools::setCanonical('https://www.sasemagroup.com/privacy-policy');
+        SEOTools::opengraph()->setUrl('https://sasemagroup.com/privacy-policy');
+        SEOTools::setCanonical('https://sasemagroup.com/privacy-policy');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/uploads/logo/logo.png');
@@ -203,8 +203,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('Copyright Statement | Sasema Management Company | Finacial advisor in Kenya');
         SEOTools::setDescription('Sasema Management Company is an Finacial advisory,mergers and acquisitions and family business consulting firm. ');
-        SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/copyright');
-        SEOTools::setCanonical('https://www.sasemagroup.com/copyright');
+        SEOTools::opengraph()->setUrl('https://sasemagroup.com/copyright');
+        SEOTools::setCanonical('https://sasemagroup.com/copyright');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/uploads/logo/logo.png');
@@ -218,8 +218,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('Careers | Sasema Management Company | Finacial advisor in Kenya');
         SEOTools::setDescription('Sasema Management Company is an Finacial advisory,mergers and acquisitions and family business consulting firm. ');
-        SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/copyright');
-        SEOTools::setCanonical('https://www.sasemagroup.com/copyright');
+        SEOTools::opengraph()->setUrl('https://sasemagroup.com/copyright');
+        SEOTools::setCanonical('https://sasemagroup.com/copyright');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/uploads/logo/logo.png');
@@ -234,8 +234,8 @@ class HomeController extends Controller
     {
         SEOTools::setTitle('Careers | Sasema Management Company | Finacial advisor in Kenya');
         SEOTools::setDescription('Sasema Management Company is an Finacial advisory,mergers and acquisitions and family business consulting firm. ');
-        SEOTools::opengraph()->setUrl('https://www.sasemagroup.com/copyright');
-        SEOTools::setCanonical('https://www.sasemagroup.com/copyright');
+        SEOTools::opengraph()->setUrl('https://sasemagroup.com/copyright');
+        SEOTools::setCanonical('https://sasemagroup.com/copyright');
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::twitter()->setSite('@sasemaM');
         SEOTools::jsonLd()->addImage('https://sasemagroup.com/uploads/logo/logo.png');
