@@ -65,7 +65,7 @@
                         {{csrf_field()}}
                         <div class="input-group input-group-rounded">
                             <input class="form-control form-control-sm bg-light px-4 text-3" placeholder="Email Address..." name="user_email" id="newsletterEmail" type="email">
-                            <button class="btn btn-primary text-color-light text-2 py-3 px-4" type="submit"><strong>SUBSCRIBE!</strong><img class="loading-imagers" width="22"  src="{{url('/')}}/uploads/preloaders/loading.gif"></button>
+                            <button class="btn btn-primary text-color-light text-2 py-3 px-4" type="submit"><strong>SUBSCRIBE!</strong><img alt="preloader sasema" class="loading-imagers" width="22"  src="{{url('/')}}/uploads/preloaders/loading.gif"></button>
                         </div>
                         <input style="display:none;" type="text" id="website" name="website"/>
                     </form>
