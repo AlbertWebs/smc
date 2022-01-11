@@ -22,7 +22,7 @@
         <div class="row pt-3 mt-5">
             <div class="col-lg-3 mb-4 mb-lg-0">
                 <a href="{{url('/')}}" class="text-decoration-none">
-                    <img src="{{asset('theme/img/logos/SASEMAA-LOGO-04.png')}}" class="img-fluid mb-4"  alt="" />
+                    <img src="{{asset('theme/img/logos/SASEMAA-LOGO-04.png')}}" class="img-fluid mb-4"  alt="Sasema Management Company" />
                 </a>
                 <p class="text-3-5">Sasema Management Company is a transaction advisory, mergers and acquisitions and family business consulting firm. </p>
                 <ul class="social-icons social-icons-clean social-icons-clean-with-border social-icons-medium social-icons-icon-light">

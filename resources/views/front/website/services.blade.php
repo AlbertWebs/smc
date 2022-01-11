@@ -5,7 +5,7 @@
             <div class="col-md-10 col-lg-6 mb-5 mb-lg-0">
                 <div class="row row-gutter-sm">
                     <div class="col-12">
-                        <img  src="{{url('/')}}/uploads/about/{{$item->image_one}}" class="img-fluid box-shadow-5" alt="" />
+                        <img  src="{{url('/')}}/uploads/about/{{$item->image_one}}" class="img-fluid box-shadow-5" alt="Sasema Management Company" />
                     </div>
                 </div>
             </div>
@@ -18,7 +18,7 @@
                 <div class="row align-items-center pb-2 mb-4 mb-lg-1 mb-xl-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">
                     <div class="col-5">
                         <div class="d-flex">
-                            <img width="63" height="63" src="{{asset('theme/img/demos/business-consulting-3/icons/label.svg')}}" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'd-lg-none d-xl-block'}" />
+                            <img width="63" height="63" src="{{asset('theme/img/demos/business-consulting-3/icons/label.svg')}}" alt="Sasema Management Company" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'd-lg-none d-xl-block'}" />
                             <span class="text-3 font-weight-bold text-color-dark pt-2 ms-2">
                                 <strong class="d-block font-weight-bold text-9 mb-2">24+</strong>
                                 Years of Experience
@@ -53,7 +53,7 @@
         <div class="col appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">
             <div class="owl-carousel owl-theme carousel-center-active-item custom-carousel-vertical-center-items custom-dots-style-1" data-plugin-options="{'responsive': {'0': {'items': 1}, '476': {'items': 3}, '768': {'items': 1}, '992': {'items': 1}, '1200': {'items': 1}, '1600': {'items': 1}}, 'autoplay': false, 'autoplayTimeout': 3000, 'dots': true}">
                 <div class="text-center">
-                    <a target="new" href="https://www.avca-africa.org/newsroom/member-news/2020/deg-financing-for-supermarkets-in-kenya/"><img class="d-inline-block img-fluid" src="{{url('/')}}/uploads/APEVCA-Logo-Proportioned.png" alt="" style="max-width: 250px;" /></a>
+                    <a target="new" href="https://www.avca-africa.org/newsroom/member-news/2020/deg-financing-for-supermarkets-in-kenya/"><img class="d-inline-block img-fluid" src="{{url('/')}}/uploads/APEVCA-Logo-Proportioned.png" alt="Sasema Management Company" style="max-width: 250px;" /></a>
                 </div>
             </div>
         </div>

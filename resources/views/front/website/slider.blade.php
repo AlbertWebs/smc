@@ -5,11 +5,11 @@
                 <div class="d-flex flex-column align-items-center justify-content-center h-100">
                     <h1 class="position-relative text-color-light text-5 line-height-5 font-weight-medium px-4 mb-2 appear-animation" data-appear-animation="fadeInDownShorterPlus" data-plugin-options="{'minWindowWidth': 0}">
                         <span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
-                            <img src="{{asset('theme/img/slides/slide-title-border-light.png')}}" class="w-auto appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
+                            <img src="{{asset('theme/img/slides/slide-title-border-light.png')}}" class="w-auto appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="Sasema Management Company" />
                         </span>
-                        SASEMA MANAGEMENT <span class="position-relative">COMPANY<span class="position-absolute left-50pct transform3dx-n50 top-0 mt-3"><img src="{{asset('theme/img/slides/slide-blue-line.png')}}" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" alt="" /></span></span>
+                        SASEMA MANAGEMENT <span class="position-relative">COMPANY<span class="position-absolute left-50pct transform3dx-n50 top-0 mt-3"><img src="{{asset('theme/img/slides/slide-blue-line.png')}}" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" alt="Sasema Management Company" /></span></span>
                         <span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
-                            <img src="{{asset('theme/img/slides/slide-title-border-light.png')}}" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
+                            <img src="{{asset('theme/img/slides/slide-title-border-light.png')}}" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="Sasema Management Company" />
                         </span>
                     </h1>
                     {{-- <h1 class="text-color-light font-weight-extra-bold text-12 line-height-1 mb-2 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}">Sasema Management Company</h1> --}}
