@@ -13,11 +13,11 @@
 						<div class="d-flex flex-column align-items-center justify-content-center h-100">
 							<h1 class="position-relative text-color-light text-5 line-height-5 font-weight-medium px-4 mb-2 appear-animation" data-appear-animation="fadeInDownShorterPlus" data-plugin-options="{'minWindowWidth': 0}">
 								<span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-3">
-									<img src="{{asset('theme/img/slides/slide-title-border-light.png')}}" class="w-auto appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
+									<img src="{{asset('theme/img/slides/slide-title-border-light.png')}}" class="w-auto appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="Sasema Management Company" />
 								</span>
-								GET READY TO <span class="position-relative">SEE<span class="position-absolute left-50pct transform3dx-n50 top-0 mt-3"><img src="{{asset('theme/img/slides/slide-blue-line.png')}}" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" alt="" /></span></span>
+								GET READY TO <span class="position-relative">SEE<span class="position-absolute left-50pct transform3dx-n50 top-0 mt-3"><img src="{{asset('theme/img/slides/slide-blue-line.png')}}" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorterPlus" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" alt="Sasema Management Company" /></span></span>
 								<span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-3">
-									<img src="{{asset('theme/img/slides/slide-title-border-light.png')}}" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="" />
+									<img src="{{asset('theme/img/slides/slide-title-border-light.png')}}" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="250" data-plugin-options="{'minWindowWidth': 0}" alt="Sasema Management Company" />
 								</span>
 							</h1>
 							<h1 class="text-color-light font-weight-extra-bold text-12 line-height-1 mb-2 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}">Sasema Management Company</h1>
@@ -206,7 +206,7 @@
 					</div>
 					<div class="col-md-6 position-relative py-5">
 						<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
-							<img class="lazyload"src="img/lazy.png" data-src="img/landing/porto_dots2.png" alt="" width="149" height="142" style="position: absolute; top: -60px; right: -8%;">
+							<img class="lazyload"src="img/lazy.png" data-src="img/landing/porto_dots2.png" alt="Sasema Management Company" width="149" height="142" style="position: absolute; top: -60px; right: -8%;">
 						</div>
 						<div class="appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="0" data-appear-animation-duration="750">
 							<div class="strong-shadow rounded strong-shadow-top-right">
@@ -1896,7 +1896,7 @@
 					</div>
 					<div class="col-lg-4 offset-lg-2 position-relative">
 						<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="500">
-							<img class="img-fluid lazyload" src="img/lazy.png" data-src="img/landing/porto_dots2.png" alt="" style="position: absolute; bottom: -2%; left: -43%; transform: rotate(90deg)">
+							<img class="img-fluid lazyload" src="img/lazy.png" data-src="img/landing/porto_dots2.png" alt="Sasema Management Company" style="position: absolute; bottom: -2%; left: -43%; transform: rotate(90deg)">
 						</div>
 						<img alt="Porto Support" src="img/lazy.png" data-src="img/landing/support_login.jpg" class="img-fluid border border-width-10 border-color-light rounded box-shadow-3 lazyload ms-5 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="200" style="width: 590px; max-width: none;">
 						<img alt="Porto Documentation" src="img/lazy.png" data-src="img/landing/porto_docs.jpg" class="img-fluid lazyload rounded box-shadow-3 position-absolute appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="700" style="left: -100px; bottom: 50px;">
