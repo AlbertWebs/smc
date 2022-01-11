@@ -952,7 +952,7 @@
 								</div>
 								<div class="header-nav-feature header-nav-features-cart d-inline-flex ms-2">
 									<a href="#" class="header-nav-features-toggle">
-										<img src="img/icons/icon-cart-light.svg" width="14" alt="" class="header-nav-top-icon-img">
+										<img src="img/icons/icon-cart-light.svg" width="14" alt="Sasema Management Company" class="header-nav-top-icon-img">
 										<span class="cart-info">
 											<span class="cart-qty">1</span>
 										</span>
