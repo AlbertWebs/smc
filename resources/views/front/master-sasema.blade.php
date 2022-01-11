@@ -46,7 +46,7 @@
 		<link rel="stylesheet" href="{{asset('theme/css/custom.css')}}">
 
 		<!-- Head Libs -->
-		<script defer src="{{asset('theme/vendor/modernizr/modernizr.min.js')}}"></script>
+		<script src="{{asset('theme/vendor/modernizr/modernizr.min.js')}}"></script>
 
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -69,19 +69,19 @@
 
 		<!-- Vendor -->
 		<script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js')}}"></script><script src="{{asset('theme/vendor/jquery/jquery.min.js')}}"></script>
-		<script defer src="{{asset('theme/vendor/jquery.appear/jquery.appear.min.js')}}"></script>
-		<script defer src="{{asset('theme/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
-		<script defer src="{{asset('theme/vendor/jquery.cookie/jquery.cookie.min.js')}}"></script>
-		<script defer src="{{asset('theme/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-		<script defer src="{{asset('theme/vendor/jquery.validation/jquery.validate.min.js')}}"></script>
-		<script defer src="{{asset('theme/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js')}}"></script>
-		<script defer src="{{asset('theme/vendor/jquery.gmap/jquery.gmap.min.js')}}"></script>
-		<script defer src="{{asset('theme/vendor/lazysizes/lazysizes.min.js')}}"></script>
-		<script defer src="{{asset('theme/vendor/isotope/jquery.isotope.min.js')}}"></script>
-		<script defer src="{{asset('theme/vendor/owl.carousel/owl.carousel.min.js')}}"></script>
-		<script defer src="{{asset('theme/vendor/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
-		<script defer src="{{asset('theme/vendor/vide/jquery.vide.min.js')}}"></script>
-		<script defer src="{{asset('theme/vendor/vivus/vivus.min.js')}}"></script>
+		<script src="{{asset('theme/vendor/jquery.appear/jquery.appear.min.js')}}"></script>
+		<script src="{{asset('theme/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
+		<script src="{{asset('theme/vendor/jquery.cookie/jquery.cookie.min.js')}}"></script>
+		<script src="{{asset('theme/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+		<script src="{{asset('theme/vendor/jquery.validation/jquery.validate.min.js')}}"></script>
+		<script src="{{asset('theme/vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js')}}"></script>
+		<script src="{{asset('theme/vendor/jquery.gmap/jquery.gmap.min.js')}}"></script>
+		<script src="{{asset('theme/vendor/lazysizes/lazysizes.min.js')}}"></script>
+		<script src="{{asset('theme/vendor/isotope/jquery.isotope.min.js')}}"></script>
+		<script src="{{asset('theme/vendor/owl.carousel/owl.carousel.min.js')}}"></script>
+		<script src="{{asset('theme/vendor/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
+		<script src="{{asset('theme/vendor/vide/jquery.vide.min.js')}}"></script>
+		<script src="{{asset('theme/vendor/vivus/vivus.min.js')}}"></script>
 
 		<!-- Theme Base, Components and Settings -->
 		<script src="{{asset('theme/js/theme.js')}}"></script>
