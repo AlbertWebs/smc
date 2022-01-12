@@ -50,13 +50,23 @@
 
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SEP1T05Z5V"></script>
+		{{-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEP1T05Z5V"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 
 		  gtag('config', 'G-SEP1T05Z5V');
+		</script> --}}
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DL66E55P8G"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-DL66E55P8G');
 		</script>
         <meta name="google-site-verification" content="SBNgMoxXmX3TyTaLauYZx_kXDJKj9e8NHIhgrCZjgrI" />
 	</head>
