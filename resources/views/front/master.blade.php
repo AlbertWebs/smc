@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html data-style-switcher-options="{'colorPrimary': '#0088cc', 'colorSecondary': '#0169fe', 'colorTertiary': '#005AEF', 'colorQuaternary': '#383f48'}" lang="en">
-	
+
     <head>
-		
+
 		<!-- Basic -->
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title>Sasema Management Company - Responsive HTML5 With Laravel</title>	
+		<title>Sasema Management Company - Responsive HTML5 With Laravel</title>
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -66,10 +66,10 @@
 
 
 	<body data-plugin-page-transition>
-		
+
 		@yield('content')
 
-		
+
 
 		<!-- Vendor -->
 		<script src="{{asset('theme/vendor/jquery/jquery.min.js')}}"></script>

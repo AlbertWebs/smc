@@ -32,19 +32,19 @@
                                     </li>
                                 </ul>
                                 <ul class="social-icons social-icons-clean social-icons-icon-dark social-icons-big m-0 ms-lg-2">
-                                    <li class="social-icons-facebook">
+                                    {{-- <li class="social-icons-facebook">
                                         <a target="new" href="{{$Settings->facebook}}" target="_blank" class="text-4" title="Facebook" data-cursor-effect-hover="fit"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
+                                    </li> --}}
                                     <li class="social-icons-linkedin">
                                         <a target="new" href="{{$Settings->linkedin}}" target="_blank" class="text-4" title="Linkedin" data-cursor-effect-hover="fit"><i class="fab fa-linkedin"></i></a>
                                     </li>
-                                    <li class="social-icons-instagram">
+                                    {{-- <li class="social-icons-instagram">
                                         <a target="new" href="{{$Settings->instagram}}" target="_blank" class="text-4" title="Instagram" data-cursor-effect-hover="fit"><i class="fab fa-instagram"></i></a>
-                                    </li>
+                                    </li> --}}
                                     <li class="social-icons-twitter">
                                         <a target="new" href="{{$Settings->twitter}}" target="_blank" class="text-4" title="Twitter" data-cursor-effect-hover="fit"><i class="fab fa-twitter"></i></a>
                                     </li>
-                                 
+
                                 </ul>
                             </div>
                         </div>
@@ -74,19 +74,19 @@
                                                 Home &nbsp; <i class="fas fa-home top-6"></i>
                                             </a>
                                         </li>
-                                      
+
                                         <li class="dropdown">
                                             <a class="nav-link dropdown-toggle @if($page_name=='About Sasema Management Company') active @endif" href="{{url('/')}}/about-us">
                                                 About us
                                             </a>
-                                           
+
                                         </li>
 
                                         <li class="dropdown">
                                             <a class="nav-link dropdown-toggle @if($page_name=='About Sasema Management Company') active @endif" href="{{url('/')}}/meet-our-team"">
                                                 Meet Our Team
                                             </a>
-                                            
+
                                         </li>
 
 
@@ -101,11 +101,11 @@
                                                     <a href="{{url('/')}}/our-services/{{$item->slung}}" class="dropdown-item">{{$item->title}}</a>
                                                 </li>
                                                 @endforeach
-            
+
                                             </ul>
                                         </li>
-                                      
-                                     
+
+
                                         {{-- <li>
                                             <a class="nav-link" href="{{url('/')}}/latest-news">
                                                 Blog
@@ -118,10 +118,10 @@
                                         </li>
                                         <li class="d-lg-none">
                                             <a class="nav-link @if($page_name == "Contact Us") active @endif" href="{{url('/')}}/contact-us">
-                                                Contact Us 
+                                                Contact Us
                                             </a>
                                         </li>
-                                    </ul>                                    
+                                    </ul>
                                 </nav>
                             </div>
                         </div>
@@ -134,8 +134,8 @@
                             <a href="#" class="header-nav-features-toggle text-decoration-none" data-focus="headerSearch">
                                 <i class="icons icon-magnifier header-nav-top-icon text-3-5 text-color-dark text-color-hover-primary font-weight-semibold top-3"></i>
                             </a>
-                            
-                            
+
+
                         </div>
                     </div>
                     <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">

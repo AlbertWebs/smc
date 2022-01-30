@@ -13,11 +13,11 @@
             </div>
         </div>
 
-       
+
 
         <p class="font-weight-semibold text-color-light text-4 ls-0 mb-0 text-center" style="margin: 0px auto;">To contact us in regards to client, investor and career development queries, please reach us at <a href="mailto:info@sasemagroup.com">info@sasemagroup.com</a></p>
 
-        
+
         <hr class="bg-color-light opacity-1 my-0">
         <div class="row pt-3 mt-5">
             <div class="col-lg-3 mb-4 mb-lg-0">
@@ -26,10 +26,12 @@
                 </a>
                 <p class="text-3-5">Sasema Management Company is a transaction advisory, mergers and acquisitions and family business consulting firm. </p>
                 <ul class="social-icons social-icons-clean social-icons-clean-with-border social-icons-medium social-icons-icon-light">
-                    <li class="social-icons-facebook"><a href="https://web.facebook.com/sasemaMC" target="_blank" title="Facebook" data-cursor-effect-hover="fit"><i class="fab fa-facebook-f"></i></a></li>
+
+                    {{-- <li class="social-icons-facebook"><a href="https://web.facebook.com/sasemaMC" target="_blank" title="Facebook" data-cursor-effect-hover="fit"><i class="fab fa-facebook-f"></i></a></li> --}}
                     <li class="social-icons-twitter mx-2"><a href="https://twitter.com/SasemaM" target="_blank" title="Twitter" data-cursor-effect-hover="fit"><i class="fab fa-twitter"></i></a></li>
+
                     <li class="social-icons-linkedin"><a href="https://ke.linkedin.com/company/sasema-management-company" target="_blank" title="Linkedin" data-cursor-effect-hover="fit"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="social-icons-instagram"><a href="https://www.instagram.com/sasemamanagement/" target="_blank" title="instagram" data-cursor-effect-hover="fit"><i class="fab fa-instagram"></i></a></li>
+                    {{-- <li class="social-icons-instagram"><a href="https://www.instagram.com/sasemamanagement/" target="_blank" title="instagram" data-cursor-effect-hover="fit"><i class="fab fa-instagram"></i></a></li> --}}
                 </ul>
             </div>
             <div class="col-lg-3 mb-4 mb-lg-0">
@@ -53,7 +55,7 @@
                 </ul>
             </div>
             <div class="col-lg-4 mb-4 mb-lg-0">
-  
+
                     <h5 class="text-6 text-transform-none font-weight-semibold text-color-light mb-4">Newsletter</h5>
                     <p class="text-4 mb-1">Get all the latest updates on our product and services.</p>
                     <p class="text-4">Sign up for newsletter today.</p>
@@ -86,7 +88,7 @@
                         <i class="fas fa-angle-right text-color-default"></i>
                         <a href="{{url('/')}}" class="link-hover-style-1 ms-1"> Contact Us</a>
                     </li>
-                    
+
                     <li>
                         <i class="fas fa-angle-right text-color-default"></i>
                         <a href="{{url('/')}}/terms-and-conditions" class="link-hover-style-1 ms-1"> Terms and Services</a>
@@ -110,7 +112,7 @@
     <div class="footer-copyright container bg-transparent">
         <div class="row pb-5">
             <div class="col-lg-12 text-center m-0">
-                
+
                 <hr class="bg-color-light opacity-1 mt-5 mb-4">
                 <p class="text-3-4">© copyright <?php echo date('Y') ?> Sasema Management Company All Rights Reserved</p>
             </div>

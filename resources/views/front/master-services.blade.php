@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html data-style-switcher-options="{'changeLogo': false, 'colorPrimary': '#f04c23', 'colorSecondary': '#e36159', 'colorTertiary': '#2baab1', 'colorQuaternary': '#383f48', 'borderRadius': 0}">
-	
+
     <head>
-		
+
 		<!-- Basic -->
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		{!! SEO::generate() !!}	
+		{!! SEO::generate() !!}
 
-		<meta name="keywords" content="Sasema" />
+		<meta name="keywords" content="Mergers and Acquisitions Advisory, Family Business Advisory ,Capital Raising" />
 
-		<meta name="author" content="designekta.com">
+		<meta name="author" content="Designekta Studios">
 
         @include('favicon')
 
@@ -63,10 +63,10 @@
 	</head>
 
 	<body data-plugin-cursor-effect>
-		
+
         @yield('content')
 
-		
+
 
 		<!-- Vendor -->
 		<script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js')}}"></script><script src="{{asset('theme/vendor/jquery/jquery.min.js')}}"></script>
@@ -192,10 +192,10 @@
 				url: "{{url('/')}}/news-letters",
 				data: formdata, // here $(this) refers to the ajax object not form
 				success: function (results) {
-					
+
 					$('#newsletterSuccess').show();
-					
-				
+
+
 					$(".loading-imagers").hide("slow",function(){
 						// Animation complete.
 					});

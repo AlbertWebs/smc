@@ -5,12 +5,11 @@
       "name": "Sasema Management Company",
       "url": "http://sasemagroup.com/",
       "logo": "https://sasemagroup.com/uploads/logo/logo.png",
-      "sameAs": [ 
-        "https://web.facebook.com/sasemaMC",
-        "https://www.instagram.com/sasemamanagement/",
+      "sameAs": [
+
         "https://ke.linkedin.com/company/sasema-management-company",
         "https://twitter.com/SasemaM"
-        
+
       ],
       "priceRange": "$$$$",
       "image": "https://sasemagroup.com/uploads/logo/logo.png",

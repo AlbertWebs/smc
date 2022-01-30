@@ -12,7 +12,7 @@ use App\Models\Message;
 
 class HomeController extends Controller
 {
-  
+
 
     /**
      * Show the application dashboard.
@@ -83,7 +83,7 @@ class HomeController extends Controller
         return view('front.website.projects',compact('page_title','page_name','Projects','ProjectsComplete'));
     }
 
-    
+
 
     public function team()
     {
@@ -117,10 +117,10 @@ class HomeController extends Controller
             $Team = DB::table('teams')->where('slung',$slung)->get();
             return view('front.website.team-single',compact('page_title','page_name','Team'));
         }
-        
+
     }
 
-    
+
 
     public function services()
     {
@@ -141,7 +141,7 @@ class HomeController extends Controller
     {
         $Services = DB::table('services')->where('slung',$slung)->get();
         foreach ($Services as $key => $value) {
-            SEOTools::setTitle(' '.$value->title.' | Sasema Management Company | Financial advisor in Kenya');
+            SEOTools::setTitle(' '.$value->title.' Services in Kenya | Sasema Management Company | Financial advisor in Kenya');
             SEOTools::setDescription('Sasema Management Company is an Financial advisory,mergers and acquisitions and family business consulting firm. ');
             SEOTools::opengraph()->setUrl('https://sasemagroup.com/our-services/'.$slung.'');
             SEOTools::setCanonical('https://sasemagroup.com/our-services/'.$slung.'');
@@ -152,7 +152,7 @@ class HomeController extends Controller
             $page_name = "Sasema Services";
             return view('front.service',compact('page_title','page_name','Services'));
         }
-        
+
     }
 
     public function contact()
@@ -245,13 +245,13 @@ class HomeController extends Controller
         $Abouts = DB::table('abouts')->get();
         return view('front.sitemap',compact('page_title','page_name','About','Abouts'));
     }
-    
-    
-    
+
+
+
 
     // Subscribe Mail Chimp
     public function news_letters(Request $request)
-    {   
+    {
         if($request->filled('website')) {
             return response()->json(['response'=>'success']);
         }
@@ -264,7 +264,7 @@ class HomeController extends Controller
     }
 
     public function submit_message(Request $request)
-    {   
+    {
             if($request->filled('website')) {
                 return response()->json(['response'=>'success']);
             } else {
@@ -281,7 +281,7 @@ class HomeController extends Controller
     }
 
     public function submit_messages(Request $request)
-    {   
+    {
             if($request->filled('website')) {
                 return response()->json(['response'=>'success']);
             } else {
@@ -300,7 +300,7 @@ class HomeController extends Controller
                 return response()->json(['response'=>'success']);
             }
     }
-    
+
 
 
 
@@ -312,7 +312,7 @@ class HomeController extends Controller
             );
             DB::table('services')->where('id',$team->id)->update($updateDetails);
         }
-        
+
         return "Done";
     }
 
