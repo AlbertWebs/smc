@@ -32,7 +32,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '221f99adfcf1db1601364b14d3b0d608dd81cfbf',
+    'reference' => '00b4f513584ce6dfb86a2de7f299c111458c44cd',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -231,6 +231,15 @@ private static $installed = array (
       ),
       'reference' => 'f056f1fe935d9ed86e698905a957334029899895',
     ),
+    'firebase/php-jwt' => 
+    array (
+      'pretty_version' => 'v5.5.1',
+      'version' => '5.5.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '83b609028194aa042ea33b5af2d41a7427de80e6',
+    ),
     'fruitcake/laravel-cors' => 
     array (
       'pretty_version' => 'v2.0.5',
@@ -239,6 +248,33 @@ private static $installed = array (
       array (
       ),
       'reference' => '3a066e5cac32e2d1cdaacd6b961692778f37b5fc',
+    ),
+    'google/apiclient' => 
+    array (
+      'pretty_version' => 'v2.12.1',
+      'version' => '2.12.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '1530583a711f4414407112c4068464bcbace1c71',
+    ),
+    'google/apiclient-services' => 
+    array (
+      'pretty_version' => 'v0.233.0',
+      'version' => '0.233.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c3632d433742f1e0660460c1d9c220adf4e83885',
+    ),
+    'google/auth' => 
+    array (
+      'pretty_version' => 'v1.18.0',
+      'version' => '1.18.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '21dd478e77b0634ed9e3a68613f74ed250ca9347',
     ),
     'graham-campbell/result-type' => 
     array (
@@ -525,7 +561,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '221f99adfcf1db1601364b14d3b0d608dd81cfbf',
+      'reference' => '00b4f513584ce6dfb86a2de7f299c111458c44cd',
     ),
     'laravel/sail' => 
     array (
@@ -736,6 +772,24 @@ private static $installed = array (
       ),
       'reference' => '8ffb09713d2f565c81f2c42e87748221a6afeb8b',
     ),
+    'paragonie/constant_time_encoding' => 
+    array (
+      'pretty_version' => 'v2.5.0',
+      'version' => '2.5.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9229e15f2e6ba772f0c55dd6986c563b937170a8',
+    ),
+    'paragonie/random_compat' => 
+    array (
+      'pretty_version' => 'v9.99.100',
+      'version' => '9.99.100.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '996434e5492cb4c3edcb9168db6fbb1359ef965a',
+    ),
     'phar-io/manifest' => 
     array (
       'pretty_version' => '2.0.3',
@@ -789,6 +843,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'eab7a0df01fe2344d172bff4cd6dbd3f8b84ad15',
+    ),
+    'phpseclib/phpseclib' => 
+    array (
+      'pretty_version' => '3.0.13',
+      'version' => '3.0.13.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '1443ab79364eea48665fa8c09ac67f37d1025f7e',
     ),
     'phpspec/prophecy' => 
     array (
@@ -852,6 +915,22 @@ private static $installed = array (
       array (
       ),
       'reference' => '2406855036db1102126125537adb1406f7242fdd',
+    ),
+    'psr/cache' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd11b50ad223250cf17b86e38383413f5a6764bf8',
+    ),
+    'psr/cache-implementation' => 
+    array (
+      'provided' => 
+      array (
+        0 => '1.0|2.0',
+      ),
     ),
     'psr/container' => 
     array (
@@ -964,6 +1043,7 @@ private static $installed = array (
       'provided' => 
       array (
         0 => '1.0',
+        1 => '1.0|2.0',
       ),
     ),
     'psy/psysh' => 
@@ -1162,6 +1242,15 @@ private static $installed = array (
       ),
       'reference' => 'bdc44862aaca39ecbd824133b80dbd7c8017ed7f',
     ),
+    'spatie/laravel-analytics' => 
+    array (
+      'pretty_version' => '3.11.0',
+      'version' => '3.11.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '6ce4610eea86e59446866504f71dcb17ddc8c496',
+    ),
     'spatie/laravel-newsletter' => 
     array (
       'pretty_version' => '4.10.0',
@@ -1179,6 +1268,31 @@ private static $installed = array (
       array (
       ),
       'reference' => '8a5d5072dca8f48460fce2f4131fcc495eec654c',
+    ),
+    'symfony/cache' => 
+    array (
+      'pretty_version' => 'v5.4.3',
+      'version' => '5.4.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4178f0a19ec3f1f76e7f1a07b8187cbe3d94b825',
+    ),
+    'symfony/cache-contracts' => 
+    array (
+      'pretty_version' => 'v2.5.0',
+      'version' => '2.5.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'ac2e168102a2e06a2624f0379bde94cd5854ced2',
+    ),
+    'symfony/cache-implementation' => 
+    array (
+      'provided' => 
+      array (
+        0 => '1.0|2.0',
+      ),
     ),
     'symfony/console' => 
     array (
@@ -1436,6 +1550,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '1b56c32c3679002b3a42384a580e16e2600f41c1',
+    ),
+    'symfony/var-exporter' => 
+    array (
+      'pretty_version' => 'v5.4.3',
+      'version' => '5.4.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'b199936b7365be36663532e547812d3abb10234a',
     ),
     'theseer/tokenizer' => 
     array (
