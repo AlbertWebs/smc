@@ -39,6 +39,9 @@ Route::get('/sitemap', [App\Http\Controllers\HomeController::class, 'sitemap'])-
 Route::get('/slungyfy', [App\Http\Controllers\HomeController::class, 'slungyfy'])->name('slungyfy');
 
 
+
+Route::get('/google-analytics', [App\Http\Controllers\AnalyticsController::class, 'index'])->name('analytics');
+
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
