@@ -62,6 +62,16 @@
 		</script>
 		<meta name="google-site-verification" content="SBNgMoxXmX3TyTaLauYZx_kXDJKj9e8NHIhgrCZjgrI" />
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CR14M1Q1LJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CR14M1Q1LJ');
+</script>
+
         <!--Start of Tawk.to Script-->
         <script type="text/javascript">
             var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
