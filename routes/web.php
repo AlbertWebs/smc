@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminsController;
+use App\Http\Controllers\AnalyticsController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,6 +35,9 @@ Route::get('/page-careers', [App\Http\Controllers\HomeController::class, 'page_c
 Route::post('/submit-message', [HomeController::class, 'submit_message'])->name('submit-message');
 Route::post('/submit-messages', [HomeController::class, 'submit_messages'])->name('submit-messages');
 
+Route::get('/g-analytics', [App\Http\Controllers\AnalyticsController::class, 'index'])->name('page-analytics');
+
+
 Route::get('/get-tables', [App\Http\Controllers\HomeController::class, 'getTables'])->name('getTables');
 
 Route::get('/sitemap', [App\Http\Controllers\HomeController::class, 'sitemap'])->name('sitemap');
@@ -39,6 +45,7 @@ Route::get('/sitemap', [App\Http\Controllers\HomeController::class, 'sitemap'])-
 Route::get('/slungyfy', [App\Http\Controllers\HomeController::class, 'slungyfy'])->name('slungyfy');
 
 Auth::routes();
+Route::get('/analytics', [AnalyticsController::class, 'index'])->name('analytics.dashboard');
 
 Route::get('/google-analytics', [App\Http\Controllers\AnalyticsController::class, 'index'])->name('analytics');
 
@@ -196,4 +203,10 @@ Route::post('admin/deleteFaqAjax', [AdminsController::class, 'deleteFaqAjax'])->
 Route::post('admin/deletePrivacyAjax', [AdminsController::class, 'deletePrivacyAjax'])->middleware('is_admin');
 Route::post('admin/deleteTermsAjax', [AdminsController::class, 'deleteTermsAjax'])->middleware('is_admin');
 Route::post('admin/deleteHowAjax', [AdminsController::class, 'deleteHowAjax'])->middleware('is_admin');
+
+
+Route::get('/wait/{seconds}', function ($seconds) {
+    sleep($seconds);
+    return "Here ya go! Waited for $seconds seconds";
+});
 

@@ -32,7 +32,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '00b4f513584ce6dfb86a2de7f299c111458c44cd',
+    'reference' => '407ea4e2f561cdd93f9f7f22b0e0ab55c0b8a16d',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -538,6 +538,15 @@ private static $installed = array (
         0 => 'v8.78.0',
       ),
     ),
+    'ipunkt/laravel-analytics' => 
+    array (
+      'pretty_version' => '4.1.0',
+      'version' => '4.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'b247c5386f8e6f5a6ede15fc322b4a9b88e194f8',
+    ),
     'kodova/hamcrest-php' => 
     array (
       'replaced' => 
@@ -561,7 +570,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '00b4f513584ce6dfb86a2de7f299c111458c44cd',
+      'reference' => '407ea4e2f561cdd93f9f7f22b0e0ab55c0b8a16d',
     ),
     'laravel/sail' => 
     array (
@@ -789,6 +798,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '996434e5492cb4c3edcb9168db6fbb1359ef965a',
+    ),
+    'paragonie/sodium_compat' => 
+    array (
+      'pretty_version' => 'v1.17.0',
+      'version' => '1.17.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c59cac21abbcc0df06a3dd18076450ea4797b321',
     ),
     'phar-io/manifest' => 
     array (
@@ -1054,6 +1072,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'a0d9981aa07ecfcbea28e4bfa868031cca121e7d',
+    ),
+    'pusher/pusher-php-server' => 
+    array (
+      'pretty_version' => 'v3.3.1',
+      'version' => '3.3.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2279bcd21a608a76f9be1fe0675aa2dd1efb2fa0',
     ),
     'ralouphie/getallheaders' => 
     array (

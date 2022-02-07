@@ -32,12 +32,13 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
-        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         '1f87db08236948d07391152dccb70f04' => __DIR__ . '/..' . '/google/apiclient-services/autoload.php',
+        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
         '9cdd7b9056abc3081735233ba9dd9c7f' => __DIR__ . '/..' . '/facade/flare-client-php/src/helpers.php',
-        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
-        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'a8d3953fd9959404dd22d3dfcd0a79f0' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
+        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '3109cb1a231dcd04bee1f9f620d46975' => __DIR__ . '/..' . '/paragonie/sodium_compat/autoload.php',
+        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
         '72b1e3f4a2af9b30b3f137b3ec2057fc' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/helpers.php',
     );
@@ -104,6 +105,7 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         ),
         'P' => 
         array (
+            'Pusher\\' => 7,
             'Psy\\' => 4,
             'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
@@ -372,6 +374,10 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'Ramsey\\Collection\\' => 
         array (
             0 => __DIR__ . '/..' . '/ramsey/collection/src',
+        ),
+        'Pusher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pusher/pusher-php-server/src',
         ),
         'Psy\\' => 
         array (
@@ -655,12 +661,21 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
                 0 => __DIR__ . '/..' . '/mockery/mockery/library',
             ),
         ),
+        'I' => 
+        array (
+            'Ipunkt\\LaravelAnalytics\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/ipunkt/laravel-analytics/src',
+            ),
+        ),
     );
 
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\Events\\AnalyticsUpdated' => __DIR__ . '/../..' . '/app/Events/AnalyticsUpdated.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\AdminsController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminsController.php',
+        'App\\Http\\Controllers\\AnalyticsController' => __DIR__ . '/../..' . '/app/Http/Controllers/AnalyticsController.php',
         'App\\Http\\Controllers\\Auth\\ConfirmPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmPasswordController.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
@@ -675,6 +690,7 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'App\\Http\\Middleware\\IsAdmin' => __DIR__ . '/../..' . '/app/Http/Middleware/IsAdmin.php',
         'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => __DIR__ . '/../..' . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
+        'App\\Http\\Middleware\\RequestLogger' => __DIR__ . '/../..' . '/app/Http/Middleware/RequestLogger.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
@@ -695,6 +711,7 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'App\\Models\\Notification' => __DIR__ . '/../..' . '/app/Models/Notification.php',
         'App\\Models\\Privacy' => __DIR__ . '/../..' . '/app/Models/Privacy.php',
         'App\\Models\\Project' => __DIR__ . '/../..' . '/app/Models/Project.php',
+        'App\\Models\\RequestLog' => __DIR__ . '/../..' . '/app/Models/RequestLog.php',
         'App\\Models\\SendMails' => __DIR__ . '/../..' . '/app/Models/SendMails.php',
         'App\\Models\\Service' => __DIR__ . '/../..' . '/app/Models/Service.php',
         'App\\Models\\Slider' => __DIR__ . '/../..' . '/app/Models/Slider.php',
@@ -707,6 +724,7 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Services\\AnalyticsService' => __DIR__ . '/../..' . '/app/Services/AnalyticsService.php',
         'Artesaos\\SEOTools\\Contracts\\JsonLd' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/JsonLd.php',
         'Artesaos\\SEOTools\\Contracts\\JsonLdMulti' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/JsonLdMulti.php',
         'Artesaos\\SEOTools\\Contracts\\MetaTags' => __DIR__ . '/..' . '/artesaos/seotools/src/SEOTools/Contracts/MetaTags.php',
@@ -18578,6 +18596,17 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'Illuminate\\View\\ViewFinderInterface' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewFinderInterface.php',
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
+        'Ipunkt\\LaravelAnalytics\\AnalyticsFacade' => __DIR__ . '/..' . '/ipunkt/laravel-analytics/src/Ipunkt/LaravelAnalytics/AnalyticsFacade.php',
+        'Ipunkt\\LaravelAnalytics\\AnalyticsServiceProvider' => __DIR__ . '/..' . '/ipunkt/laravel-analytics/src/Ipunkt/LaravelAnalytics/AnalyticsServiceProvider.php',
+        'Ipunkt\\LaravelAnalytics\\Contracts\\AnalyticsProviderInterface' => __DIR__ . '/..' . '/ipunkt/laravel-analytics/src/Ipunkt/LaravelAnalytics/Contracts/AnalyticsProviderInterface.php',
+        'Ipunkt\\LaravelAnalytics\\Contracts\\TrackingBagInterface' => __DIR__ . '/..' . '/ipunkt/laravel-analytics/src/Ipunkt/LaravelAnalytics/Contracts/TrackingBagInterface.php',
+        'Ipunkt\\LaravelAnalytics\\Data\\Campaign' => __DIR__ . '/..' . '/ipunkt/laravel-analytics/src/Ipunkt/LaravelAnalytics/Data/Campaign.php',
+        'Ipunkt\\LaravelAnalytics\\Data\\Event' => __DIR__ . '/..' . '/ipunkt/laravel-analytics/src/Ipunkt/LaravelAnalytics/Data/Event.php',
+        'Ipunkt\\LaravelAnalytics\\Data\\Renderer\\CampaignRenderer' => __DIR__ . '/..' . '/ipunkt/laravel-analytics/src/Ipunkt/LaravelAnalytics/Data/Renderer/CampaignRenderer.php',
+        'Ipunkt\\LaravelAnalytics\\Data\\Renderer\\Renderer' => __DIR__ . '/..' . '/ipunkt/laravel-analytics/src/Ipunkt/LaravelAnalytics/Data/Renderer/Renderer.php',
+        'Ipunkt\\LaravelAnalytics\\Providers\\GoogleAnalytics' => __DIR__ . '/..' . '/ipunkt/laravel-analytics/src/Ipunkt/LaravelAnalytics/Providers/GoogleAnalytics.php',
+        'Ipunkt\\LaravelAnalytics\\Providers\\NoAnalytics' => __DIR__ . '/..' . '/ipunkt/laravel-analytics/src/Ipunkt/LaravelAnalytics/Providers/NoAnalytics.php',
+        'Ipunkt\\LaravelAnalytics\\TrackingBag' => __DIR__ . '/..' . '/ipunkt/laravel-analytics/src/Ipunkt/LaravelAnalytics/TrackingBag.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'LaravelMigrationGenerator\\Commands\\GenerateMigrationsCommand' => __DIR__ . '/..' . '/bennett-treptow/laravel-migration-generator/src/Commands/GenerateMigrationsCommand.php',
         'LaravelMigrationGenerator\\Definitions\\ColumnDefinition' => __DIR__ . '/..' . '/bennett-treptow/laravel-migration-generator/src/Definitions/ColumnDefinition.php',
@@ -20285,6 +20314,11 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'Psy\\VersionUpdater\\GitHubChecker' => __DIR__ . '/..' . '/psy/psysh/src/VersionUpdater/GitHubChecker.php',
         'Psy\\VersionUpdater\\IntervalChecker' => __DIR__ . '/..' . '/psy/psysh/src/VersionUpdater/IntervalChecker.php',
         'Psy\\VersionUpdater\\NoopChecker' => __DIR__ . '/..' . '/psy/psysh/src/VersionUpdater/NoopChecker.php',
+        'Pusher\\Pusher' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/Pusher.php',
+        'Pusher\\PusherCrypto' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/PusherCrypto.php',
+        'Pusher\\PusherException' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/PusherException.php',
+        'Pusher\\PusherInstance' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/PusherInstance.php',
+        'Pusher\\Webhook' => __DIR__ . '/..' . '/pusher/pusher-php-server/src/Webhook.php',
         'Ramsey\\Collection\\AbstractArray' => __DIR__ . '/..' . '/ramsey/collection/src/AbstractArray.php',
         'Ramsey\\Collection\\AbstractCollection' => __DIR__ . '/..' . '/ramsey/collection/src/AbstractCollection.php',
         'Ramsey\\Collection\\AbstractSet' => __DIR__ . '/..' . '/ramsey/collection/src/AbstractSet.php',
