@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '407ea4e2f561cdd93f9f7f22b0e0ab55c0b8a16d',
+    'reference' => 'e9cf69f346c9dc77da8291ca0938e346272d368f',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -46,6 +46,15 @@
       array (
       ),
       'reference' => 'ca57d18f028f84f777b2168cd1911b0dee2343ae',
+    ),
+    'composer/ca-bundle' => 
+    array (
+      'pretty_version' => '1.3.1',
+      'version' => '1.3.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4c679186f2aca4ab6a0f1b0b9cf9252decb44d0b',
     ),
     'cordoval/hamcrest-php' => 
     array (
@@ -222,6 +231,15 @@
       array (
       ),
       'reference' => '3a066e5cac32e2d1cdaacd6b961692778f37b5fc',
+    ),
+    'geoip2/geoip2' => 
+    array (
+      'pretty_version' => 'v2.12.2',
+      'version' => '2.12.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '83adb44ac4b9553d36b579a14673ed124583082f',
     ),
     'google/apiclient' => 
     array (
@@ -521,6 +539,24 @@
       ),
       'reference' => 'b247c5386f8e6f5a6ede15fc322b4a9b88e194f8',
     ),
+    'jaybizzle/crawler-detect' => 
+    array (
+      'pretty_version' => 'v1.2.110',
+      'version' => '1.2.110.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'f9d63a3581428fd8a3858e161d072f0b9debc26f',
+    ),
+    'jenssegers/agent' => 
+    array (
+      'pretty_version' => 'v2.6.4',
+      'version' => '2.6.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'daa11c43729510b3700bc34d414664966b03bffe',
+    ),
     'kodova/hamcrest-php' => 
     array (
       'replaced' => 
@@ -544,7 +580,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '407ea4e2f561cdd93f9f7f22b0e0ab55c0b8a16d',
+      'reference' => 'e9cf69f346c9dc77da8291ca0938e346272d368f',
     ),
     'laravel/sail' => 
     array (
@@ -635,6 +671,33 @@
       array (
       ),
       'reference' => '972f58e42b5f110a0a1d8433247f65248abcfd5c',
+    ),
+    'maxmind-db/reader' => 
+    array (
+      'pretty_version' => 'v1.11.0',
+      'version' => '1.11.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'b1f3c0699525336d09cc5161a2861268d9f2ae5b',
+    ),
+    'maxmind/web-service-common' => 
+    array (
+      'pretty_version' => 'v0.8.1',
+      'version' => '0.8.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '32f274051c543fc865e5a84d3a2c703913641ea8',
+    ),
+    'mobiledetect/mobiledetectlib' => 
+    array (
+      'pretty_version' => '2.8.37',
+      'version' => '2.8.37.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9841e3c46f5bd0739b53aed8ac677fa712943df7',
     ),
     'mockery/mockery' => 
     array (
@@ -907,6 +970,33 @@
       array (
       ),
       'reference' => '2406855036db1102126125537adb1406f7242fdd',
+    ),
+    'pragmarx/datatables' => 
+    array (
+      'pretty_version' => 'v1.4.12',
+      'version' => '1.4.12.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '142631346d01c074248b80c8bc55fdfea255e23e',
+    ),
+    'pragmarx/support' => 
+    array (
+      'pretty_version' => 'v0.9.3',
+      'version' => '0.9.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'fb0c7891ac6ce172f2d7e790cb70ef30a090f03c',
+    ),
+    'pragmarx/tracker' => 
+    array (
+      'pretty_version' => 'v4.0.1',
+      'version' => '4.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '1985a681abe457a9ad6e6a04393b6739a34f720d',
     ),
     'psr/cache' => 
     array (
@@ -1233,6 +1323,15 @@
       array (
       ),
       'reference' => 'c6c1022351a901512170118436c764e473f6de8c',
+    ),
+    'snowplow/referer-parser' => 
+    array (
+      'pretty_version' => '0.2.0',
+      'version' => '0.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5ce872b60999c63039723959a45928ef1196f03d',
     ),
     'spatie/laravel-activitylog' => 
     array (
@@ -1578,6 +1677,15 @@
       array (
       ),
       'reference' => 'da444caae6aca7a19c0c140f68c6182e337d5b1c',
+    ),
+    'ua-parser/uap-php' => 
+    array (
+      'pretty_version' => 'v3.9.14',
+      'version' => '3.9.14.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'b796c5ea5df588e65aeb4e2c6cce3811dec4fed6',
     ),
     'vlucas/phpdotenv' => 
     array (

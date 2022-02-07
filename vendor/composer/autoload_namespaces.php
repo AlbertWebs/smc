@@ -7,8 +7,11 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Way\\Generators' => array($vendorDir . '/oscarafdev/laravel-4-generators/src'),
+    'Snowplow\\RefererParser' => array($vendorDir . '/snowplow/referer-parser/php/src'),
     'OscarAFDev\\MigrationsGenerator' => array($vendorDir . '/oscarafdev/migrations-generator/src'),
     'Orangehill\\Iseed' => array($vendorDir . '/orangehill/iseed/src'),
     'Mockery' => array($vendorDir . '/mockery/mockery/library'),
     'Ipunkt\\LaravelAnalytics\\' => array($vendorDir . '/ipunkt/laravel-analytics/src'),
+    'Detection' => array($vendorDir . '/mobiledetect/mobiledetectlib/namespaced'),
+    'Bllim\\Datatables' => array($vendorDir . '/pragmarx/datatables/src'),
 );

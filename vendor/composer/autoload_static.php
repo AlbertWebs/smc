@@ -17,16 +17,16 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
-        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
-        'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
-        '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
+        'a1105708a18b76903365ca1c4aa61b02' => __DIR__ . '/..' . '/symfony/translation/Resources/functions.php',
         'e39a8b23c42d4e1452234d762b03835a' => __DIR__ . '/..' . '/ramsey/uuid/src/functions.php',
+        '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
         '265b4faa2b3a9766332744949e83bf97' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Collections/helpers.php',
         'c7a3c339e7e14b60e06a2d7fcce9476b' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Events/functions.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
@@ -38,6 +38,7 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'a8d3953fd9959404dd22d3dfcd0a79f0' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '3109cb1a231dcd04bee1f9f620d46975' => __DIR__ . '/..' . '/paragonie/sodium_compat/autoload.php',
+        'ae2fadc5a311f32b20ba30a524ca3683' => __DIR__ . '/..' . '/pragmarx/support/src/helpers.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         'ed962a97bd972bc82007176b647d4e36' => __DIR__ . '/..' . '/facade/ignition/src/helpers.php',
         '72b1e3f4a2af9b30b3f137b3ec2057fc' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/helpers.php',
@@ -57,6 +58,10 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         array (
             'Whoops\\' => 7,
             'Webmozart\\Assert\\' => 17,
+        ),
+        'U' => 
+        array (
+            'UAParser\\' => 9,
         ),
         'T' => 
         array (
@@ -115,6 +120,8 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
             'Prophecy\\' => 9,
+            'PragmaRX\\Tracker\\' => 17,
+            'PragmaRX\\Support\\' => 17,
             'PhpParser\\' => 10,
             'PhpOption\\' => 10,
             'ParagonIE\\ConstantTime\\' => 23,
@@ -130,6 +137,9 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'M' => 
         array (
             'Monolog\\' => 8,
+            'MaxMind\\WebService\\' => 19,
+            'MaxMind\\Exception\\' => 18,
+            'MaxMind\\Db\\' => 11,
             'MJS\\TopSort\\Tests\\' => 18,
             'MJS\\TopSort\\' => 12,
         ),
@@ -146,6 +156,11 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
             'Laravel\\Sail\\' => 13,
             'LaravelMigrationGenerator\\' => 26,
         ),
+        'J' => 
+        array (
+            'Jenssegers\\Agent\\' => 17,
+            'Jaybizzle\\CrawlerDetect\\' => 24,
+        ),
         'I' => 
         array (
             'Illuminate\\Support\\' => 19,
@@ -161,6 +176,7 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
             'Google\\Service\\' => 15,
             'Google\\Auth\\' => 12,
             'Google\\' => 7,
+            'GeoIp2\\' => 7,
         ),
         'F' => 
         array (
@@ -194,6 +210,7 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'C' => 
         array (
             'Cron\\' => 5,
+            'Composer\\CaBundle\\' => 18,
             'Carbon\\' => 7,
         ),
         'B' => 
@@ -230,6 +247,10 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'UAParser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ua-parser/uap-php/src',
         ),
         'TijsVerkoyen\\CssToInlineStyles\\' => 
         array (
@@ -416,6 +437,14 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
         ),
+        'PragmaRX\\Tracker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pragmarx/tracker/src',
+        ),
+        'PragmaRX\\Support\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/pragmarx/support/src',
+        ),
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
@@ -439,6 +468,18 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'MaxMind\\WebService\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/maxmind/web-service-common/src/WebService',
+        ),
+        'MaxMind\\Exception\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/maxmind/web-service-common/src/Exception',
+        ),
+        'MaxMind\\Db\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/maxmind-db/reader/src/MaxMind/Db',
         ),
         'MJS\\TopSort\\Tests\\' => 
         array (
@@ -488,6 +529,14 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         array (
             0 => __DIR__ . '/..' . '/bennett-treptow/laravel-migration-generator/src',
         ),
+        'Jenssegers\\Agent\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jenssegers/agent/src',
+        ),
+        'Jaybizzle\\CrawlerDetect\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src',
+        ),
         'Illuminate\\Support\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Macroable',
@@ -528,6 +577,10 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'Google\\' => 
         array (
             0 => __DIR__ . '/..' . '/google/apiclient/src',
+        ),
+        'GeoIp2\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/geoip2/geoip2/src',
         ),
         'Fruitcake\\Cors\\' => 
         array (
@@ -613,6 +666,10 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         array (
             0 => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron',
         ),
+        'Composer\\CaBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/ca-bundle/src',
+        ),
         'Carbon\\' => 
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
@@ -643,6 +700,13 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
                 0 => __DIR__ . '/..' . '/oscarafdev/laravel-4-generators/src',
             ),
         ),
+        'S' => 
+        array (
+            'Snowplow\\RefererParser' => 
+            array (
+                0 => __DIR__ . '/..' . '/snowplow/referer-parser/php/src',
+            ),
+        ),
         'O' => 
         array (
             'OscarAFDev\\MigrationsGenerator' => 
@@ -666,6 +730,20 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
             'Ipunkt\\LaravelAnalytics\\' => 
             array (
                 0 => __DIR__ . '/..' . '/ipunkt/laravel-analytics/src',
+            ),
+        ),
+        'D' => 
+        array (
+            'Detection' => 
+            array (
+                0 => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/namespaced',
+            ),
+        ),
+        'B' => 
+        array (
+            'Bllim\\Datatables' => 
+            array (
+                0 => __DIR__ . '/..' . '/pragmarx/datatables/src',
             ),
         ),
     );
@@ -749,6 +827,9 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Cors.php',
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/CorsService.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
+        'Bllim\\Datatables\\Datatables' => __DIR__ . '/..' . '/pragmarx/datatables/src/Bllim/Datatables/Datatables.php',
+        'Bllim\\Datatables\\DatatablesServiceProvider' => __DIR__ . '/..' . '/pragmarx/datatables/src/Bllim/Datatables/DatatablesServiceProvider.php',
+        'Bllim\\Datatables\\Facade\\Datatables' => __DIR__ . '/..' . '/pragmarx/datatables/src/Bllim/Datatables/Facade/Datatables.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
         'Brick\\Math\\BigInteger' => __DIR__ . '/..' . '/brick/math/src/BigInteger.php',
         'Brick\\Math\\BigNumber' => __DIR__ . '/..' . '/brick/math/src/BigNumber.php',
@@ -840,6 +921,7 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'Carbon\\Traits\\Week' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Traits/Week.php',
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
         'Carbon\\TranslatorStrongTypeInterface' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/TranslatorStrongTypeInterface.php',
+        'Composer\\CaBundle\\CaBundle' => __DIR__ . '/..' . '/composer/ca-bundle/src/CaBundle.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/AbstractField.php',
         'Cron\\CronExpression' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/CronExpression.php',
@@ -896,6 +978,7 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'DeepCopy\\TypeFilter\\Spl\\SplDoublyLinkedListFilter' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/Spl/SplDoublyLinkedListFilter.php',
         'DeepCopy\\TypeFilter\\TypeFilter' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeFilter/TypeFilter.php',
         'DeepCopy\\TypeMatcher\\TypeMatcher' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/TypeMatcher/TypeMatcher.php',
+        'Detection\\MobileDetect' => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/namespaced/Detection/MobileDetect.php',
         'Dflydev\\DotAccessData\\Data' => __DIR__ . '/..' . '/dflydev/dot-access-data/src/Data.php',
         'Dflydev\\DotAccessData\\DataInterface' => __DIR__ . '/..' . '/dflydev/dot-access-data/src/DataInterface.php',
         'Dflydev\\DotAccessData\\Exception\\DataException' => __DIR__ . '/..' . '/dflydev/dot-access-data/src/Exception/DataException.php',
@@ -2028,6 +2111,37 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'Firebase\\JWT\\SignatureInvalidException' => __DIR__ . '/..' . '/firebase/php-jwt/src/SignatureInvalidException.php',
         'Fruitcake\\Cors\\CorsServiceProvider' => __DIR__ . '/..' . '/fruitcake/laravel-cors/src/CorsServiceProvider.php',
         'Fruitcake\\Cors\\HandleCors' => __DIR__ . '/..' . '/fruitcake/laravel-cors/src/HandleCors.php',
+        'GeoIp2\\Database\\Reader' => __DIR__ . '/..' . '/geoip2/geoip2/src/Database/Reader.php',
+        'GeoIp2\\Exception\\AddressNotFoundException' => __DIR__ . '/..' . '/geoip2/geoip2/src/Exception/AddressNotFoundException.php',
+        'GeoIp2\\Exception\\AuthenticationException' => __DIR__ . '/..' . '/geoip2/geoip2/src/Exception/AuthenticationException.php',
+        'GeoIp2\\Exception\\GeoIp2Exception' => __DIR__ . '/..' . '/geoip2/geoip2/src/Exception/GeoIp2Exception.php',
+        'GeoIp2\\Exception\\HttpException' => __DIR__ . '/..' . '/geoip2/geoip2/src/Exception/HttpException.php',
+        'GeoIp2\\Exception\\InvalidRequestException' => __DIR__ . '/..' . '/geoip2/geoip2/src/Exception/InvalidRequestException.php',
+        'GeoIp2\\Exception\\OutOfQueriesException' => __DIR__ . '/..' . '/geoip2/geoip2/src/Exception/OutOfQueriesException.php',
+        'GeoIp2\\Model\\AbstractModel' => __DIR__ . '/..' . '/geoip2/geoip2/src/Model/AbstractModel.php',
+        'GeoIp2\\Model\\AnonymousIp' => __DIR__ . '/..' . '/geoip2/geoip2/src/Model/AnonymousIp.php',
+        'GeoIp2\\Model\\Asn' => __DIR__ . '/..' . '/geoip2/geoip2/src/Model/Asn.php',
+        'GeoIp2\\Model\\City' => __DIR__ . '/..' . '/geoip2/geoip2/src/Model/City.php',
+        'GeoIp2\\Model\\ConnectionType' => __DIR__ . '/..' . '/geoip2/geoip2/src/Model/ConnectionType.php',
+        'GeoIp2\\Model\\Country' => __DIR__ . '/..' . '/geoip2/geoip2/src/Model/Country.php',
+        'GeoIp2\\Model\\Domain' => __DIR__ . '/..' . '/geoip2/geoip2/src/Model/Domain.php',
+        'GeoIp2\\Model\\Enterprise' => __DIR__ . '/..' . '/geoip2/geoip2/src/Model/Enterprise.php',
+        'GeoIp2\\Model\\Insights' => __DIR__ . '/..' . '/geoip2/geoip2/src/Model/Insights.php',
+        'GeoIp2\\Model\\Isp' => __DIR__ . '/..' . '/geoip2/geoip2/src/Model/Isp.php',
+        'GeoIp2\\ProviderInterface' => __DIR__ . '/..' . '/geoip2/geoip2/src/ProviderInterface.php',
+        'GeoIp2\\Record\\AbstractPlaceRecord' => __DIR__ . '/..' . '/geoip2/geoip2/src/Record/AbstractPlaceRecord.php',
+        'GeoIp2\\Record\\AbstractRecord' => __DIR__ . '/..' . '/geoip2/geoip2/src/Record/AbstractRecord.php',
+        'GeoIp2\\Record\\City' => __DIR__ . '/..' . '/geoip2/geoip2/src/Record/City.php',
+        'GeoIp2\\Record\\Continent' => __DIR__ . '/..' . '/geoip2/geoip2/src/Record/Continent.php',
+        'GeoIp2\\Record\\Country' => __DIR__ . '/..' . '/geoip2/geoip2/src/Record/Country.php',
+        'GeoIp2\\Record\\Location' => __DIR__ . '/..' . '/geoip2/geoip2/src/Record/Location.php',
+        'GeoIp2\\Record\\MaxMind' => __DIR__ . '/..' . '/geoip2/geoip2/src/Record/MaxMind.php',
+        'GeoIp2\\Record\\Postal' => __DIR__ . '/..' . '/geoip2/geoip2/src/Record/Postal.php',
+        'GeoIp2\\Record\\RepresentedCountry' => __DIR__ . '/..' . '/geoip2/geoip2/src/Record/RepresentedCountry.php',
+        'GeoIp2\\Record\\Subdivision' => __DIR__ . '/..' . '/geoip2/geoip2/src/Record/Subdivision.php',
+        'GeoIp2\\Record\\Traits' => __DIR__ . '/..' . '/geoip2/geoip2/src/Record/Traits.php',
+        'GeoIp2\\Util' => __DIR__ . '/..' . '/geoip2/geoip2/src/Util.php',
+        'GeoIp2\\WebService\\Client' => __DIR__ . '/..' . '/geoip2/geoip2/src/WebService/Client.php',
         'Google\\AccessToken\\Revoke' => __DIR__ . '/..' . '/google/apiclient/src/AccessToken/Revoke.php',
         'Google\\AccessToken\\Verify' => __DIR__ . '/..' . '/google/apiclient/src/AccessToken/Verify.php',
         'Google\\AuthHandler\\AuthHandlerFactory' => __DIR__ . '/..' . '/google/apiclient/src/AuthHandler/AuthHandlerFactory.php',
@@ -18607,6 +18721,14 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'Ipunkt\\LaravelAnalytics\\Providers\\GoogleAnalytics' => __DIR__ . '/..' . '/ipunkt/laravel-analytics/src/Ipunkt/LaravelAnalytics/Providers/GoogleAnalytics.php',
         'Ipunkt\\LaravelAnalytics\\Providers\\NoAnalytics' => __DIR__ . '/..' . '/ipunkt/laravel-analytics/src/Ipunkt/LaravelAnalytics/Providers/NoAnalytics.php',
         'Ipunkt\\LaravelAnalytics\\TrackingBag' => __DIR__ . '/..' . '/ipunkt/laravel-analytics/src/Ipunkt/LaravelAnalytics/TrackingBag.php',
+        'Jaybizzle\\CrawlerDetect\\CrawlerDetect' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/CrawlerDetect.php',
+        'Jaybizzle\\CrawlerDetect\\Fixtures\\AbstractProvider' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/Fixtures/AbstractProvider.php',
+        'Jaybizzle\\CrawlerDetect\\Fixtures\\Crawlers' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/Fixtures/Crawlers.php',
+        'Jaybizzle\\CrawlerDetect\\Fixtures\\Exclusions' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/Fixtures/Exclusions.php',
+        'Jaybizzle\\CrawlerDetect\\Fixtures\\Headers' => __DIR__ . '/..' . '/jaybizzle/crawler-detect/src/Fixtures/Headers.php',
+        'Jenssegers\\Agent\\Agent' => __DIR__ . '/..' . '/jenssegers/agent/src/Agent.php',
+        'Jenssegers\\Agent\\AgentServiceProvider' => __DIR__ . '/..' . '/jenssegers/agent/src/AgentServiceProvider.php',
+        'Jenssegers\\Agent\\Facades\\Agent' => __DIR__ . '/..' . '/jenssegers/agent/src/Facades/Agent.php',
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'LaravelMigrationGenerator\\Commands\\GenerateMigrationsCommand' => __DIR__ . '/..' . '/bennett-treptow/laravel-migration-generator/src/Commands/GenerateMigrationsCommand.php',
         'LaravelMigrationGenerator\\Definitions\\ColumnDefinition' => __DIR__ . '/..' . '/bennett-treptow/laravel-migration-generator/src/Definitions/ColumnDefinition.php',
@@ -19042,6 +19164,24 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'MJS\\TopSort\\Tests\\GroupedSortTest' => __DIR__ . '/..' . '/marcj/topsort/tests/Tests/GroupedSortTest.php',
         'MJS\\TopSort\\Tests\\SimpleSortTest' => __DIR__ . '/..' . '/marcj/topsort/tests/Tests/SimpleSortTest.php',
         'MJS\\TopSort\\TopSortInterface' => __DIR__ . '/..' . '/marcj/topsort/src/TopSortInterface.php',
+        'MaxMind\\Db\\Reader' => __DIR__ . '/..' . '/maxmind-db/reader/src/MaxMind/Db/Reader.php',
+        'MaxMind\\Db\\Reader\\Decoder' => __DIR__ . '/..' . '/maxmind-db/reader/src/MaxMind/Db/Reader/Decoder.php',
+        'MaxMind\\Db\\Reader\\InvalidDatabaseException' => __DIR__ . '/..' . '/maxmind-db/reader/src/MaxMind/Db/Reader/InvalidDatabaseException.php',
+        'MaxMind\\Db\\Reader\\Metadata' => __DIR__ . '/..' . '/maxmind-db/reader/src/MaxMind/Db/Reader/Metadata.php',
+        'MaxMind\\Db\\Reader\\Util' => __DIR__ . '/..' . '/maxmind-db/reader/src/MaxMind/Db/Reader/Util.php',
+        'MaxMind\\Exception\\AuthenticationException' => __DIR__ . '/..' . '/maxmind/web-service-common/src/Exception/AuthenticationException.php',
+        'MaxMind\\Exception\\HttpException' => __DIR__ . '/..' . '/maxmind/web-service-common/src/Exception/HttpException.php',
+        'MaxMind\\Exception\\InsufficientFundsException' => __DIR__ . '/..' . '/maxmind/web-service-common/src/Exception/InsufficientFundsException.php',
+        'MaxMind\\Exception\\InvalidInputException' => __DIR__ . '/..' . '/maxmind/web-service-common/src/Exception/InvalidInputException.php',
+        'MaxMind\\Exception\\InvalidRequestException' => __DIR__ . '/..' . '/maxmind/web-service-common/src/Exception/InvalidRequestException.php',
+        'MaxMind\\Exception\\IpAddressNotFoundException' => __DIR__ . '/..' . '/maxmind/web-service-common/src/Exception/IpAddressNotFoundException.php',
+        'MaxMind\\Exception\\PermissionRequiredException' => __DIR__ . '/..' . '/maxmind/web-service-common/src/Exception/PermissionRequiredException.php',
+        'MaxMind\\Exception\\WebServiceException' => __DIR__ . '/..' . '/maxmind/web-service-common/src/Exception/WebServiceException.php',
+        'MaxMind\\WebService\\Client' => __DIR__ . '/..' . '/maxmind/web-service-common/src/WebService/Client.php',
+        'MaxMind\\WebService\\Http\\CurlRequest' => __DIR__ . '/..' . '/maxmind/web-service-common/src/WebService/Http/CurlRequest.php',
+        'MaxMind\\WebService\\Http\\Request' => __DIR__ . '/..' . '/maxmind/web-service-common/src/WebService/Http/Request.php',
+        'MaxMind\\WebService\\Http\\RequestFactory' => __DIR__ . '/..' . '/maxmind/web-service-common/src/WebService/Http/RequestFactory.php',
+        'Mobile_Detect' => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/Mobile_Detect.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegration' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegrationAssertPostConditions' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegrationAssertPostConditions.php',
@@ -20035,6 +20175,131 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'PhpParser\\Parser\\Tokens' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Parser/Tokens.php',
         'PhpParser\\PrettyPrinterAbstract' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/PrettyPrinterAbstract.php',
         'PhpParser\\PrettyPrinter\\Standard' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php',
+        'PragmaRX\\Support\\CacheManager' => __DIR__ . '/..' . '/pragmarx/support/src/CacheManager.php',
+        'PragmaRX\\Support\\Config' => __DIR__ . '/..' . '/pragmarx/support/src/Config.php',
+        'PragmaRX\\Support\\CpfCnpj\\Cnpj' => __DIR__ . '/..' . '/pragmarx/support/src/CpfCnpj/Cnpj.php',
+        'PragmaRX\\Support\\CpfCnpj\\Cpf' => __DIR__ . '/..' . '/pragmarx/support/src/CpfCnpj/Cpf.php',
+        'PragmaRX\\Support\\CpfCnpj\\CpfCnpj' => __DIR__ . '/..' . '/pragmarx/support/src/CpfCnpj/CpfCnpj.php',
+        'PragmaRX\\Support\\DateTime' => __DIR__ . '/..' . '/pragmarx/support/src/DateTime.php',
+        'PragmaRX\\Support\\Debug\\Dumper' => __DIR__ . '/..' . '/pragmarx/support/src/Debug/Dumper.php',
+        'PragmaRX\\Support\\Debug\\HtmlDumper' => __DIR__ . '/..' . '/pragmarx/support/src/Debug/HtmlDumper.php',
+        'PragmaRX\\Support\\Environment' => __DIR__ . '/..' . '/pragmarx/support/src/Environment.php',
+        'PragmaRX\\Support\\Exceptions\\EnvironmentVariableNotSet' => __DIR__ . '/..' . '/pragmarx/support/src/Exceptions/EnvironmentVariableNotSet.php',
+        'PragmaRX\\Support\\Exceptions\\Exception' => __DIR__ . '/..' . '/pragmarx/support/src/Exceptions/Exception.php',
+        'PragmaRX\\Support\\Filesystem' => __DIR__ . '/..' . '/pragmarx/support/src/Filesystem.php',
+        'PragmaRX\\Support\\Finder' => __DIR__ . '/..' . '/pragmarx/support/src/Finder.php',
+        'PragmaRX\\Support\\GeoIp\\GeoIp' => __DIR__ . '/..' . '/pragmarx/support/src/GeoIp/GeoIp.php',
+        'PragmaRX\\Support\\GeoIp\\GeoIp1' => __DIR__ . '/..' . '/pragmarx/support/src/GeoIp/GeoIp1.php',
+        'PragmaRX\\Support\\GeoIp\\GeoIp2' => __DIR__ . '/..' . '/pragmarx/support/src/GeoIp/GeoIp2.php',
+        'PragmaRX\\Support\\GeoIp\\GeoIpAbstract' => __DIR__ . '/..' . '/pragmarx/support/src/GeoIp/GeoIpAbstract.php',
+        'PragmaRX\\Support\\GeoIp\\GeoIpContract' => __DIR__ . '/..' . '/pragmarx/support/src/GeoIp/GeoIpContract.php',
+        'PragmaRX\\Support\\GeoIp\\Updater' => __DIR__ . '/..' . '/pragmarx/support/src/GeoIp/Updater.php',
+        'PragmaRX\\Support\\ImporterExporter\\ImporterExporter' => __DIR__ . '/..' . '/pragmarx/support/src/ImporterExporter/ImporterExporter.php',
+        'PragmaRX\\Support\\Inflectors\\En' => __DIR__ . '/..' . '/pragmarx/support/src/Inflectors/En.php',
+        'PragmaRX\\Support\\Inflectors\\Inflector' => __DIR__ . '/..' . '/pragmarx/support/src/Inflectors/Inflector.php',
+        'PragmaRX\\Support\\Inflectors\\InflectorInterface' => __DIR__ . '/..' . '/pragmarx/support/src/Inflectors/InflectorInterface.php',
+        'PragmaRX\\Support\\Inflectors\\PtBr' => __DIR__ . '/..' . '/pragmarx/support/src/Inflectors/PtBr.php',
+        'PragmaRX\\Support\\IpAddress' => __DIR__ . '/..' . '/pragmarx/support/src/IpAddress.php',
+        'PragmaRX\\Support\\Migration' => __DIR__ . '/..' . '/pragmarx/support/src/Migration.php',
+        'PragmaRX\\Support\\PhpSession' => __DIR__ . '/..' . '/pragmarx/support/src/PhpSession.php',
+        'PragmaRX\\Support\\Response' => __DIR__ . '/..' . '/pragmarx/support/src/Response.php',
+        'PragmaRX\\Support\\ServiceProvider' => __DIR__ . '/..' . '/pragmarx/support/src/ServiceProvider.php',
+        'PragmaRX\\Support\\Timer' => __DIR__ . '/..' . '/pragmarx/support/src/Timer.php',
+        'PragmaRX\\Support\\YamlConfig' => __DIR__ . '/..' . '/pragmarx/support/src/YamlConfig.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\Agent' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/Agent.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\Connection' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/Connection.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\Cookie' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/Cookie.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\Device' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/Device.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\Domain' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/Domain.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\Error' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/Error.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\Event' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/Event.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\EventLog' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/EventLog.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\GeoIp' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/GeoIp.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\Language' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/Language.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\Log' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/Log.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\Path' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/Path.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\Query' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/Query.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\QueryArgument' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/QueryArgument.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\Referer' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/Referer.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\Repository' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/Repository.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\RepositoryInterface' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/RepositoryInterface.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\Route' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/Route.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\RoutePath' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/RoutePath.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\RoutePathParameter' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/RoutePathParameter.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\Session' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/Session.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\SqlQuery' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/SqlQuery.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\SqlQueryBinding' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/SqlQueryBinding.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\SqlQueryBindingParameter' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/SqlQueryBindingParameter.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\SqlQueryLog' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/SqlQueryLog.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\SystemClass' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/SystemClass.php',
+        'PragmaRX\\Tracker\\Data\\Repositories\\User' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/Repositories/User.php',
+        'PragmaRX\\Tracker\\Data\\RepositoryManager' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/RepositoryManager.php',
+        'PragmaRX\\Tracker\\Data\\RepositoryManagerInterface' => __DIR__ . '/..' . '/pragmarx/tracker/src/Data/RepositoryManagerInterface.php',
+        'PragmaRX\\Tracker\\Eventing\\EventStorage' => __DIR__ . '/..' . '/pragmarx/tracker/src/Eventing/EventStorage.php',
+        'PragmaRX\\Tracker\\Repositories\\Message' => __DIR__ . '/..' . '/pragmarx/tracker/src/Repositories/Message.php',
+        'PragmaRX\\Tracker\\Services\\Authentication' => __DIR__ . '/..' . '/pragmarx/tracker/src/Services/Authentication.php',
+        'PragmaRX\\Tracker\\Support\\Cache' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Cache.php',
+        'PragmaRX\\Tracker\\Support\\CrawlerDetector' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/CrawlerDetector.php',
+        'PragmaRX\\Tracker\\Support\\Exceptions\\CompileError' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Exceptions/CompileError.php',
+        'PragmaRX\\Tracker\\Support\\Exceptions\\CompileWarning' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Exceptions/CompileWarning.php',
+        'PragmaRX\\Tracker\\Support\\Exceptions\\CoreError' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Exceptions/CoreError.php',
+        'PragmaRX\\Tracker\\Support\\Exceptions\\CoreWarning' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Exceptions/CoreWarning.php',
+        'PragmaRX\\Tracker\\Support\\Exceptions\\Deprecated' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Exceptions/Deprecated.php',
+        'PragmaRX\\Tracker\\Support\\Exceptions\\Error' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Exceptions/Error.php',
+        'PragmaRX\\Tracker\\Support\\Exceptions\\ExceptionFactory' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Exceptions/ExceptionFactory.php',
+        'PragmaRX\\Tracker\\Support\\Exceptions\\Handler' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Exceptions/Handler.php',
+        'PragmaRX\\Tracker\\Support\\Exceptions\\Notice' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Exceptions/Notice.php',
+        'PragmaRX\\Tracker\\Support\\Exceptions\\Parse' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Exceptions/Parse.php',
+        'PragmaRX\\Tracker\\Support\\Exceptions\\RecoverableError' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Exceptions/RecoverableError.php',
+        'PragmaRX\\Tracker\\Support\\Exceptions\\Strict' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Exceptions/Strict.php',
+        'PragmaRX\\Tracker\\Support\\Exceptions\\UserDeprecated' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Exceptions/UserDeprecated.php',
+        'PragmaRX\\Tracker\\Support\\Exceptions\\UserError' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Exceptions/UserError.php',
+        'PragmaRX\\Tracker\\Support\\Exceptions\\UserNotice' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Exceptions/UserNotice.php',
+        'PragmaRX\\Tracker\\Support\\Exceptions\\UserWarning' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Exceptions/UserWarning.php',
+        'PragmaRX\\Tracker\\Support\\Exceptions\\Warning' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Exceptions/Warning.php',
+        'PragmaRX\\Tracker\\Support\\Filesystem' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Filesystem.php',
+        'PragmaRX\\Tracker\\Support\\LanguageDetect' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/LanguageDetect.php',
+        'PragmaRX\\Tracker\\Support\\Migration' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Migration.php',
+        'PragmaRX\\Tracker\\Support\\Minutes' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/Minutes.php',
+        'PragmaRX\\Tracker\\Support\\MobileDetect' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/MobileDetect.php',
+        'PragmaRX\\Tracker\\Support\\RefererParser' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/RefererParser.php',
+        'PragmaRX\\Tracker\\Support\\UserAgentParser' => __DIR__ . '/..' . '/pragmarx/tracker/src/Support/UserAgentParser.php',
+        'PragmaRX\\Tracker\\Tracker' => __DIR__ . '/..' . '/pragmarx/tracker/src/Tracker.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Artisan\\Base' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Artisan/Base.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Artisan\\Tables' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Artisan/Tables.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Artisan\\UpdateGeoIp' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Artisan/UpdateGeoIp.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Controllers\\Stats' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Controllers/Stats.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Facade' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Facade.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Middlewares\\Tracker' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Middlewares/Tracker.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\Agent' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/Agent.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\Base' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/Base.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\Connection' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/Connection.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\Cookie' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/Cookie.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\Device' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/Device.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\Domain' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/Domain.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\Error' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/Error.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\Event' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/Event.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\EventLog' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/EventLog.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\GeoIp' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/GeoIp.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\Language' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/Language.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\Log' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/Log.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\Path' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/Path.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\Query' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/Query.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\QueryArgument' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/QueryArgument.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\Referer' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/Referer.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\RefererSearchTerm' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/RefererSearchTerm.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\Route' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/Route.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\RoutePath' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/RoutePath.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\RoutePathParameter' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/RoutePathParameter.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\Session' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/Session.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\SqlQuery' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/SqlQuery.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\SqlQueryBinding' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/SqlQueryBinding.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\SqlQueryBindingParameter' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/SqlQueryBindingParameter.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\SqlQueryLog' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/SqlQueryLog.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\SystemClass' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/SystemClass.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Models\\User' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Models/User.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\ServiceProvider' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/ServiceProvider.php',
+        'PragmaRX\\Tracker\\Vendor\\Laravel\\Support\\Session' => __DIR__ . '/..' . '/pragmarx/tracker/src/Vendor/Laravel/Support/Session.php',
         'Prophecy\\Argument' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument.php',
         'Prophecy\\Argument\\ArgumentsWildcard' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/ArgumentsWildcard.php',
         'Prophecy\\Argument\\Token\\AnyValueToken' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValueToken.php',
@@ -20654,6 +20919,14 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'SebastianBergmann\\Type\\UnknownType' => __DIR__ . '/..' . '/sebastian/type/src/UnknownType.php',
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Snowplow\\RefererParser\\Config\\ConfigFileReaderTrait' => __DIR__ . '/..' . '/snowplow/referer-parser/php/src/Snowplow/RefererParser/Config/ConfigFileReaderTrait.php',
+        'Snowplow\\RefererParser\\Config\\ConfigReaderInterface' => __DIR__ . '/..' . '/snowplow/referer-parser/php/src/Snowplow/RefererParser/Config/ConfigReaderInterface.php',
+        'Snowplow\\RefererParser\\Config\\JsonConfigReader' => __DIR__ . '/..' . '/snowplow/referer-parser/php/src/Snowplow/RefererParser/Config/JsonConfigReader.php',
+        'Snowplow\\RefererParser\\Config\\YamlConfigReader' => __DIR__ . '/..' . '/snowplow/referer-parser/php/src/Snowplow/RefererParser/Config/YamlConfigReader.php',
+        'Snowplow\\RefererParser\\Exception\\InvalidArgumentException' => __DIR__ . '/..' . '/snowplow/referer-parser/php/src/Snowplow/RefererParser/Exception/InvalidArgumentException.php',
+        'Snowplow\\RefererParser\\Medium' => __DIR__ . '/..' . '/snowplow/referer-parser/php/src/Snowplow/RefererParser/Medium.php',
+        'Snowplow\\RefererParser\\Parser' => __DIR__ . '/..' . '/snowplow/referer-parser/php/src/Snowplow/RefererParser/Parser.php',
+        'Snowplow\\RefererParser\\Referer' => __DIR__ . '/..' . '/snowplow/referer-parser/php/src/Snowplow/RefererParser/Referer.php',
         'Spatie\\Activitylog\\ActivityLogStatus' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/ActivityLogStatus.php',
         'Spatie\\Activitylog\\ActivityLogger' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/ActivityLogger.php',
         'Spatie\\Activitylog\\ActivitylogServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-activitylog/src/ActivitylogServiceProvider.php',
@@ -21554,6 +21827,35 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Property\\Property' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Property/Property.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
+        'UAParser\\AbstractParser' => __DIR__ . '/..' . '/ua-parser/uap-php/src/AbstractParser.php',
+        'UAParser\\Command\\ConvertCommand' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Command/ConvertCommand.php',
+        'UAParser\\Command\\FetchCommand' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Command/FetchCommand.php',
+        'UAParser\\Command\\LogfileCommand' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Command/LogfileCommand.php',
+        'UAParser\\Command\\ParserCommand' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Command/ParserCommand.php',
+        'UAParser\\Command\\UpdateCommand' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Command/UpdateCommand.php',
+        'UAParser\\DeviceParser' => __DIR__ . '/..' . '/ua-parser/uap-php/src/DeviceParser.php',
+        'UAParser\\Exception\\DomainException' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Exception/DomainException.php',
+        'UAParser\\Exception\\FetcherException' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Exception/FetcherException.php',
+        'UAParser\\Exception\\FileNotFoundException' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Exception/FileNotFoundException.php',
+        'UAParser\\Exception\\InvalidArgumentException' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Exception/InvalidArgumentException.php',
+        'UAParser\\Exception\\ReaderException' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Exception/ReaderException.php',
+        'UAParser\\OperatingSystemParser' => __DIR__ . '/..' . '/ua-parser/uap-php/src/OperatingSystemParser.php',
+        'UAParser\\Parser' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Parser.php',
+        'UAParser\\ParserFactoryMethods' => __DIR__ . '/..' . '/ua-parser/uap-php/src/ParserFactoryMethods.php',
+        'UAParser\\Result\\AbstractClient' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Result/AbstractClient.php',
+        'UAParser\\Result\\AbstractSoftware' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Result/AbstractSoftware.php',
+        'UAParser\\Result\\AbstractVersionedSoftware' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Result/AbstractVersionedSoftware.php',
+        'UAParser\\Result\\Client' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Result/Client.php',
+        'UAParser\\Result\\Device' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Result/Device.php',
+        'UAParser\\Result\\OperatingSystem' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Result/OperatingSystem.php',
+        'UAParser\\Result\\UserAgent' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Result/UserAgent.php',
+        'UAParser\\UserAgentParser' => __DIR__ . '/..' . '/ua-parser/uap-php/src/UserAgentParser.php',
+        'UAParser\\Util\\CodeGenerator' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Util/CodeGenerator.php',
+        'UAParser\\Util\\Converter' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Util/Converter.php',
+        'UAParser\\Util\\Fetcher' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Util/Fetcher.php',
+        'UAParser\\Util\\Logfile\\AbstractReader' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Util/Logfile/AbstractReader.php',
+        'UAParser\\Util\\Logfile\\ApacheCommonLogFormatReader' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Util/Logfile/ApacheCommonLogFormatReader.php',
+        'UAParser\\Util\\Logfile\\ReaderInterface' => __DIR__ . '/..' . '/ua-parser/uap-php/src/Util/Logfile/ReaderInterface.php',
         'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
         'Way\\Generators\\Commands\\ControllerGeneratorCommand' => __DIR__ . '/..' . '/oscarafdev/laravel-4-generators/src/Way/Generators/Commands/ControllerGeneratorCommand.php',

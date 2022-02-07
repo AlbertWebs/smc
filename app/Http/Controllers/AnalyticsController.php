@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Analytics;
 use Spatie\Analytics\Period;
+use Tracker;
 
 class AnalyticsController extends Controller
 {
@@ -14,6 +15,11 @@ class AnalyticsController extends Controller
 
         //retrieve visitors and pageviews since the 6 months ago
         // $analyticsData = Analytics::fetchVisitorsAndPageViews(Period::months(6));
+        $visitor = Tracker::currentSession();
+        $users = Tracker::onlineUsers(); // defaults to 3 minutes
+        dd($users);
+
+        die();
         return view('analytic');
     }
 }
