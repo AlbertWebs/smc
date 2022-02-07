@@ -118,6 +118,23 @@
 		<script src="{{asset('theme/js/theme.init.js')}}"></script>
 
 	<script defer src="../../../../static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"6a205b9d5ca2ac3a","version":"2021.10.0","r":1,"token":"03fa3b9eb60b49789931c4694c153f9b","si":100}'></script>
+    <!-- Default Statcounter code for Sasema management Company
+https://sasemagroup.com/g-analytics -->
+<script type="text/javascript">
+    var sc_project=12713521;
+    var sc_invisible=1;
+    var sc_security="87011fb3";
+    </script>
+    <script type="text/javascript"
+    src="https://www.statcounter.com/counter/counter.js"
+    async></script>
+    <noscript><div class="statcounter"><a title="Web Analytics"
+    href="https://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="https://c.statcounter.com/12713521/0/87011fb3/1/"
+    alt="Web Analytics"
+    referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+    <!-- End of Statcounter Code -->
 </body>
 
 <!-- Mirrored from www.okler.net/previews/porto/9.2.0/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Oct 2021 05:48:21 GMT -->
