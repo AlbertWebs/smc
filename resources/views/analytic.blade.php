@@ -14,8 +14,13 @@ https://sasemagroup.com -->
     src="https://c.statcounter.com/12713521/0/87011fb3/1/" alt="Web Analytics"
     referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
     <!-- End of Statcounter Code -->
+    <style>
+        .subnav-right{
+            display:none !important;
+        }
+    </style>
     </head>
     <body>
-
+    <iframe width="100%" height="100%" src="http://statcounter.com/p12713521/summary/?guest=1"></iframe>
     </body>
 </html>
