@@ -43,6 +43,7 @@ return array(
     'Symfony\\Component\\CssSelector\\' => array($vendorDir . '/symfony/css-selector'),
     'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'Symfony\\Component\\Cache\\' => array($vendorDir . '/symfony/cache'),
+    'Stevebauman\\Location\\' => array($vendorDir . '/stevebauman/location/src'),
     'Spatie\\Newsletter\\' => array($vendorDir . '/spatie/laravel-newsletter/src'),
     'Spatie\\Analytics\\' => array($vendorDir . '/spatie/laravel-analytics/src'),
     'Spatie\\Activitylog\\' => array($vendorDir . '/spatie/laravel-activitylog/src'),

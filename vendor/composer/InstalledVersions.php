@@ -32,7 +32,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'e9cf69f346c9dc77da8291ca0938e346272d368f',
+    'reference' => '218bbd9b41ca509f407013bdf173bfc3981ff107',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -606,7 +606,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'e9cf69f346c9dc77da8291ca0938e346272d368f',
+      'reference' => '218bbd9b41ca509f407013bdf173bfc3981ff107',
     ),
     'laravel/sail' => 
     array (
@@ -1385,6 +1385,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'c3b9061a8410650aeab1416ed76e1afb57adc685',
+    ),
+    'stevebauman/location' => 
+    array (
+      'pretty_version' => 'v6.2.0',
+      'version' => '6.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'cc2e63fc2b64f17d4404fe206612bc67dca16b10',
     ),
     'swiftmailer/swiftmailer' => 
     array (

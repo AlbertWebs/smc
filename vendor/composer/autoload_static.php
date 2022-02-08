@@ -99,6 +99,7 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Component\\Cache\\' => 24,
+            'Stevebauman\\Location\\' => 21,
             'Spatie\\Newsletter\\' => 18,
             'Spatie\\Analytics\\' => 17,
             'Spatie\\Activitylog\\' => 19,
@@ -375,6 +376,10 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'Symfony\\Component\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/cache',
+        ),
+        'Stevebauman\\Location\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/stevebauman/location/src',
         ),
         'Spatie\\Newsletter\\' => 
         array (
@@ -20955,6 +20960,19 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'Spatie\\Newsletter\\NewsletterPermissions' => __DIR__ . '/..' . '/spatie/laravel-newsletter/src/NewsletterPermissions.php',
         'Spatie\\Newsletter\\NewsletterServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-newsletter/src/NewsletterServiceProvider.php',
         'Spatie\\Newsletter\\NullDriver' => __DIR__ . '/..' . '/spatie/laravel-newsletter/src/NullDriver.php',
+        'Stevebauman\\Location\\Drivers\\Driver' => __DIR__ . '/..' . '/stevebauman/location/src/Drivers/Driver.php',
+        'Stevebauman\\Location\\Drivers\\GeoPlugin' => __DIR__ . '/..' . '/stevebauman/location/src/Drivers/GeoPlugin.php',
+        'Stevebauman\\Location\\Drivers\\IpApi' => __DIR__ . '/..' . '/stevebauman/location/src/Drivers/IpApi.php',
+        'Stevebauman\\Location\\Drivers\\IpApiPro' => __DIR__ . '/..' . '/stevebauman/location/src/Drivers/IpApiPro.php',
+        'Stevebauman\\Location\\Drivers\\IpData' => __DIR__ . '/..' . '/stevebauman/location/src/Drivers/IpData.php',
+        'Stevebauman\\Location\\Drivers\\IpInfo' => __DIR__ . '/..' . '/stevebauman/location/src/Drivers/IpInfo.php',
+        'Stevebauman\\Location\\Drivers\\MaxMind' => __DIR__ . '/..' . '/stevebauman/location/src/Drivers/MaxMind.php',
+        'Stevebauman\\Location\\Exceptions\\DriverDoesNotExistException' => __DIR__ . '/..' . '/stevebauman/location/src/Exceptions/DriverDoesNotExistException.php',
+        'Stevebauman\\Location\\Exceptions\\LocationException' => __DIR__ . '/..' . '/stevebauman/location/src/Exceptions/LocationException.php',
+        'Stevebauman\\Location\\Facades\\Location' => __DIR__ . '/..' . '/stevebauman/location/src/Facades/Location.php',
+        'Stevebauman\\Location\\Location' => __DIR__ . '/..' . '/stevebauman/location/src/Location.php',
+        'Stevebauman\\Location\\LocationServiceProvider' => __DIR__ . '/..' . '/stevebauman/location/src/LocationServiceProvider.php',
+        'Stevebauman\\Location\\Position' => __DIR__ . '/..' . '/stevebauman/location/src/Position.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'Symfony\\Component\\Cache\\Adapter\\AbstractAdapter' => __DIR__ . '/..' . '/symfony/cache/Adapter/AbstractAdapter.php',
         'Symfony\\Component\\Cache\\Adapter\\AbstractTagAwareAdapter' => __DIR__ . '/..' . '/symfony/cache/Adapter/AbstractTagAwareAdapter.php',

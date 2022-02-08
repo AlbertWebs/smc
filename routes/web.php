@@ -47,7 +47,9 @@ Route::get('/slungyfy', [App\Http\Controllers\HomeController::class, 'slungyfy']
 Auth::routes();
 Route::get('/analytics', [AnalyticsController::class, 'index'])->name('analytics.dashboard');
 
-Route::get('/google-analytics', [App\Http\Controllers\AnalyticsController::class, 'index'])->name('analytics');
+Route::get('/google-analytics', [App\Http\Controllers\AnalyticsController::class, 'track'])->name('analytics');
+Route::get('/google-analytics/visitors', [App\Http\Controllers\AnalyticsController::class, 'allVisitors'])->name('visitors');
+Route::get('/google-analytics/visitors/bots', [App\Http\Controllers\AnalyticsController::class, 'allVisitorsBots'])->name('visitors-bots');
 
 Auth::routes();
 
