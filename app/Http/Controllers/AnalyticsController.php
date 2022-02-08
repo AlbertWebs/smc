@@ -58,8 +58,9 @@ class AnalyticsController extends Controller
     }
 
     public function getIp($ip){
-        die();
+
         $currentUserInfo = \Location::get($ip);
+        die();
         $countryName = $currentUserInfo->countryName;
         echo $countryName;
         die();
