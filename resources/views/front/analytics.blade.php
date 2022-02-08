@@ -192,10 +192,10 @@
                                                                 {{$Ses->client_ip}}<br>
                                                                 <hr>
                                                                 <strong>Location</strong>:
-                                                                <?php
+
                                                                     {{$Ses->location}}
 
-                                                                ?>
+
                                                             </td>
 
 
