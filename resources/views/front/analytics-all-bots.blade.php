@@ -107,11 +107,7 @@
 
                                             </td>
                                             <td>
-                                                <?php
-                                                    // $ip = $Ses->client_ip;
-                                                    // $CountryName = \App\Http\Controllers\AnalyticsController::getIP($ip);
-                                                    // echo $CountryName;
-                                                ?>
+                                                {{$Ses->location}}
                                             </td>
 
                                             <td class="center">
