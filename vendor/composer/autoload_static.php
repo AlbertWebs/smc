@@ -754,6 +754,9 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
     );
 
     public static $classMap = array (
+        'App\\Console\\Commands\\BotCron' => __DIR__ . '/../..' . '/app/Console/Commands/BotCron.php',
+        'App\\Console\\Commands\\DeleteCron' => __DIR__ . '/../..' . '/app/Console/Commands/DeleteCron.php',
+        'App\\Console\\Commands\\DemoCron' => __DIR__ . '/../..' . '/app/Console/Commands/DemoCron.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Events\\AnalyticsUpdated' => __DIR__ . '/../..' . '/app/Events/AnalyticsUpdated.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
@@ -779,6 +782,7 @@ class ComposerStaticInit33f5b7e324a4b3376f844da7c74be6b8
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Models\\About' => __DIR__ . '/../..' . '/app/Models/About.php',
+        'App\\Models\\Apply' => __DIR__ . '/../..' . '/app/Models/Apply.php',
         'App\\Models\\Banner' => __DIR__ . '/../..' . '/app/Models/Banner.php',
         'App\\Models\\Blog' => __DIR__ . '/../..' . '/app/Models/Blog.php',
         'App\\Models\\Career' => __DIR__ . '/../..' . '/app/Models/Career.php',

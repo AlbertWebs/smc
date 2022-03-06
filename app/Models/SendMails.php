@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 class SendMails extends Model
 {
     use HasFactory;
-    public static function contact_form($name,$email,$subject,$message){ 
+    public static function contact_form($name,$email,$subject,$message){
         //The Generic mailler Goes here
         $messageee = ''.$message.'';
         $data = array(
@@ -20,10 +20,10 @@ class SendMails extends Model
         );
 
         $subject = "Contact Form: $subject";
-     
+
         $appEmail = 'mailer@sasemagroup.com';
-    
-    
+
+
         $SenderEmail = $email;
         $SenderName = $name;
 
@@ -38,7 +38,7 @@ class SendMails extends Model
         });
     }
 
-    public static function approvePayment($name,$email,$subject,$message){ 
+    public static function approvePayment($name,$email,$subject,$message){
         //The Generic mailler Goes here
         $messageee = ''.$message.'';
         $data = array(
@@ -49,10 +49,10 @@ class SendMails extends Model
         );
 
         $subject = "$subject";
-     
+
         $appEmail = 'mailer@sasemagroup.com';
-    
-    
+
+
         $SenderEmail = $email;
         $SenderName = $name;
 
@@ -67,7 +67,7 @@ class SendMails extends Model
         });
     }
 
-    public static function approvePaymentRequest($email,$Transcode){ 
+    public static function approvePaymentRequest($email,$Transcode){
         $subject = "Request Approval";
         //The Generic mailler Goes here
         $messageee = '';
@@ -78,10 +78,10 @@ class SendMails extends Model
         );
 
         $subject = "$subject";
-     
+
         $appEmail = 'mailer@sasemagroup.com';
-    
-    
+
+
         $SenderEmail = $email;
         $SenderName = $email;
 
@@ -96,6 +96,6 @@ class SendMails extends Model
         });
     }
 
-    
+
 
 }

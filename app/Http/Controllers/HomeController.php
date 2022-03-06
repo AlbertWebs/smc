@@ -9,6 +9,8 @@ use Newsletter;
 use Illuminate\Support\Str;
 use App\Models\SendMails;
 use App\Models\Message;
+use App\Models\Apply;
+
 
 class HomeController extends Controller
 {
@@ -301,8 +303,28 @@ class HomeController extends Controller
             }
     }
 
+    public function apply_career_post(Request $request)
+    {
+            if($request->filled('website')) {
+                return response()->json(['response'=>'success']);
+            } else {
 
+                //
+                $rawSubject= $request->subject;
+                $relSubject = "Career Application";
+                $rawMessage = "Hello, My name is $request->name, Call me on <a href='tel:$request->phone'>$request->phone</a>, We Talk about $request->subject.";
+                $email = "mailer@sasemagroup.com";
+                $Message = new Apply;
 
+                // $Message->attachments = $image;
+                $Message->subject = $request->subject;
+                $Message->content = $rawMessage;
+                $Message->save();
+                // Send Email to Notify
+                SendMails::contact_form($request->name,$email,$relSubject,$rawMessage);
+                return response()->json(['response'=>'success']);
+            }
+    }
 
     public function slungyfy(){
         $Team = DB::table('services')->get();
@@ -320,6 +342,39 @@ class HomeController extends Controller
         $allTables = DB::select('SHOW TABLES');
         var_dump($allTables);
     }
+
+    public function apply_career($slung)
+    {
+        SEOTools::setTitle('Careers | Sasema Management Company | Financial advisor in Kenya');
+        SEOTools::setDescription('Sasema Management Company is an Financial advisory,mergers and acquisitions and family business consulting firm. ');
+        SEOTools::opengraph()->setUrl('https://sasemagroup.com/copyright');
+        SEOTools::setCanonical('https://sasemagroup.com/copyright');
+        SEOTools::opengraph()->addProperty('type', 'articles');
+        SEOTools::twitter()->setSite('@sasemaM');
+        SEOTools::jsonLd()->addImage('https://sasemagroup.com/uploads/logo/logo.png');
+        $page_title = "Sasema Management Company";
+        $page_name = "Careers";
+        $About = DB::table('careers')->where('slung',$slung)->get();
+        $Abouts = DB::table('abouts')->get();
+        return view('front.website.careers',compact('page_title','page_name','About','Abouts'));
+    }
+
+    public function career_inquiry()
+    {
+        SEOTools::setTitle('Careers | Sasema Management Company | Financial advisor in Kenya');
+        SEOTools::setDescription('Sasema Management Company is an Financial advisory,mergers and acquisitions and family business consulting firm. ');
+        SEOTools::opengraph()->setUrl('https://sasemagroup.com/copyright');
+        SEOTools::setCanonical('https://sasemagroup.com/copyright');
+        SEOTools::opengraph()->addProperty('type', 'articles');
+        SEOTools::twitter()->setSite('@sasemaM');
+        SEOTools::jsonLd()->addImage('https://sasemagroup.com/uploads/logo/logo.png');
+        $page_title = "Sasema Management Company";
+        $page_name = "Careers";
+        $About = DB::table('careers')->get();
+        $Abouts = DB::table('abouts')->get();
+        return view('front.website.career',compact('page_title','page_name','About','Abouts'));
+    }
+
 
 
 }

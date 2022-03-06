@@ -18,7 +18,7 @@
         @include('admin.sidebar')
 
         <!--== BODY INNER CONTAINER ==-->
-        
+
         <div class="sb2-2">
             <div class="sb2-2-2">
                 <ul>
@@ -29,7 +29,7 @@
                     <li class="page-back"><a href="{{url('/')}}/admin/courses"><i class="fa fa-backward" aria-hidden="true"></i> All Courses</a>
                     </li>
                 </ul>
-               
+
             </div>
             <div class="sb2-2-Edit-Course sb2-2-1">
                 <div class="box-inn-sp">
@@ -40,7 +40,7 @@
                             @if(Session::has('message'))
                                           <div class="alert alert-success">{{ Session::get('message') }}</div>
                            @endif
-           
+
                            @if(Session::has('messageError'))
                                           <div class="alert alert-danger">{{ Session::get('messageError') }}</div>
                            @endif
@@ -58,9 +58,9 @@
                                     <input autocomplete="off" name="price" id="list-title" value="{{$Course->price}}" type="text" class="validate" required>
                                     <label for="list-title">Price</label>
                                 </div>
-                                
+
                             </div>
-                          
+
                             <div class="row">
                                 <div class="input-field col s12">
                                     <textarea required name="meta" class="materialize-textarea">{{$Course->meta}}</textarea>
@@ -139,10 +139,10 @@
                             {{-- Preview --}}
 
                             {{-- Images --}}
-                           
+
                             <input type="hidden" name="image_cheat" value="{{$Course->image}}">
                             <input type="hidden" name="icon_cheat" value="{{$Course->icon}}">
-                            
+
                             <div class="row">
                                 <div class="input-field col s12">
                                     <input  type="submit" class="waves-effect waves-light btn-large" value="Save Changes">

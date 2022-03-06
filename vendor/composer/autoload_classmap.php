@@ -6,6 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Console\\Commands\\BotCron' => $baseDir . '/app/Console/Commands/BotCron.php',
+    'App\\Console\\Commands\\DeleteCron' => $baseDir . '/app/Console/Commands/DeleteCron.php',
+    'App\\Console\\Commands\\DemoCron' => $baseDir . '/app/Console/Commands/DemoCron.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Events\\AnalyticsUpdated' => $baseDir . '/app/Events/AnalyticsUpdated.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
@@ -31,6 +34,7 @@ return array(
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Models\\About' => $baseDir . '/app/Models/About.php',
+    'App\\Models\\Apply' => $baseDir . '/app/Models/Apply.php',
     'App\\Models\\Banner' => $baseDir . '/app/Models/Banner.php',
     'App\\Models\\Blog' => $baseDir . '/app/Models/Blog.php',
     'App\\Models\\Career' => $baseDir . '/app/Models/Career.php',

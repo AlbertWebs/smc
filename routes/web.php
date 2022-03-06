@@ -32,6 +32,12 @@ Route::get('/copyright', [App\Http\Controllers\HomeController::class, 'copyright
 Route::post('/news-letters', [HomeController::class, 'news_letters'])->name('news-letters');
 Route::get('/projects', [App\Http\Controllers\HomeController::class, 'projects'])->name('projects');
 Route::get('/page-careers', [App\Http\Controllers\HomeController::class, 'page_careers'])->name('page-careers');
+Route::get('/apply-career/{slung}', [App\Http\Controllers\HomeController::class, 'apply_career'])->name('apply-career');
+Route::post('/apply-career', [App\Http\Controllers\HomeController::class, 'apply_career_post'])->name('apply-career-post');
+Route::get('/career-inquiry', [App\Http\Controllers\HomeController::class, 'career_inquiry'])->name('career-inquiry');
+
+
+
 Route::post('/submit-message', [HomeController::class, 'submit_message'])->name('submit-message');
 Route::post('/submit-messages', [HomeController::class, 'submit_messages'])->name('submit-messages');
 
@@ -99,6 +105,14 @@ Route::get('admin/editClient/{id}', [AdminsController::class, 'editClient'])->mi
 Route::post('admin/add_Client', [AdminsController::class, 'add_Client'])->middleware('is_admin');
 Route::post('admin/edit_Client/{id}', [AdminsController::class, 'edit_Client'])->middleware('is_admin');
 Route::get('admin/delete_Client/{id}', [AdminsController::class, 'delete_Client'])->middleware('is_admin');
+
+// Careers
+Route::get('admin/careers', [AdminsController::class, 'careers'])->middleware('is_admin');
+Route::get('admin/addCareers', [AdminsController::class, 'addCareer'])->middleware('is_admin');
+Route::get('admin/editCareers/{id}', [AdminsController::class, 'editCareer'])->middleware('is_admin');
+Route::post('admin/add_Career', [AdminsController::class, 'add_Career'])->middleware('is_admin');
+Route::post('admin/edit_Career/{id}', [AdminsController::class, 'edit_Career'])->middleware('is_admin');
+Route::get('admin/delete_Career/{id}', [AdminsController::class, 'delete_Career'])->middleware('is_admin');
 
 // Copyright Statement
 Route::get('admin/editCopyright', [AdminsController::class, 'copyright'])->middleware('is_admin');
@@ -205,6 +219,8 @@ Route::post('admin/deleteFaqAjax', [AdminsController::class, 'deleteFaqAjax'])->
 Route::post('admin/deletePrivacyAjax', [AdminsController::class, 'deletePrivacyAjax'])->middleware('is_admin');
 Route::post('admin/deleteTermsAjax', [AdminsController::class, 'deleteTermsAjax'])->middleware('is_admin');
 Route::post('admin/deleteHowAjax', [AdminsController::class, 'deleteHowAjax'])->middleware('is_admin');
+Route::post('admin/deleteCareerAjax', [AdminsController::class, 'deleteCareerAjax'])->middleware('is_admin');
+
 
 
 Route::get('/wait/{seconds}', function ($seconds) {

@@ -42,14 +42,15 @@ use App\Models\Topic;
 
 use App\Models\SendMails;
 
+use App\Models\Career;
+
 use App\Models\Client;
 
 use App\Models\Gallery;
 
-
-
 use Illuminate\Http\Request;
 
+use Auth;
 // use Request;
 
 use Datetime;
@@ -75,7 +76,7 @@ class AdminsController extends Controller
     {
         $this->middleware('auth');
     }
-  
+
     /**
      * Show the application dashboard.
      *
@@ -85,7 +86,7 @@ class AdminsController extends Controller
     {
         return view('home');
     }
-  
+
     /**
      * Show the application dashboard.
      *
@@ -111,7 +112,7 @@ class AdminsController extends Controller
         return view('admin.index',compact('Notifications','ActivityLog','SiteSettings','Message'));
     }
 
-    
+
 
     public function SiteSettings(){
         activity()->log('User Accessed Site Settings Page');
@@ -125,7 +126,7 @@ class AdminsController extends Controller
         return view('admin.mailerSettings',compact('SiteSettings'));
     }
 
-    
+
     public function SocialMediaSettings(){
         activity()->log('User Accessed Social Media Settings Page');
         $SiteSettings = DB::table('_site_settings')->get();
@@ -196,7 +197,7 @@ class AdminsController extends Controller
         Session::flash('message', "Changes have Been Saved");
         return Redirect::back();
     }
-    
+
     public function editRisk(){
         activity()->log('User Accessed The Risk Declaration Page');
         // activity()->log('User Accessed Site Settings Page');
@@ -315,7 +316,7 @@ class AdminsController extends Controller
         $Privacy = Privacy::find($id);
         $page_name = $Privacy->title;
         $page_title = 'formfiletext';//For Style Inheritance
-        
+
         return view('admin.editPrivacy')->with('Privacy',$Privacy)->with('page_name',$page_name)->with('page_title',$page_title);
     }
 
@@ -418,14 +419,14 @@ class AdminsController extends Controller
         $page_name = 'Site Banner';
         return view('admin.editBanner',compact('page_title','Banner','page_name'));
     }
-    
+
     public function edit_Banner(Request $request, $id){
         activity()->log('Evoked Edit Banner For Banner ID number '.$id.' ');
         $path = 'uploads/banners';
         if(isset($request->image)){
             $file = $request->file('image');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
-            
+
             $file->move($path, $filename);
             $image = $filename;
         }else{
@@ -485,14 +486,14 @@ class AdminsController extends Controller
         $page_name = 'Categories';
         return view('admin.categories',compact('page_title','Category','page_name'));
     }
-    
+
     public function addCategory(){
         activity()->log('Accessed Add Category Page');
         $page_title = 'formfiletext';
         $page_name = 'Add Category';
         return view('admin.addCategory',compact('page_title','page_name'));
     }
-    
+
     public function add_Category(Request $request){
         activity()->log('Evoked add Category Operation');
         $path = 'uploads/categories';
@@ -513,7 +514,7 @@ class AdminsController extends Controller
         Session::flash('message', "Category Has Been Added");
         return Redirect::back();
     }
-    
+
     public function editCategories($id){
         activity()->log('Access Edit Category ID number '.$id.' ');
         $Category = Category::find($id);
@@ -521,7 +522,7 @@ class AdminsController extends Controller
         $page_name = 'Edit Home Page Slider';
         return view('admin.editCategory',compact('page_title','Category','page_name'));
     }
-    
+
     public function edit_Category(Request $request, $id){
         activity()->log('Evoked Edit Category For Category ID number '.$id.' ');
         $path = 'uploads/categories';
@@ -539,13 +540,13 @@ class AdminsController extends Controller
             'slung' => Str::slug($request->title),
             'content'=>$request->content,
             'image'=>$image
-          
+
         );
         DB::table('categories')->where('id',$id)->update($updateDetails);
         Session::flash('message', "Changes have been saved");
         return Redirect::back();
     }
-    
+
     public function deleteCategory($id){
         activity()->log('Deleted Category ID number '.$id.' ');
         DB::table('categories')->where('id',$id)->delete();
@@ -568,14 +569,14 @@ class AdminsController extends Controller
         $page_name = 'Users';
         return view('admin.users',compact('page_title','Users','page_name'));
     }
-    
+
     public function addUser(){
         activity()->log('Access Addd user Page');
         $page_title = 'formfiletext';
         $page_name = 'Add User';
         return view('admin.addUser',compact('page_title','page_name'));
     }
-    
+
     public function add_User(Request $request){
         activity()->log('Evoked and add User Operation');
         $path = 'uploads/users';
@@ -603,7 +604,7 @@ class AdminsController extends Controller
         Session::flash('message', "User Has Been Added");
         return Redirect::back();
     }
-    
+
     public function editUser($id){
         activity()->log('Edited User ID number '.$id.' ');
         $User = User::find($id);
@@ -611,7 +612,7 @@ class AdminsController extends Controller
         $page_name = 'Edit User';
         return view('admin.editUser',compact('page_title','User','page_name'));
     }
-    
+
     public function edit_User(Request $request, $id){
         activity()->log('Evoked an edit user for user with ID number '.$id.' ');
         $path = 'uploads/users';
@@ -629,17 +630,17 @@ class AdminsController extends Controller
             'email'=>$request->email,
             'facebook'=>$request->facebook,
             'instagram'=>$request->instagram,
-            'linkedin'=>$request->linkedin, 
+            'linkedin'=>$request->linkedin,
             'mobile'=>$request->mobile,
             'address'=>$request->address,
             'image'=>$image
-          
+
         );
         DB::table('users')->where('id',$id)->update($updateDetails);
         Session::flash('message', "Changes have been saved");
         return Redirect::back();
     }
-    
+
     public function delete_user($id){
         activity()->log('Evoked a Delete user operations for ID number '.$id.' ');
         DB::table('users')->where('id',$id)->delete();
@@ -653,12 +654,12 @@ class AdminsController extends Controller
             if($value->is_admin == 1){
                 $new_value = 0;
                 $updateDetails = array(
-                    'is_admin'=>$new_value,          
+                    'is_admin'=>$new_value,
                 );
             }else{
                 $new_value = 1;
                 $updateDetails = array(
-                    'is_admin'=>$new_value,          
+                    'is_admin'=>$new_value,
                 );
             }
             DB::table('users')->where('id',$id)->update($updateDetails);
@@ -674,12 +675,12 @@ class AdminsController extends Controller
             if($value->status == 1){
                 $new_value = 0;
                 $updateDetails = array(
-                    'status'=>$new_value,          
+                    'status'=>$new_value,
                 );
             }else{
                 $new_value = 1;
                 $updateDetails = array(
-                    'status'=>$new_value,          
+                    'status'=>$new_value,
                 );
             }
             DB::table('users')->where('id',$id)->update($updateDetails);
@@ -688,9 +689,9 @@ class AdminsController extends Controller
         }
     }
 
-    
 
-    // 
+
+    //
 
     // Testimonials
     public function addTestimonial(){
@@ -704,7 +705,7 @@ class AdminsController extends Controller
         activity()->log('Evoked an Add Testimonial Operation');
 
         $path = 'uploads/testimonials';
-        if(isset($request->image)){            
+        if(isset($request->image)){
                 $file = $request->file('image');
                 $filename = str_replace(' ', '', $file->getClientOriginalName());
                 $timestamp = new Datetime();
@@ -717,9 +718,9 @@ class AdminsController extends Controller
             $image = $request->pro_img_cheat;
         }
 
-        
 
-    
+
+
 
         $Testimonial = new Testimonial;
         $Testimonial->name = $request->name;
@@ -761,13 +762,13 @@ class AdminsController extends Controller
                 $image_main_temp = $new_timestamp.'image'.$filename;
                 $image = str_replace(' ', '',$image_main_temp);
                 $file->move($path, $image);
-                
+
         }else{
             $image = $request->image_cheat;
         }
 
 
-    
+
 
         $updateDetails = array(
             'name' => $request->name,
@@ -775,10 +776,10 @@ class AdminsController extends Controller
             'rating' => $request->rating,
             'company' => $request->company,
             'position' => $request->position,
-        
+
             'image' =>$image,
-            
-            
+
+
         );
         DB::table('testimonials')->where('id',$id)->update($updateDetails);
         Session::flash('message', "Changes have been saved");
@@ -801,19 +802,19 @@ class AdminsController extends Controller
         $page_name = 'add Blog';
         return view('admin.addBlog',compact('page_title','page_name','Category'));
     }
-    
+
     public function add_Blog(Request $request){
         activity()->log('Evoked an add Blog Operation');
         $title = $request->title;
         $description = $request->content;
-       
-      
-      
+
+
+
         $category = $request->cat;
         $path = 'uploads/blogs';
-        if(isset($request->image_one)){ 
-            
-                
+        if(isset($request->image_one)){
+
+
                 $file = $request->file('image_one');
                 $filename = str_replace(' ', '', $file->getClientOriginalName());
                 $timestamp = new Datetime();
@@ -821,12 +822,12 @@ class AdminsController extends Controller
                 $image_main_temp = $new_timestamp.'image'.$filename;
                 $image_one = str_replace(' ', '',$image_main_temp);
                 $file->move($path, $image_one);
-                
+
         }else{
             $image_one = $request->pro_img_cheat;
         }
 
-        $blog = new Blog; 
+        $blog = new Blog;
         $blog->title = $request->title;
         $blog->meta = $request->meta;
         $blog->slung = Str::slug($request->title);
@@ -838,16 +839,16 @@ class AdminsController extends Controller
         $blog->save();
         Session::flash('message', "Post Saved Successfully");
         return Redirect::back();
-    
-        
-     
-        
+
+
+
+
         $Blog->save();
-      
+
         Session::flash('message', "Blog Has Been Added");
         return Redirect::back();
     }
-    
+
     public function blog(){
         activity()->log('Accessed the all blogs page ');
         $Blog = Blog::all();
@@ -855,7 +856,7 @@ class AdminsController extends Controller
         $page_name = 'Blog';
         return view('admin.blog',compact('page_title','Blog','page_name'));
     }
-    
+
     public function editBlog($id){
         activity()->log('Accessed Edit Blog For Blog ID number '.$id.' ');
         $Category = DB::table('categories')->orderBy('id','DESC')->get();
@@ -864,14 +865,14 @@ class AdminsController extends Controller
         $page_name = 'Edit Blog';
         return view('admin.editBlog',compact('page_title','Blog','page_name','Category'));
     }
-    
-    
+
+
     public function edit_Blog(Request $request, $id){
         activity()->log('Evoked an Edit Blog Operation For Blog ID number '.$id.' ');
         $path = 'uploads/blogs';
         if(isset($request->image_one)){
-          
-                
+
+
                 $file = $request->file('image_one');
                 $filename = str_replace(' ', '', $file->getClientOriginalName());
                 $timestamp = new Datetime();
@@ -879,13 +880,13 @@ class AdminsController extends Controller
                 $image_main_temp = $new_timestamp.'image'.$filename;
                 $image_one = str_replace(' ', '',$image_main_temp);
                 $file->move($path, $image_one);
-                
+
         }else{
-            $image_one = $request->image_one_cheat; 
+            $image_one = $request->image_one_cheat;
         }
-    
+
         if(isset($request->image_two)){
-          
+
                 $file = $request->file('image_two');
                 $filename = str_replace(' ', '', $file->getClientOriginalName());
                 $timestamp = new Datetime();
@@ -893,14 +894,14 @@ class AdminsController extends Controller
                 $image_main_temp = $new_timestamp.'image'.$filename;
                 $image_two = str_replace(' ', '',$image_main_temp);
                 $file->move($path, $image_two);
-             
+
         }else{
             $image_two = $request->image_two_cheat;
         }
-    
-        
+
+
         if(isset($request->image_three)){
-          
+
                 $file = $request->file('image_three');
                 $filename = str_replace(' ', '', $file->getClientOriginalName());
                 $timestamp = new Datetime();
@@ -908,12 +909,12 @@ class AdminsController extends Controller
                 $image_main_temp = $new_timestamp.'image'.$filename;
                 $image_three = str_replace(' ', '',$image_main_temp);
                 $file->move($path, $image_three);
-            
+
         }else{
             $image_three = $request->image_three_cheat;
         }
         //Additional images
-        
+
         if(isset($request->image_four)){
                 $file = $request->file('image_four');
                 $filename = str_replace(' ', '', $file->getClientOriginalName());
@@ -922,11 +923,11 @@ class AdminsController extends Controller
                 $image_main_temp = $new_timestamp.'image'.$filename;
                 $image_four = str_replace(' ', '',$image_main_temp);
                 $file->move($path, $image_four);
-            
+
         }else{
             $image_four = $request->image_four_cheat;
         }
-        
+
         $updateDetails = array(
             'title' => $request->title,
             'slung' => Str::slug($request->title),
@@ -943,7 +944,7 @@ class AdminsController extends Controller
         Session::flash('message', "Changes have been saved");
         return Redirect::back();
     }
-    
+
     public function delete_Blog($id){
         activity()->log('Deleted Blog With ID number '.$id.' ');
         DB::table('blogs')->where('id',$id)->delete();
@@ -1044,7 +1045,7 @@ class AdminsController extends Controller
         $FAQ = FAQ::find($id);
         $page_name = $FAQ->title;
         $page_title = 'formfiletext';//For Style Inheritance
-        
+
         return view('admin.editFaq')->with('FAQ',$FAQ)->with('page_name',$page_name)->with('Category',$Category)->with('page_title',$page_title);
     }
 
@@ -1142,7 +1143,7 @@ class AdminsController extends Controller
                 $new_timestamp = $timestamp->format('Y-m-d H:i:s');
                 $image_main_temp = $new_timestamp.'image'.$filename;
                 $image = str_replace(' ', '',$image_main_temp);
-                $file->move($path, $image);      
+                $file->move($path, $image);
         }else{
             $image = '0';
         }
@@ -1154,7 +1155,7 @@ class AdminsController extends Controller
             $new_timestamp = $timestamp->format('Y-m-d H:i:s');
             $image_main_temp = $new_timestamp.'icon'.$filename;
             $icon = str_replace(' ', '',$image_main_temp);
-            $file->move($path, $icon);      
+            $file->move($path, $icon);
         }else{
             $icon = '0';
         }
@@ -1198,7 +1199,7 @@ class AdminsController extends Controller
             $new_timestamp = $timestamp->format('Y-m-d H:i:s');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image = str_replace(' ', '',$image_main_temp);
-            $file->move($path, $image);      
+            $file->move($path, $image);
         }else{
             $image = $request->image_cheat;
         }
@@ -1210,7 +1211,7 @@ class AdminsController extends Controller
             $new_timestamp = $timestamp->format('Y-m-d H:i:s');
             $image_main_temp = $new_timestamp.'icon'.$filename;
             $icon = str_replace(' ', '',$image_main_temp);
-            $file->move($path, $icon);      
+            $file->move($path, $icon);
         }else{
             $icon = $request->icon_cheat;
         }
@@ -1240,9 +1241,9 @@ class AdminsController extends Controller
 
     // Add Client
     public function addClient(){
-       
+
         activity()->log('Access The Add Clients');
-       
+
         $page_name = 'Add How It Works';
         $page_title = 'formfiletext';//For Style Inheritance
         return view('admin.addClient',compact('page_title','page_name'));
@@ -1250,8 +1251,8 @@ class AdminsController extends Controller
 
 
     public function add_Client(Request $request){
-        
-        
+
+
         activity()->log('Evoked Add Client');
         $path = 'uploads/clients';
         if(isset($request->image)){
@@ -1261,22 +1262,22 @@ class AdminsController extends Controller
                 $new_timestamp = $timestamp->format('Y-m-d H:i:s');
                 $image_main_temp = $new_timestamp.'image'.$filename;
                 $image = str_replace(' ', '',$image_main_temp);
-                $file->move($path, $image);      
+                $file->move($path, $image);
         }else{
             $image = 'Thumbnail.png';
         }
 
-        
+
         $Client = new Client;
         $Client->title = $request->title;
         $Client->image = $image;
         $Client->link = $request->link;
-        $Client->type = $request->type;        
+        $Client->type = $request->type;
         $Client->save();
         Session::flash('message', "Content Has been Added");
         return Redirect::back();
     }
-       
+
     public function clients(){
         activity()->log('Accessed All Clients Page');
         $Client = Client::All();
@@ -1302,12 +1303,12 @@ class AdminsController extends Controller
             $new_timestamp = $timestamp->format('Y-m-d H:i:s');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image = str_replace(' ', '',$image_main_temp);
-            $file->move($path, $image);      
+            $file->move($path, $image);
         }else{
             $image = $request->image_cheat;
         }
 
-       
+
 
         activity()->log('Edited Client ID number '.$id.' ');
         $updateDetails = array(
@@ -1337,11 +1338,11 @@ class AdminsController extends Controller
         $page_title = 'formfiletext';//For Style Inheritance
         return view('admin.addTopic',compact('page_title','page_name','Course'));
     }
-    
+
 
     public function add_Topic(Request $request){
-        
-        
+
+
         activity()->log('Evoked Add Topic');
         $path = 'uploads/topics';
         if(isset($request->image)){
@@ -1351,11 +1352,11 @@ class AdminsController extends Controller
                 $new_timestamp = $timestamp->format('Y-m-d H:i:s');
                 $image_main_temp = $new_timestamp.'image'.$filename;
                 $image = str_replace(' ', '',$image_main_temp);
-                $file->move($path, $image);      
+                $file->move($path, $image);
         }else{
             $image = 'Thumbnail.png';
         }
-         
+
 
 
         if(isset($request->file)){
@@ -1364,7 +1365,7 @@ class AdminsController extends Controller
                 $file = $request->file('file');
                 $filename = $file->getClientOriginalName();
                 $path = $request->file('file')->storeAs('public/uploads/videos',$filename);
-              
+
                 $ffprobe = FFMpeg\FFProbe::create();
                 $media = FFMpeg::open('public/uploads/videos/'.$filename.'');
                 $durationInSeconds = $media->getDurationInSeconds(); // returns an int
@@ -1372,19 +1373,19 @@ class AdminsController extends Controller
                 //in seconds
                 if($durationInSeconds>=60){
                     $duration = $durationInSeconds/60;
-                    $whole = number_format($duration); 
+                    $whole = number_format($duration);
                     $remainer = $duration - floor($duration);
                     $i = $whole;
                     $s = $remainer*60;
-                    
-    
+
+
                     if($s<10){
                         $duration= "$i:0$s";
                     }else{
                         $duration= "$i:$s";
                     }
-                    
-                    
+
+
                 }else{
                     $duration = $durationInSeconds/60;
                     $remainer = $duration - floor($duration);
@@ -1395,12 +1396,12 @@ class AdminsController extends Controller
                         }else{
                             $duration= "$i:$s";
                         }
-                }        
+                }
         }else{
             $filename = $request->video_cheat;
             $filename = $file->getClientOriginalName();
             $path = $request->file('file')->storeAs('public/uploads/videos',$filename);
-            
+
             $ffprobe = FFMpeg\FFProbe::create();
             $media = FFMpeg::open('public/uploads/videos/'.$filename.'');
             $durationInSeconds = $media->getDurationInSeconds(); // returns an int
@@ -1408,19 +1409,19 @@ class AdminsController extends Controller
             //in seconds
             if($durationInSeconds>=60){
                 $duration = $durationInSeconds/60;
-                $whole = number_format($duration); 
+                $whole = number_format($duration);
                 $remainer = $duration - floor($duration);
                 $i = $whole;
                 $s = $remainer*60;
-                
+
 
                 if($s<10){
                     $duration= "$i:0$s";
                 }else{
                     $duration= "$i:$s";
                 }
-                
-                
+
+
             }else{
                 $duration = $durationInSeconds/60;
                 $remainer = $duration - floor($duration);
@@ -1431,11 +1432,11 @@ class AdminsController extends Controller
                     }else{
                         $duration= "$i:$s";
                     }
-            }       
-                
+            }
+
         }
-        
-            
+
+
 
         if($request->bonus == 'on'){
             $is_bonus = 1;
@@ -1460,12 +1461,12 @@ class AdminsController extends Controller
         $Topic->video = $filename;
         $Topic->video_views = $request->video_views;
         $Topic->video_duration = $duration;
-        
+
         $Topic->save();
         Session::flash('message', "Content Has been Added");
         return Redirect::back();
     }
-           
+
     public function topics(){
         activity()->log('Accessed All Topics Page');
         $Topic = Topic::All();
@@ -1493,7 +1494,7 @@ class AdminsController extends Controller
             $new_timestamp = $timestamp->format('Y-m-d H:i:s');
             $image_main_temp = $new_timestamp.'image'.$filename;
             $image = str_replace(' ', '',$image_main_temp);
-            $file->move($path, $image);      
+            $file->move($path, $image);
         }else{
             $image = "Thumbnail1.png";
         }
@@ -1504,7 +1505,7 @@ class AdminsController extends Controller
             $file = $request->file('file');
             $filename = $file->getClientOriginalName();
             $path = $request->file('file')->storeAs('public/uploads/videos',$filename);
-          
+
             $ffprobe = FFMpeg\FFProbe::create();
             $media = FFMpeg::open('public/uploads/videos/'.$filename.'');
             $durationInSeconds = $media->getDurationInSeconds(); // returns an int
@@ -1512,19 +1513,19 @@ class AdminsController extends Controller
             //in seconds
             if($durationInSeconds>=60){
                 $duration = $durationInSeconds/60;
-                $whole = number_format($duration); 
+                $whole = number_format($duration);
                 $remainer = $duration - floor($duration);
                 $i = $whole;
                 $s = $remainer*60;
-                
+
 
                 if($s<10){
                     $duration= "$i:0$s";
                 }else{
                     $duration= "$i:$s";
                 }
-                
-                
+
+
             }else{
                 $duration = $durationInSeconds/60;
                 $remainer = $duration - floor($duration);
@@ -1535,11 +1536,11 @@ class AdminsController extends Controller
                     }else{
                         $duration= "$i:$s";
                     }
-            }       
+            }
         }else{
             $filename = $request->video_cheat;
-      
-            
+
+
             $ffprobe = FFMpeg\FFProbe::create();
             $media = FFMpeg::open('public/uploads/videos/'.$filename.'');
             $durationInSeconds = $media->getDurationInSeconds(); // returns an int
@@ -1547,19 +1548,19 @@ class AdminsController extends Controller
             //in seconds
             if($durationInSeconds>=60){
                 $duration = $durationInSeconds/60;
-                $whole = number_format($duration); 
+                $whole = number_format($duration);
                 $remainer = $duration - floor($duration);
                 $i = $whole;
                 $s = $remainer*60;
-                
+
 
                 if($s<10){
                     $duration= "$i:0$s";
                 }else{
                     $duration= "$i:$s";
                 }
-                
-                
+
+
             }else{
                 $duration = $durationInSeconds/60;
                 $remainer = $duration - floor($duration);
@@ -1570,10 +1571,10 @@ class AdminsController extends Controller
                     }else{
                         $duration= "$i:$s";
                     }
-            }       
-                
+            }
+
         }
-     
+
 
         if($request->bonus == 'on'){
             $is_bonus = 1;
@@ -1584,8 +1585,8 @@ class AdminsController extends Controller
         $OriginalFileName = $filename;
         // Remove .mp4
         $withoutExt = preg_replace('/\\.[^.\\s]{3,4}$/', '', $OriginalFileName);
-     
-         
+
+
         $encrypted = Crypt::encryptString(Str::slug($request->title));
         activity()->log('Edited Topic ID number '.$id.' ');
         $updateDetails = array(
@@ -1619,11 +1620,11 @@ class AdminsController extends Controller
         $page_name = 'add Signal';
         return view('admin.addSignal',compact('page_title','page_name'));
     }
-    
+
     public function add_Signal(Request $request){
         activity()->log('Evoked an add Signal Operation');
-    
-        $Signal = new Signal; 
+
+        $Signal = new Signal;
         $Signal->currency_pair = $request->currency_pair;
         $Signal->datetime = $request->datetime;
         $Signal->position = $request->position;
@@ -1636,7 +1637,7 @@ class AdminsController extends Controller
 
     }
 
-    
+
     public function signals(){
         activity()->log('Accessed the all signals page ');
         $Signal = Signal::all();
@@ -1644,7 +1645,7 @@ class AdminsController extends Controller
         $page_name = 'Signal';
         return view('admin.signals',compact('page_title','Signal','page_name'));
     }
-    
+
     public function editSignal($id){
         activity()->log('Accessed Edit Signal For Signal ID number '.$id.' ');
         $Signal = Signal::find($id);
@@ -1652,11 +1653,11 @@ class AdminsController extends Controller
         $page_name = 'Edit Signal';
         return view('admin.editSignal',compact('page_title','Signal','page_name'));
     }
-    
-    
+
+
     public function edit_Signal(Request $request, $id){
         activity()->log('Evoked an Edit Signal Operation For Signal ID number '.$id.' ');
-        
+
         $updateDetails = array(
             'currency_pair' => $request->currency_pair,
             'datetime' => $request->datetime,
@@ -1670,7 +1671,7 @@ class AdminsController extends Controller
         return Redirect::back();
     }
 
-    
+
     public function delete_Signal($id){
         activity()->log('Deleted Signal With ID number '.$id.' ');
         DB::table('signals')->where('id',$id)->delete();
@@ -1733,8 +1734,8 @@ class AdminsController extends Controller
         return view('admin.enroll_users_post',compact('page_title','User','page_name'));
     }
 
-    
-    
+
+
     public function enroll_user_now(Request $request){
         $User_id = $request->user_id;
         activity()->log('Enrolling User');
@@ -1752,7 +1753,7 @@ class AdminsController extends Controller
         SendMails::approvePayment($User->name,$User->email,$subject,$Message);
         DB::table('users')->where('id',$User_id)->update($updateDetails);
         Session::flash('message', "User Enroled Successfully");
-        return Redirect::back();  
+        return Redirect::back();
     }
     public function enroll_users_now($email){
         $TheUSer = User::where('email',$email)->get();
@@ -1778,23 +1779,23 @@ class AdminsController extends Controller
             return "User $email Approved!";
         }
     }
-    
 
-    
-    
+
+
+
     // AJAX REQUESTS
     public function addCategoryAjaxRequest(Request $request){
         activity()->log('Evoked an Add Categorgy Request');
        $Category = new Category;
        $Category->title = $request->title;
        $Category->slung = Str::slug($request->title);
-       
+
        if($Category->save()){
         return response()->json(['success'=>'Category Added Successfully!']);
        }else{
         return response()->json(['success'=>'Something went Wrong!']);
        }
-       
+
     }
 
     public function deleteCategoryAjax(Request $request){
@@ -1893,29 +1894,38 @@ class AdminsController extends Controller
         $id = $request->id;
         DB::table('privacies')->where('id',$id)->delete();
         return response()->json(['success'=>'Deleted Successfully!']);
-    }    
+    }
 
     public function deleteTermsAjax(Request $request){
         activity()->log('Evoked a delete Privacy Request');
         $id = $request->id;
         DB::table('terms')->where('id',$id)->delete();
         return response()->json(['success'=>'Deleted Successfully!']);
-    }    
+    }
 
     public function deleteHowAjax(Request $request){
         activity()->log('Evoked a delete How it works Request');
         $id = $request->id;
         DB::table('hows')->where('id',$id)->delete();
         return response()->json(['success'=>'Deleted Successfully!']);
-    }  
-    
-    
+    }
+
+
     public function deleteCoursesAjax(Request $request){
         activity()->log('Evoked a delete How it works Request');
         $id = $request->id;
         DB::table('courses')->where('id',$id)->delete();
         return response()->json(['success'=>'Deleted Successfully!']);
-    }   
+    }
+
+    public function deleteCareerAjax(Request $request){
+        activity()->log('Evoked a delete How it works Request');
+        $id = $request->id;
+        DB::table('careers')->where('id',$id)->delete();
+        return response()->json(['success'=>'Deleted Successfully!']);
+    }
+
+
 
 
     public function deleteTopicsAjax(Request $request){
@@ -1923,23 +1933,23 @@ class AdminsController extends Controller
         $id = $request->id;
         DB::table('topics')->where('id',$id)->delete();
         return response()->json(['success'=>'Deleted Successfully!']);
-    }  
-    
+    }
+
     public function deleteSignalsAjax(Request $request){
         activity()->log('Evoked a delete How it works Request');
         $id = $request->id;
         DB::table('signals')->where('id',$id)->delete();
         return response()->json(['success'=>'Deleted Successfully!']);
-    }   
+    }
 
     public function deleteCaseStudiesAjax(Request $request){
         activity()->log('Evoked a delete How it works Request');
         $id = $request->id;
         DB::table('cases')->where('id',$id)->delete();
         return response()->json(['success'=>'Deleted Successfully!']);
-    }   
+    }
 
-        
+
     public function updateSiteSettingsAjax(Request $request){
         activity()->log('Evoked an update Settings Request');
         if($request->tawkToStatus == 'on'){
@@ -1953,7 +1963,7 @@ class AdminsController extends Controller
              $newwhatsAppStatus = 0;
          }
 
-        
+
         $updateDetails = array (
             'sitename' => $request->sitename,
             'whatsAppStatus' => $newwhatsAppStatus,
@@ -1972,7 +1982,7 @@ class AdminsController extends Controller
             'address'=>$request->address,
             'welcome'=>$request->welcome
         );
-        
+
         DB::table('_site_settings')->update($updateDetails);
         Session::flash('message', "Changes have Been Saved");
         return response()->json(['success'=>'Changes Saved Successfully!']);
@@ -1980,7 +1990,7 @@ class AdminsController extends Controller
 
     public function updateMailerAjax(Request $request){
         activity()->log('Evoked a update Mailer Request');
-     
+
         $updateDetails = array (
             'email' => $request->email,
             'title'=>$request->title,
@@ -1992,9 +2002,9 @@ class AdminsController extends Controller
             'password'=>$request->password,
             'encryption'=>$request->encryption,
             'location'=>$request->location,
-         
+
         );
-        
+
         DB::table('email_settings')->update($updateDetails);
         Session::flash('message', "Changes have Been Saved");
         return response()->json(['success'=>'Changes Saved Successfully!']);
@@ -2010,7 +2020,7 @@ class AdminsController extends Controller
             'youtube'=>$request->youtube,
             'google'=>$request->google,
         );
-        
+
         DB::table('_site_settings')->update($updateDetails);
         Session::flash('message', "Changes have Been Saved");
         return "Done";
@@ -2029,7 +2039,7 @@ class AdminsController extends Controller
             'c2bcallback'=>$request->twitter,
             'b2bcallback'=>$request->linkedin,
         );
-        
+
         DB::table('site_settings')->update($updateDetails);
         Session::flash('message', "Changes have Been Saved");
         return Redirect::back();
@@ -2044,7 +2054,7 @@ class AdminsController extends Controller
         }
         return "Done";
     }
-    
+
 
     // Case Study
 public function addCaseStudy(){
@@ -2063,7 +2073,7 @@ public function add_CaseStudy(Request $request){
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
             return Redirect::back();
             }else{
-            
+
             $file = $request->file('image_one');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
@@ -2081,9 +2091,9 @@ public function add_CaseStudy(Request $request){
          if($fileSize>=2000000){
             Session::flash('message', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
-            
+
          }else{
-            
+
             $file = $request->file('image_two');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
@@ -2096,15 +2106,15 @@ public function add_CaseStudy(Request $request){
         $image_two = $request->pro_img_cheat;
     }
 
-    
+
     if(isset($request->image_three)){
         $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=2000000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
-           
+
         }else{
-           
+
             $file = $request->file('image_three');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
@@ -2117,15 +2127,15 @@ public function add_CaseStudy(Request $request){
         $image_three = $request->pro_img_cheat;
     }
     //Additional images
-    
+
     if(isset($request->image_four)){
         $fileSize = $request->file('image_four')->getSize();
         if($fileSize>=2000000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
-           
+
         }else{
-        
+
             $file = $request->file('image_four');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
@@ -2138,16 +2148,16 @@ public function add_CaseStudy(Request $request){
         $image_four = $request->pro_img_cheat;
     }
 
-    
+
 
     if(isset($request->image_five)){
         $fileSize = $request->file('image_five')->getSize();
         if($fileSize>=2000000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
-           
+
         }else{
-            
+
             $file = $request->file('image_five');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
@@ -2165,9 +2175,9 @@ public function add_CaseStudy(Request $request){
         if($fileSize>=2000000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
-           
+
         }else{
-            
+
             $file = $request->file('thumbnail');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
@@ -2180,9 +2190,9 @@ public function add_CaseStudy(Request $request){
         $thumbnail = $request->pro_img_cheat;
     }
 
-    
 
-  
+
+
     $slung = str_slug($request->name);
     $Portfolio = new Cases;
     $Portfolio->title = $request->name;
@@ -2201,7 +2211,7 @@ public function add_CaseStudy(Request $request){
     $Portfolio->image_five = $image_five;
     $Portfolio->thumbnail = $thumbnail;
     $Portfolio->save();
- 
+
     Session::flash('message', "Case Study Has Been Added");
     return Redirect::back();
 }
@@ -2231,7 +2241,7 @@ public function edit_CaseStudies(Request $request, $id){
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
             return Redirect::back();
             }else{
-            
+
             $file = $request->file('image_one');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
@@ -2249,9 +2259,9 @@ public function edit_CaseStudies(Request $request, $id){
          if($fileSize>=200000000){
             Session::flash('message_image_two', "File Exceeded the maximum allowed Size");
             Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
-            
+
          }else{
-            
+
             $file = $request->file('image_two');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
@@ -2264,15 +2274,15 @@ public function edit_CaseStudies(Request $request, $id){
         $image_two = $request->image_two_cheat;
     }
 
-    
+
     if(isset($request->image_three)){
         $fileSize = $request->file('image_three')->getSize();
         if($fileSize>=200000000){
            Session::flash('message_image_three', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
-           
+
         }else{
-           
+
             $file = $request->file('image_three');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
@@ -2285,15 +2295,15 @@ public function edit_CaseStudies(Request $request, $id){
         $image_three = $request->image_three_cheat;
     }
     //Additional images
-    
+
     if(isset($request->image_four)){
         $fileSize = $request->file('image_four')->getSize();
         if($fileSize>=200000000){
            Session::flash('message_image_four', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
-           
+
         }else{
-        
+
             $file = $request->file('image_four');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
@@ -2306,16 +2316,16 @@ public function edit_CaseStudies(Request $request, $id){
         $image_four = $request->image_four_cheat;
     }
 
-    
+
 
     if(isset($request->image_five)){
         $fileSize = $request->file('image_five')->getSize();
         if($fileSize>=200000000){
            Session::flash('message_image_five', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
-           
+
         }else{
-            
+
             $file = $request->file('image_five');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
@@ -2333,9 +2343,9 @@ public function edit_CaseStudies(Request $request, $id){
         if($fileSize>=2000000){
            Session::flash('message', "File Exceeded the maximum allowed Size");
            Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
-           
+
         }else{
-            
+
             $file = $request->file('thumbnail');
             $filename = str_replace(' ', '', $file->getClientOriginalName());
             $timestamp = new Datetime();
@@ -2433,7 +2443,7 @@ public function edit_CaseStudies(Request $request, $id){
         'file_three' =>$file_three,
         'file_four' =>$file_four,
         'file_five' =>$file_five
-        
+
     );
     DB::table('cases')->where('id',$id)->update($updateDetails);
     Session::flash('message', "Changes have been saved");
@@ -2442,20 +2452,20 @@ public function edit_CaseStudies(Request $request, $id){
 
 public function deleteCaseStudies($id){
     DB::table('cases')->where('id',$id)->delete();
-   
+
     return Redirect::back();
 }
 
-// 
+//
     // Case Study
     public function addGallery(){
         $page_title = 'formfiletext';//For Layout Inheritance
         $page_name = 'add Gallery Study';
         return view('admin.addGallery',compact('page_title','page_name'));
     }
-    
+
     public function add_Gallery(Request $request){
-    
+
         $path = 'uploads/gallery';
         if(isset($request->image_one)){
             $fileSize = $request->file('image_one')->getSize();
@@ -2464,7 +2474,7 @@ public function deleteCaseStudies($id){
                 Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
                 return Redirect::back();
                 }else{
-                
+
                 $file = $request->file('image_one');
                 $filename = str_replace(' ', '', $file->getClientOriginalName());
                 $timestamp = new Datetime();
@@ -2476,38 +2486,38 @@ public function deleteCaseStudies($id){
         }else{
             $image_one = $request->pro_img_cheat;
         }
-  
-        
-    
-      
-      
+
+
+
+
+
         $Portfolio = new Gallery;
         $Portfolio->portfolio_id = $request->portfolio_id;
-       
+
         $Portfolio->image = $image_one;
-       
+
         $Portfolio->save();
-     
+
         Session::flash('message', "Case Study Has Been Added");
         return Redirect::back();
     }
-    
-    
+
+
     public function galleries(){
         $Gallery = Gallery::all();
         $page_title = 'list';
         $page_name = 'Portfolio';
         return view('admin.gallery',compact('page_title','Gallery','page_name'));
     }
-    
+
     public function editGallery($id){
         $Gallery = Gallery::find($id);
         $page_title = 'formfiletext';
         $page_name = 'Edit Case Study';
         return view('admin.editGallery',compact('page_title','Gallery','page_name'));
     }
-    
-    
+
+
     public function edit_Gallery(Request $request, $id){
         $path = 'uploads/gallery';
         if(isset($request->image_one)){
@@ -2517,7 +2527,7 @@ public function deleteCaseStudies($id){
                 Session::flash('messageError', "An error occured, You may have exceeded the maximum size for an image you uploaded");
                 return Redirect::back();
                 }else{
-                
+
                 $file = $request->file('image_one');
                 $filename = str_replace(' ', '', $file->getClientOriginalName());
                 $timestamp = new Datetime();
@@ -2529,7 +2539,7 @@ public function deleteCaseStudies($id){
         }else{
             $image_one = $request->image_one_cheat;
         }
-    
+
 
         $updateDetails = array(
             'portfolio_id' => $request->portfolio_id,
@@ -2539,14 +2549,97 @@ public function deleteCaseStudies($id){
         Session::flash('message', "Changes have been saved");
         return Redirect::back();
     }
-    
+
     public function deleteGallery($id){
         DB::table('galleries')->where('id',$id)->delete();
-       
+
         return Redirect::back();
     }
-// 
-    
+
+        // Add Career
+        public function addCareer(){
+            activity()->log('Access The Add Careers');
+            $page_name = 'Add How It Works';
+            $page_title = 'formfiletext';//For Style Inheritance
+            return view('admin.addCareer',compact('page_title','page_name'));
+        }
+
+
+        public function add_Career(Request $request){
+            activity()->log('Evoked Add Career');
+            $path = 'uploads/careers';
+            if(isset($request->image)){
+                    $file = $request->file('image');
+                    $filename = str_replace(' ', '', $file->getClientOriginalName());
+                    $timestamp = new Datetime();
+                    $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+                    $image_main_temp = $new_timestamp.'image'.$filename;
+                    $image = str_replace(' ', '',$image_main_temp);
+                    $file->move($path, $image);
+            }else{
+                $image = 'Thumbnail.png';
+            }
+
+
+            $Career = new Career;
+            $Career->slung = Str::slug($request->title);
+            $Career->title = $request->title;
+            $Career->content = $request->content;
+            $Career->save();
+            Session::flash('message', "Content Has been Added");
+            return Redirect::back();
+        }
+
+        public function careers(){
+            activity()->log('Accessed All Careers Page');
+            $Career = Career::All();
+            $page_name = 'All Careers';
+            $page_title = 'list';
+            return view('admin.careers',compact('page_title','Career','page_name'));
+        }
+
+        public function editCareer($id){
+            activity()->log('Accessed Career Edit ID number '.$id.' ');
+            $Career = Career::find($id);
+            $page_name = $Career->title;
+            $page_title = 'formfiletext';//For Style Inheritance
+            return view('admin.editCareer')->with('Career',$Career)->with('page_name',$page_name)->with('page_title',$page_title);
+        }
+
+        public function edit_Career(Request $request, $id){
+            $path = 'uploads/careers';
+            if(isset($request->image)){
+                $file = $request->file('image');
+                $filename = str_replace(' ', '', $file->getClientOriginalName());
+                $timestamp = new Datetime();
+                $new_timestamp = $timestamp->format('Y-m-d H:i:s');
+                $image_main_temp = $new_timestamp.'image'.$filename;
+                $image = str_replace(' ', '',$image_main_temp);
+                $file->move($path, $image);
+            }else{
+                $image = $request->image_cheat;
+            }
+
+            activity()->log('User '.Auth::user()->name.' Edited Career ID number '.$id.' ');
+            $updateDetails = array(
+                'title'=>$request->title,
+                'slung'=>Str::slug($request->title),
+                'content' =>$request->content,
+                // 'image' =>$image,
+            );
+            DB::table('careers')->where('id',$id)->update($updateDetails);
+            Session::flash('message', "Changes have been saved");
+            return Redirect::back();
+        }
+
+
+        public function delete_Career($id){
+            activity()->log('Deleted Career ID number '.$id.' ');
+            DB::table('careers')->where('id',$id)->delete();
+            return Redirect::back();
+        }
+//
+
 }
 
 

@@ -137,5 +137,4 @@ https://sasemagroup.com/g-analytics -->
     <!-- End of Statcounter Code -->
 </body>
 
-<!-- Mirrored from www.okler.net/previews/porto/9.2.0/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Oct 2021 05:48:21 GMT -->
 </html>

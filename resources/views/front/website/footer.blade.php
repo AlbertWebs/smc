@@ -88,7 +88,10 @@
                         <i class="fas fa-angle-right text-color-default"></i>
                         <a href="{{url('/')}}" class="link-hover-style-1 ms-1"> Contact Us</a>
                     </li>
-
+                    <li>
+                        <i class="fas fa-angle-right text-color-default"></i>
+                        <a href="{{url('/')}}/page-careers" class="link-hover-style-1 ms-1"> Careers</a>
+                    </li>
                     <li>
                         <i class="fas fa-angle-right text-color-default"></i>
                         <a href="{{url('/')}}/terms-and-conditions" class="link-hover-style-1 ms-1"> Terms and Services</a>

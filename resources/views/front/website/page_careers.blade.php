@@ -2,7 +2,7 @@
 @section('content')
 <div class="body">
     @include('front.website.header')
-  
+
 
     <div role="main" class="main">
         <section class="page-header page-header-classic page-header-sm">
@@ -20,7 +20,7 @@
                 </div>
             </div>
         </section>
-      
+
 				<section class="page-header page-header-modern page-header-md bg-transparent m-0">
 					<div class="container">
 						<div class="row">
@@ -39,7 +39,7 @@
 				</section>
 				<hr class="m-0">
 
-			
+
 				<section class="section section-default border-0 m-0">
 					<div class="container py-4">
 
@@ -49,7 +49,7 @@
 									<h4 class="mt-2 mb-2">Current <strong>Openings</strong></h4>
 
 									<div class="accordion accordion-modern accordion-modern-grey-scale-1 without-bg mt-4" id="accordion11">
-										
+
                                         <?php $Counter = 1; ?>
                                         @foreach($About as $about)
                                         @if($Counter == 1)
@@ -61,7 +61,7 @@
 													</a>
 												</h4>
 											</div>
-                                            
+
 											<div id="collapse11One" class="collapse show">
 												<div class="card-body mt-3">
                                                     {!!html_entity_decode($about->content)!!}
@@ -76,7 +76,7 @@
 														</li>
 													</ul> --}}
 
-													<a href="{{url('/')}}/apply-career/{{$about->id}}" class="btn btn-modern btn-dark">Apply</a>
+													<a href="{{url('/')}}/apply-career/{{$about->slung}}" class="btn btn-modern btn-dark">Apply</a>
 												</div>
 											</div>
 										</div>
@@ -109,10 +109,24 @@
                                         @endif
                                         <?php $Counter = $Counter+1 ?>
                                         @endforeach
-										
-									
+
+
 									</div>
 								</div>
+
+                                {{--  --}}
+                                <section class="call-to-action call-to-action-default with-button-arrow content-align-center call-to-action-in-footer">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-12">
+                                                <div class="call-to-action-btn">
+                                                    <a href="{{url('/')}}/career-inquiry" target="_blank" class="btn btn-dark btn-lg text-3 font-weight-semibold px-4 py-3">Custom Career Request</a><span class="arrow hlb d-none d-md-block" data-appear-animation="rotateInUpLeft" style="top: -40px; left: 70%;"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                {{--  --}}
 
 							</div>
 							<div class="col-md-4">
@@ -159,7 +173,7 @@
 
     </div>
 
-  
+
     <section class="call-to-action call-to-action-default with-button-arrow content-align-center call-to-action-in-footer">
         <div class="container">
             <div class="row">
@@ -177,7 +191,7 @@
             </div>
         </div>
     </section>
-    
+
     @include('front.website.footer')
 </div>
 @endsection
