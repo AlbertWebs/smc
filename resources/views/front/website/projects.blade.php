@@ -2,7 +2,7 @@
 @section('content')
 <div class="body">
     @include('front.website.header')
-  
+
 
     <div role="main" class="main">
         <section class="page-header page-header-classic page-header-sm">
@@ -69,7 +69,7 @@
                                 <th width="15%">NO#</th>
                                 <th width="25%">Project Name</th>
                                 <th width="25%">Sector</th>
-                                <th width="25%">Ticket Size</th>
+                                <th width="25%">Indicative Value</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -88,10 +88,10 @@
                 </div>
             </div>
         </section>
-        
+
     </div>
 
-  
+
     @include('front.website.footnote')
     @include('front.website.footer')
 </div>
