@@ -37,7 +37,7 @@
                                 <th width="15%">NO#</th>
                                 <th width="25%">Project Name</th>
                                 <th width="25%">Sector</th>
-                                <th width="25%">Ticket Size</th>
+                                <th width="25%">Indicative Value</th>
                             </tr>
                         </thead>
                         <tbody>
