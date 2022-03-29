@@ -18,7 +18,8 @@
 
                         <span class="word-rotator-words waiting">
                             <b class="is-visible">Looking for the best transaction advisory services?</b>
-                            <b>Look no further, Sasema Management Company’s team of highly skilled professionals will cater to all
+                            <b>Look no further</b>
+                            <b>Sasema Management Company’s team of highly skilled professionals will cater to all
                                 your M&amp;A, Family Business &amp; Capital/ Debt raising needs</b>
                         </span>
 
