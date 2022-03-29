@@ -20,7 +20,8 @@
                             <b class="is-visible">Looking for the best transaction advisory services?</b>
                             <b>Look no further</b>
                             <b>Sasema Management Company’s team of highly skilled professionals will cater to all
-                                your M&amp;A, Family Business &amp; Capital/ Debt raising needs</b>
+                                your M&amp;A, Family Business &amp; Capital/ Debt raising needs
+                            </b>
                         </span>
 
                     </h1>
