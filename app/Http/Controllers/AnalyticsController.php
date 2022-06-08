@@ -16,6 +16,7 @@ class AnalyticsController extends Controller
         return view('analytic',compact('Sessions'));
     }
 
+
     public function track(){
         $Sessions = DB::table('tracker_sessions')->where('is_robot','0')->orderBy('id','ASC')->get();
         $CountVisitors = count($this->getToday());
@@ -24,6 +25,7 @@ class AnalyticsController extends Controller
         $CountVisitorsThisMonthRobot = count($this->getThisMonthRobots());
         return view('front.analytics',compact('Sessions','CountVisitors','CountRobotVisitors','CountVisitorsThisMonth','CountVisitorsThisMonthRobot'));
     }
+
 
     public function getToday(){
         $Today = DB::table('tracker_sessions')->where('is_robot','0')->whereDate('created_at', Carbon::today())->get();
