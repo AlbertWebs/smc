@@ -65,12 +65,4 @@ class AnalyticsController extends Controller
         return $countryName;
     }
 
-
-    //CronJob Delete All Bots
-
-    // Create Cron Job to convert IP to Location
-
-
-
-
 }

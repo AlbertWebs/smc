@@ -20,7 +20,7 @@ class DemoCron extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Log Cron Locations';
 
     /**
      * Create a new command instance.

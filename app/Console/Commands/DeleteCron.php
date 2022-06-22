@@ -19,7 +19,7 @@ class DeleteCron extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Delete 2 Months Tracker Sessions';
 
     /**
      * Create a new command instance.

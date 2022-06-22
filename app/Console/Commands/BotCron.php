@@ -18,7 +18,7 @@ class BotCron extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Delete, Tracker Sessions';
 
     /**
      * Create a new command instance.
