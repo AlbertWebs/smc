@@ -66,6 +66,80 @@ class ColumnTokenizerTest extends TestCase
         $this->assertEquals('$table->string(\'favorite_color\')->nullable()', $columnDefinition->render());
     }
 
+    public function test_it_tokenizes_a_null_varchar_default_value_null_column_with_comment_with_setting()
+    {
+        $columnTokenizer = ColumnTokenizer::parse('`favorite_color` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT \'favorite color\'');
+        $columnDefinition = $columnTokenizer->definition();
+
+        $this->assertEquals('favorite_color', $columnDefinition->getColumnName());
+        $this->assertEquals('varchar', $columnTokenizer->getColumnDataType());
+        $this->assertEquals('string', $columnDefinition->getMethodName());
+        $this->assertCount(0, $columnDefinition->getMethodParameters());
+        $this->assertTrue($columnDefinition->isNullable());
+        $this->assertEquals('utf8mb4_unicode_ci', $columnDefinition->getCollation());
+        $this->assertNull($columnDefinition->getDefaultValue());
+        $this->assertEquals('favorite color', $columnDefinition->getComment());
+        $this->assertEquals('$table->string(\'favorite_color\')->nullable()->comment("favorite color")', $columnDefinition->render());
+    }
+
+    public function test_it_tokenizes_a_null_varchar_default_value_null_column_with_comment_without_setting()
+    {
+        config()->set('laravel-migration-generator.definitions.with_comments', false);
+        $columnTokenizer = ColumnTokenizer::parse('`favorite_color` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT \'favorite color\'');
+        $columnDefinition = $columnTokenizer->definition();
+
+        $this->assertEquals('favorite_color', $columnDefinition->getColumnName());
+        $this->assertEquals('varchar', $columnTokenizer->getColumnDataType());
+        $this->assertEquals('string', $columnDefinition->getMethodName());
+        $this->assertCount(0, $columnDefinition->getMethodParameters());
+        $this->assertTrue($columnDefinition->isNullable());
+        $this->assertEquals('utf8mb4_unicode_ci', $columnDefinition->getCollation());
+        $this->assertNull($columnDefinition->getDefaultValue());
+        $this->assertEquals('favorite color', $columnDefinition->getComment());
+        $this->assertEquals('$table->string(\'favorite_color\')->nullable()', $columnDefinition->render());
+
+        config()->set('laravel-migration-generator.definitions.with_comments', true);
+    }
+
+    public function test_it_tokenizes_a_null_varchar_default_value_null_column_with_comment_apostrophe()
+    {
+        $columnTokenizer = ColumnTokenizer::parse("`favorite_color` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'favorite color is ''green''");
+        $columnDefinition = $columnTokenizer->definition();
+
+        $this->assertEquals('favorite_color', $columnDefinition->getColumnName());
+        $this->assertEquals('varchar', $columnTokenizer->getColumnDataType());
+        $this->assertEquals('string', $columnDefinition->getMethodName());
+        $this->assertCount(0, $columnDefinition->getMethodParameters());
+        $this->assertTrue($columnDefinition->isNullable());
+        $this->assertEquals('utf8mb4_unicode_ci', $columnDefinition->getCollation());
+        $this->assertNull($columnDefinition->getDefaultValue());
+        $this->assertEquals('favorite color is \'green\'', $columnDefinition->getComment());
+        $this->assertEquals('$table->string(\'favorite_color\')->nullable()->comment("favorite color is \'green\'")', $columnDefinition->render());
+    }
+
+    public function test_it_tokenizes_a_null_varchar_default_value_null_column_with_comment_quotation()
+    {
+        $columnTokenizer = ColumnTokenizer::parse("`favorite_color` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'favorite color is \"green\"");
+        $columnDefinition = $columnTokenizer->definition();
+
+        $this->assertEquals('favorite_color', $columnDefinition->getColumnName());
+        $this->assertEquals('varchar', $columnTokenizer->getColumnDataType());
+        $this->assertEquals('string', $columnDefinition->getMethodName());
+        $this->assertCount(0, $columnDefinition->getMethodParameters());
+        $this->assertTrue($columnDefinition->isNullable());
+        $this->assertEquals('utf8mb4_unicode_ci', $columnDefinition->getCollation());
+        $this->assertNull($columnDefinition->getDefaultValue());
+        $this->assertEquals('favorite color is "green"', $columnDefinition->getComment());
+        $this->assertEquals('$table->string(\'favorite_color\')->nullable()->comment("favorite color is \"green\"")', $columnDefinition->render());
+    }
+
+    public function test_it_tokenizes_varchar_with_default_and_comment(){
+        $columnTokenizer = ColumnTokenizer::parse("`testing` varchar(255) DEFAULT 'this is ''it''' COMMENT 'this is the \"comment\"'");
+        $columnDefinition = $columnTokenizer->definition();
+        $this->assertEquals('this is \'it\'', $columnDefinition->getDefaultValue());
+        $this->assertEquals('this is the "comment"', $columnDefinition->getComment());
+    }
+
     public function test_it_tokenizes_char_column_with_character_and_collation()
     {
         $columnTokenizer = ColumnTokenizer::parse('`country` char(2) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT \'US\'');
@@ -107,9 +181,9 @@ class ColumnTokenizerTest extends TestCase
         $this->assertEquals('tinytext', $columnTokenizer->getColumnDataType());
         $this->assertEquals('string', $columnDefinition->getMethodName());
         $this->assertCount(0, $columnDefinition->getMethodParameters());
-        $this->assertNull($columnDefinition->isNullable());
+        $this->assertTrue($columnDefinition->isNullable());
         $this->assertNull($columnDefinition->getCollation());
-        $this->assertEquals('$table->string(\'notes\')', $columnDefinition->render());
+        $this->assertEquals('$table->string(\'notes\')->nullable()', $columnDefinition->render());
     }
 
     public function test_it_tokenizes_a_not_null_text_column()
@@ -135,9 +209,9 @@ class ColumnTokenizerTest extends TestCase
         $this->assertEquals('text', $columnTokenizer->getColumnDataType());
         $this->assertEquals('text', $columnDefinition->getMethodName());
         $this->assertCount(0, $columnDefinition->getMethodParameters());
-        $this->assertNull($columnDefinition->isNullable());
+        $this->assertTrue($columnDefinition->isNullable());
         $this->assertNull($columnDefinition->getCollation());
-        $this->assertEquals('$table->text(\'notes\')', $columnDefinition->render());
+        $this->assertEquals('$table->text(\'notes\')->nullable()', $columnDefinition->render());
     }
 
     public function test_it_tokenizes_a_not_null_mediumtext_column()
@@ -163,9 +237,9 @@ class ColumnTokenizerTest extends TestCase
         $this->assertEquals('mediumtext', $columnTokenizer->getColumnDataType());
         $this->assertEquals('mediumText', $columnDefinition->getMethodName());
         $this->assertCount(0, $columnDefinition->getMethodParameters());
-        $this->assertNull($columnDefinition->isNullable());
+        $this->assertTrue($columnDefinition->isNullable());
         $this->assertNull($columnDefinition->getCollation());
-        $this->assertEquals('$table->mediumText(\'notes\')', $columnDefinition->render());
+        $this->assertEquals('$table->mediumText(\'notes\')->nullable()', $columnDefinition->render());
     }
 
     public function test_it_tokenizes_a_not_null_longtext_column()
@@ -191,9 +265,9 @@ class ColumnTokenizerTest extends TestCase
         $this->assertEquals('longtext', $columnTokenizer->getColumnDataType());
         $this->assertEquals('longText', $columnDefinition->getMethodName());
         $this->assertCount(0, $columnDefinition->getMethodParameters());
-        $this->assertNull($columnDefinition->isNullable());
+        $this->assertTrue($columnDefinition->isNullable());
         $this->assertNull($columnDefinition->getCollation());
-        $this->assertEquals('$table->longText(\'notes\')', $columnDefinition->render());
+        $this->assertEquals('$table->longText(\'notes\')->nullable()', $columnDefinition->render());
     }
 
     //endregion
@@ -795,7 +869,7 @@ class ColumnTokenizerTest extends TestCase
         $columnTokenizer = ColumnTokenizer::parse('`calculate` enum(\'one\',\'and\',\'highest or\',\'lowest or\',\'sum\',\'highest position or\',\'lowest position or\') COLLATE utf8mb4_general_ci NOT NULL COMMENT \'set the way we calculate a feature value. with high or low or the sort is by position\'');
         $definition = $columnTokenizer->definition();
 
-        $this->assertEquals('$table->enum(\'calculate\', [\'one\', \'and\', \'highest or\', \'lowest or\', \'sum\', \'highest position or\', \'lowest position or\'])', $definition->render());
+        $this->assertEquals('$table->enum(\'calculate\', [\'one\', \'and\', \'highest or\', \'lowest or\', \'sum\', \'highest position or\', \'lowest position or\'])->comment("set the way we calculate a feature value. with high or low or the sort is by position")', $definition->render());
     }
 
     public function test_it_tokenizes_enum_with_special_characters()
@@ -803,7 +877,7 @@ class ColumnTokenizerTest extends TestCase
         $columnTokenizer = ColumnTokenizer::parse('`calculate` enum(\'one\',\'and\',\'highest-or\',\'lowest^or\',\'sum%\',\'highest $ position or\',\'lowest+_<>?/ position or\',\'"quoted"\') COLLATE utf8mb4_general_ci NOT NULL COMMENT \'set the way we calculate a feature value. with high or low or the sort is by position\'');
         $definition = $columnTokenizer->definition();
 
-        $this->assertEquals('$table->enum(\'calculate\', [\'one\', \'and\', \'highest-or\', \'lowest^or\', \'sum%\', \'highest $ position or\', \'lowest+_<>?/ position or\', \'"quoted"\'])', $definition->render());
+        $this->assertEquals('$table->enum(\'calculate\', [\'one\', \'and\', \'highest-or\', \'lowest^or\', \'sum%\', \'highest $ position or\', \'lowest+_<>?/ position or\', \'"quoted"\'])->comment("set the way we calculate a feature value. with high or low or the sort is by position")', $definition->render());
     }
 
     //endregion
@@ -1004,7 +1078,8 @@ class ColumnTokenizerTest extends TestCase
         $this->assertEquals('$table->decimal(\'total\', 24, 6)->storedAs("(`quantity` * `unit_price`)")', $columnDefinition->render());
     }
 
-    public function test_it_tokenizes_generated_as_column_example(){
+    public function test_it_tokenizes_generated_as_column_example()
+    {
         $columnTokenizer = ColumnTokenizer::parse('`full_name` varchar(150) COLLATE utf8mb4_unicode_ci GENERATED ALWAYS AS (concat(`first_name`,\' \',`last_name`)) STORED');
         $columnDefinition = $columnTokenizer->definition();
 

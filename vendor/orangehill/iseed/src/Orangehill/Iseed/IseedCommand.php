@@ -88,10 +88,10 @@ class IseedCommand extends Command
             }
             $tableIncrement++;
 
-            // tengeneza izo files na class names based on table-names
+            // generate file and class name based on name of the table
             list($fileName, $className) = $this->generateFileName($table, $prefix, $suffix);
 
-            // hapa tutalazimisha ii maneno
+            // if file does not exist or force option is turned on generate seeder
             if (!\File::exists($fileName) || $this->option('force')) {
                 $this->printResult(
                     app('iseed')->generateSeed(
