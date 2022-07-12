@@ -16,6 +16,7 @@ class Kernel extends ConsoleKernel
         Commands\DemoCron::class,
         Commands\DeleteCron::class,
         Commands\BotCron::class,
+        Commands\RunMaintenance::class,
     ];
 
     /**
@@ -29,6 +30,7 @@ class Kernel extends ConsoleKernel
         $schedule->command('demo:cron')->everyMinute();
         $schedule->command('delete:cron')->weekly();
         $schedule->command('bot:cron')->everyMinute();
+        $schedule->command('run:maintenance')->monthlyOn(30, '13:00');
     }
 
     /**
