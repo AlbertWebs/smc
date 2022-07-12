@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use App\Models\SendMails;
 
 class RunMaintenance extends Command
 {
@@ -37,6 +38,8 @@ class RunMaintenance extends Command
      */
     public function handle()
     {
+        SendMails::maintainance();
+        // Mail Maintenance Directives
         \Artisan::call('down');
     }
 }

@@ -281,7 +281,7 @@ class HomeController extends Controller
                 return response()->json(['response'=>'success']);
             }
     }
- 
+
     public function submit_messages(Request $request)
     {
             if($request->filled('website')) {

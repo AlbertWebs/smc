@@ -96,6 +96,40 @@ class SendMails extends Model
         });
     }
 
+    public static function maintainance(){
+        $name = "Albert Muhatia";
+        $email = "albertmuhatia@gmail.com";
+        $subject = "Go Maintain";
+        $message = "Go Maintain SMC";
+        //The Generic mailler Goes here
+        $messageee = ''.$message.'';
+        $data = array(
+            'content'=>$messageee,
+            'name'=>$name,
+            'email'=>$email,
+            'subject'=>$subject,
+        );
+
+        $subject = "Contact Form: $subject";
+
+        $appEmail = 'mailer@sasemagroup.com';
+
+
+        $SenderEmail = $email;
+        $SenderName = $name;
+
+        $toVariable = $appEmail;
+
+        $toVariableName = 'Sasema Management Company';
+
+
+        Mail::send('mailTheme', $data, function($message) use ($subject,$SenderEmail,$SenderName,$toVariable,$toVariableName,$email,$name){
+            $message->from($SenderEmail , $SenderName);
+            $message->to($toVariable, $toVariableName)->cc('albertmuhatia@gmail.com')->replyTo($SenderEmail, $SenderName)->subject($subject);
+        });
+    }
+
+
 
 
 }
