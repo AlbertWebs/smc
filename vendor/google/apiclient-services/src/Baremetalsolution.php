@@ -44,6 +44,7 @@ class Baremetalsolution extends \Google\Service
   public $projects_locations_instances;
   public $projects_locations_networks;
   public $projects_locations_nfsShares;
+  public $projects_locations_operations;
   public $projects_locations_provisioningConfigs;
   public $projects_locations_provisioningQuotas;
   public $projects_locations_volumes;
@@ -133,7 +134,17 @@ class Baremetalsolution extends \Google\Service
         'instances',
         [
           'methods' => [
-            'detachLun' => [
+            'create' => [
+              'path' => 'v2/{+parent}/instances',
+              'httpMethod' => 'POST',
+              'parameters' => [
+                'parent' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],'detachLun' => [
               'path' => 'v2/{+instance}:detachLun',
               'httpMethod' => 'POST',
               'parameters' => [
@@ -295,7 +306,27 @@ class Baremetalsolution extends \Google\Service
         'nfsShares',
         [
           'methods' => [
-            'get' => [
+            'create' => [
+              'path' => 'v2/{+parent}/nfsShares',
+              'httpMethod' => 'POST',
+              'parameters' => [
+                'parent' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],'delete' => [
+              'path' => 'v2/{+name}',
+              'httpMethod' => 'DELETE',
+              'parameters' => [
+                'name' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ],
+              ],
+            ],'get' => [
               'path' => 'v2/{+name}',
               'httpMethod' => 'GET',
               'parameters' => [
@@ -339,6 +370,26 @@ class Baremetalsolution extends \Google\Service
                 'updateMask' => [
                   'location' => 'query',
                   'type' => 'string',
+                ],
+              ],
+            ],
+          ]
+        ]
+    );
+    $this->projects_locations_operations = new Baremetalsolution\Resource\ProjectsLocationsOperations(
+        $this,
+        $this->serviceName,
+        'operations',
+        [
+          'methods' => [
+            'get' => [
+              'path' => 'v2/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => [
+                'name' => [
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
                 ],
               ],
             ],

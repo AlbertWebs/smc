@@ -12,9 +12,9 @@
             <div class="col-lg-6 ps-lg-4 ps-xl-5">
                 <h2 class="custom-highlight-text-1 d-inline-block line-height-5 text-4 positive-ls-3 font-weight-medium text-color-primary mb-2 appear-animation" data-appear-animation="fadeInUpShorter">ABOUT US</h2>
                 <h3 class="text-9 text-lg-5 text-xl-9 line-height-3 text-transform-none font-weight-semibold mb-4 mb-lg-3 mb-xl-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250">Financial Consultant in Africa</h3>
-                
+
                 <p class="text-3-5 pb-1 mb-4 mb-lg-2 mb-xl-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">{!!html_entity_decode($item->company)!!}</p>
-                
+
                 <div class="row align-items-center pb-2 mb-4 mb-lg-1 mb-xl-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750">
                     <div class="col-5">
                         <div class="d-flex">
@@ -31,7 +31,7 @@
                         </blockquote>
                     </div>
                 </div>
-            
+
             </div>
         </div>
         @endforeach

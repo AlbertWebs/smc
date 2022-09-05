@@ -16,8 +16,8 @@
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.3",
         "orangehill/iseed": "^3.0",
-        "pragmarx/tracker": "^4.0",
-        "pusher/pusher-php-server": "~3.0",
+
+
         "spatie/laravel-activitylog": "^3.17",
         "spatie/laravel-analytics": "^3.11",
         "spatie/laravel-newsletter": "^4.10",

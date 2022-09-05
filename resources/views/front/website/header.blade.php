@@ -116,6 +116,9 @@
                                                 Projects
                                             </a>
                                         </li>
+                                        <li>
+                                            <a data-hash class="nav-link"  href="{{url('/')}}/page-careers">Careers</a>
+                                        </li>
                                         <li class="d-lg-none">
                                             <a class="nav-link @if($page_name == "Contact Us") active @endif" href="{{url('/')}}/contact-us">
                                                 Contact Us

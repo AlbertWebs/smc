@@ -15,7 +15,7 @@
         </div>
         <div class="container py-4">
             <?php $Services = DB::table('services')->get(); ?>
-            
+
             <div class="row py-3 justify-content-center text-center">
                 @foreach ($Services as $item)
                 <div class="col-sm-8 col-md-4 appear-animation animated fadeIn appear-animation-visible" {!!html_entity_decode($item->animate)!!}>
@@ -32,17 +32,17 @@
                                 <h4 class="mb-0"><a href="#" class="text-3 text-uppercase font-weight-bold pt-2 d-block text-dark text-decoration-none">{{$item->title}}</a></h4>
                                 {{-- <p class="mb-2 lead text-4 min-height">{!!html_entity_decode($item->meta)!!} </p> --}}
                                 <p class="mb-2 lead text-4 min-height"> {{ \Illuminate\Support\Str::limit($item->meta, 150, $end='...') }} </p>
-                                
+
                                 <a href="{{url('/our-services')}}/{{$item->slung}}" class="btn btn-modern btn-dark mt-3 text-center m-b">Learn More</a>
                             </div>
                         </div>
                     </article>
                 </div>
                 @endforeach
-                
+
             </div>
-            
+
         </div>
-        
+
     </div>
 </section>

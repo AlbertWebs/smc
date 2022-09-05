@@ -6,7 +6,7 @@
 
     RewriteEngine On
     RewriteCond %{HTTP_HOST} !^sasemagroup.com$
-RewriteRule ^(.*)$ https://sasemagroup.com/$1 [R=301,L]
+    RewriteRule ^(.*)$ https://sasemagroup.com/$1 [R=301,L]
 
     RewriteCond %{REQUEST_FILENAME} -d [OR]
     RewriteCond %{REQUEST_FILENAME} -f

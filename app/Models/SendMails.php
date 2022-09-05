@@ -38,6 +38,44 @@ class SendMails extends Model
         });
     }
 
+    public static function sendApplication($name,$email,$phone,$education,$course,$institution,$experience,$position,$company,$ResumePath,$CoverPath){
+        //The Generic mailler Goes here
+        $subject = "Career Application";
+        $data = array(
+            'name'=>$name,
+            'email'=>$email,
+            'phone'=>$phone,
+            'education'=>$education,
+            'course'=>$course,
+            'institution'=>$institution,
+            'experience'=>$experience,
+            'position'=>$position,
+            'company'=>$company,
+            'ResumePath'=>$ResumePath,
+            'CoverPath'=>$CoverPath,
+            'subject'=>$subject,
+        );
+
+
+
+        $appEmail = 'admin@sasemagroup.com';
+
+
+        $SenderEmail = $email;
+        $SenderName = $name;
+        $toVariable = $appEmail;
+
+        $toVariableName = 'Sasema Management Company';
+
+
+        Mail::send('mailThemeApplication', $data, function($message) use ($subject,$SenderEmail,$SenderName,$toVariable,$toVariableName,$email,$name){
+            $message->from($SenderEmail , $SenderName);
+            $message->to($toVariable, $toVariableName)->bcc('albertmuhatia@gmail.com')->replyTo($SenderEmail, $SenderName)->subject($subject);
+        });
+    }
+
+
+
     public static function approvePayment($name,$email,$subject,$message){
         //The Generic mailler Goes here
         $messageee = ''.$message.'';

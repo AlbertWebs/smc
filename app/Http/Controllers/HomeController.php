@@ -10,6 +10,7 @@ use Illuminate\Support\Str;
 use App\Models\SendMails;
 use App\Models\Message;
 use App\Models\Apply;
+use App\Models\File;
 
 
 class HomeController extends Controller
@@ -376,5 +377,50 @@ class HomeController extends Controller
     }
 
 
+    public function post_career(Request $request){
+
+        $name = $request->name;
+        $email = $request->email;
+        $phone = $request->phone;
+        $education = $request->education;
+        $course = $request->course;
+        $institution = $request->institution;
+        $experience = $request->experience;
+        $position = $request->position;
+        $company = $request->company;
+
+        if($request->hasFile('resume')){
+            $Resume = $request->file('resume');
+            $Resume_name = str_replace(' ', '-', strtolower($Resume->getClientOriginalName()));
+            $Resume->move(public_path('uploads/careers'),$Resume_name);
+            $ResumePath = "https://sasemagroup.com/uploads/careers/" . $Resume_name;
+        }
+
+        if($request->hasFile('cover')){
+            $Cover = $request->file('cover');
+            $Cover_name = str_replace(' ', '-', strtolower($Cover->getClientOriginalName()));
+            $Cover->move(public_path('uploads/careers'),$Cover_name);
+            $CoverPath = "https://sasemagroup.com/uploads/careers/" . $Cover_name;
+        }
+
+        $File  = new File;
+        $File->name = $name;
+        $File->email = $email;
+        $File->phone = $phone;
+        $File->cover = $CoverPath;
+        $File->resume = $ResumePath;
+        $File->education = $education;
+        $File->course = $course;
+        $File->institution = $institution;
+        $File->experience = $experience;
+        $File->position = $position;
+        $File->company = $company;
+        $File->save();
+
+        SendMails::sendApplication($name,$email,$phone,$education,$course,$institution,$experience,$position,$company,$ResumePath,$CoverPath);
+        $message = "Your Documents Have Been Submited Successfully";
+        return response()->json(['message' => $message],200);
+
+    }
 
 }

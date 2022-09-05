@@ -28,7 +28,7 @@
                                             <a data-hash class="nav-link" href="{{url('/about-us')}}">
                                                 About Us
                                             </a>
-    
+
                                         </li>
                                         <li>
                                             <a data-hash class="nav-link" href="{{url('/')}}/meet-our-team">Meet the Team</a>
@@ -42,7 +42,7 @@
                                                     <a href="{{url('/')}}/our-services/{{$item->slung}}" class="dropdown-item">{{$item->title}}</a>
                                                 </li>
                                                 @endforeach
-            
+
                                             </ul>
                                         </li> --}}
                                         <li class="dropdown">
@@ -56,14 +56,18 @@
                                                     <a href="{{url('/')}}/our-services/{{$item->slung}}" class="dropdown-item">{{$item->title}}</a>
                                                 </li>
                                                 @endforeach
-            
+
                                             </ul>
                                         </li>
-                                        
+
                                         <li>
                                             <a data-hash class="nav-link"  href="{{url('/')}}/projects">Projects</a>
                                         </li>
-                                       
+
+                                        <li>
+                                            <a data-hash class="nav-link"  href="{{url('/')}}/page-careers">Careers</a>
+                                        </li>
+
                                         <li>
                                             <a data-hash class="nav-link" href="{{url('/contact-us')}}">Contact Us</a>
                                         </li>

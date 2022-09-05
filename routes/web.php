@@ -34,6 +34,8 @@ Route::get('/projects', [App\Http\Controllers\HomeController::class, 'projects']
 Route::get('/page-careers', [App\Http\Controllers\HomeController::class, 'page_careers'])->name('page-careers');
 Route::get('/apply-career/{slung}', [App\Http\Controllers\HomeController::class, 'apply_career'])->name('apply-career');
 Route::post('/apply-career', [App\Http\Controllers\HomeController::class, 'apply_career_post'])->name('apply-career-post');
+Route::post('/apply-career/phpmailer/send-career-request', [App\Http\Controllers\HomeController::class, 'post_career'])->name('apply-career-post-request');
+
 Route::get('/career-inquiry', [App\Http\Controllers\HomeController::class, 'career_inquiry'])->name('career-inquiry');
 
 

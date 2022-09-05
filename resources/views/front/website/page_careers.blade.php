@@ -46,7 +46,7 @@
 						<div class="row pb-4">
 							<div class="col-md-8">
 								<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
-									<h4 class="mt-2 mb-2">Current <strong>Openings</strong></h4>
+									{{-- <h4 class="mt-2 mb-2">Current <strong>Openings</strong></h4> --}}
 
 									<div class="accordion accordion-modern accordion-modern-grey-scale-1 without-bg mt-4" id="accordion11">
 
@@ -62,9 +62,18 @@
 												</h4>
 											</div>
 
+                                            <style>
+                                                p {
+                                                    color: #000000;
+                                                    line-height: 26px;
+                                                    margin: 0 0 20px;
+                                                }
+                                            </style>
 											<div id="collapse11One" class="collapse show">
-												<div class="card-body mt-3">
-                                                    {!!html_entity_decode($about->content)!!}
+												<div class="card-body mt-3" style="color:#000000 !important">
+                                                    <p style="color:#000000 !important">
+                                                        {!!html_entity_decode($about->content)!!}
+                                                    </p>
 													{{-- <ul class="list list-inline mt-4 mb-3 text-2">
 														<li class="list-inline-item">
 															<strong>LOCATION:</strong>
@@ -76,7 +85,8 @@
 														</li>
 													</ul> --}}
 
-													<a href="{{url('/')}}/apply-career/{{$about->slung}}" class="btn btn-modern btn-dark">Apply</a>
+                                                    <br><br>
+													<a href="{{url('/')}}/apply-career/{{$about->slung}}" class="btn btn-modern btn-dark">Apply Now</a>
 												</div>
 											</div>
 										</div>

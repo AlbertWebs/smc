@@ -41,6 +41,10 @@ class Settings extends \Google\Collection
    */
   public $collation;
   /**
+   * @var string
+   */
+  public $connectorEnforcement;
+  /**
    * @var bool
    */
   public $crashSafeReplicationEnabled;
@@ -58,6 +62,10 @@ class Settings extends \Google\Collection
    * @var bool
    */
   public $databaseReplicationEnabled;
+  /**
+   * @var bool
+   */
+  public $deletionProtectionEnabled;
   protected $denyMaintenancePeriodsType = DenyMaintenancePeriod::class;
   protected $denyMaintenancePeriodsDataType = 'array';
   protected $insightsConfigType = InsightsConfig::class;
@@ -190,6 +198,20 @@ class Settings extends \Google\Collection
     return $this->collation;
   }
   /**
+   * @param string
+   */
+  public function setConnectorEnforcement($connectorEnforcement)
+  {
+    $this->connectorEnforcement = $connectorEnforcement;
+  }
+  /**
+   * @return string
+   */
+  public function getConnectorEnforcement()
+  {
+    return $this->connectorEnforcement;
+  }
+  /**
    * @param bool
    */
   public function setCrashSafeReplicationEnabled($crashSafeReplicationEnabled)
@@ -258,6 +280,20 @@ class Settings extends \Google\Collection
   public function getDatabaseReplicationEnabled()
   {
     return $this->databaseReplicationEnabled;
+  }
+  /**
+   * @param bool
+   */
+  public function setDeletionProtectionEnabled($deletionProtectionEnabled)
+  {
+    $this->deletionProtectionEnabled = $deletionProtectionEnabled;
+  }
+  /**
+   * @return bool
+   */
+  public function getDeletionProtectionEnabled()
+  {
+    return $this->deletionProtectionEnabled;
   }
   /**
    * @param DenyMaintenancePeriod[]
