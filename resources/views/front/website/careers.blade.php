@@ -70,7 +70,7 @@
 	                    </ul>
 	                </div>
 	                <!-- /social -->
-	                <div style="max-height:700px; overflow-y: scroll;">
+	                <div style="max-height:700px; overflow-y: scroll; scrollbar-width: none;">
 	                    <figure><img src="{{asset('wizard/img/info_graphic_1.svg')}}" alt="" class="img-fluid" width="270" height="270"></figure>
 	                    <h2>{{$about->title}}</h2>
 	                    <p>
